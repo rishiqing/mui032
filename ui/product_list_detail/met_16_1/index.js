@@ -9,7 +9,7 @@ METUI_FUN['$uicss'] = {
                 $(window).scroll(function() {
                     var st = $(this).scrollTop();
                     //标题工具栏固定
-                    if($("body").hasClass('met-navfixed')){
+                    if($("header").hasClass('navbar-fixed-top')){
                         if (st > navbar_t) {
                             navbar.addClass('navbar-fixed-top animation-slide-top');
                             $("header").removeClass('navbar-fixed-top');
@@ -22,7 +22,6 @@ METUI_FUN['$uicss'] = {
                             navbar.addClass('navbar-fixed-top animation-slide-top');
                         } else {
                             navbar.removeClass('navbar-fixed-top animation-slide-top');
-
                         }
                     }
                     

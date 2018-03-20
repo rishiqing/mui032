@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 首页服务区块 */
+$uicss.met-index-body.bgcolor{background:$bodybgcolor$;background:$bgcolor$;}
+$uicss.met-index-body.bgpic{background:url($bgpic$) no-repeat;background-size: cover;background-position: center;}
+$uicss.met-index-body{padding:$padding$px 0px;}
+$uicss.met-index-body h2{font-size:24px;color:$firstcolor$;color:$titlecolor$;}
+$uicss.met-index-body p.desc{padding:0 10%;font-size:16px;color:$secondcolor$;color:$desccolor$;}
+$uicss .index-service-list li h3{font-size:14px;color:$firstcolor$;color:$titlecolor$;margin:0;}
+$uicss .index-service-list li p{font-size:12px;color:$secondcolor$;color:$desccolor$;}
+$uicss .index-service-list li i{color:$secondcolor$;color: $desccolor$;}
+@media (max-width:991px){
+	$uicss.met-index-body{padding:$padding_p$px 0px;}
+}
+@media (max-width:767px){
+	$uicss.met-index-body{padding:$padding_m$px 0px;}
+	$uicss.met-index-body h2{font-size:28px;}
+	$uicss.met-index-body p.desc{font-size:14px;}
+}
+$uicss .index-service-list li{margin:50px 0 0;}
+$uicss .index-service-list li .service_img {width: 30%; }
+$uicss .index-service-list li .service_des {width: 70%; text-align: left;padding-left: 10px;}
+$uicss .index-service-list li img{width:82px;max-width:100%;}
+@media (max-width:991px){
+	$uicss .index-service-list li{margin-top:40px;}
+}
+@media (max-width:767px){
+	$uicss .index-service-list li{margin-top:30px;}
+	$uicss .index-service-list li i{width:90px;height:90px;line-height:90px;font-size:40px;}
+}

@@ -1,0 +1,19 @@
+$uicss{padding:70px 0;background: $bgbodycolor$;}
+$uicss.bgcolor{background: $bgcolor$;}
+$uicss.bgpic{background:url($bgpic$) no-repeat;background-size: cover;background-position: center;}
+$uicss .title{font-size: 24px; margin-top: 0px; text-align: center; font-weight: 300; color: $firstcolor$;color: $titlecolor$; margin-bottom: 25px;}
+$uicss p.desc {font-size: 16px; font-weight: 300; text-align: center; width: 80%; color: $secondcolor$;color: $desccolor$;  margin: 0px auto; }
+$uicss .imglist{margin-top:50px;}
+$uicss .imglist li{padding:15px;}
+$uicss .imglist div img{width: 100%;}
+$uicss .imglist div img.gray{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray;}
+$uicss .overlay-hover:hover .overlay-scale{-webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -ms-filter: grayscale(0%); -o-filter: grayscale(0%); filter: grayscale(0%); filter: gray;}
+@media (max-width:991px){
+    $uicss.met-index-body{padding:$padding_p$px 0px;}
+    $uicss .imglist{margin-top:40px;}
+}
+@media (max-width:767px){
+    $uicss.met-index-body{padding:$padding_m$px 0px;}
+    $uicss .imglist li{padding:10px;}
+    $uicss .imglist{margin-top:30px;}
+}

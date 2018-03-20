@@ -1,0 +1,21 @@
+$uicss{min-height: 200px;}
+$uicss section{height:600px;padding:50px 0;position: relative;background:$bodybgcolor$;}
+$uicss section:nth-child(odd){ background: $oddbgcolor$;}
+$uicss section:nth-child(even){background: $evenbgcolor$;}
+$uicss section .container{height:100%;}
+$uicss section .container>div,$uicss section .desc{height:100%;}
+$uicss section .desc>div{position: absolute; top: 50%; transform: translate(0, -50%);}
+$uicss section .desc>div h4{font-size: 24px;color:$firstcolor$;color:$titlecolor$;margin-top:0;}
+$uicss section .desc>div h6{font-size: 18px;color:$firstcolor$;color:$ctitlecolor$;}
+$uicss section .desc>div p{color:$secondcolor$;color:$desccolor$;}
+$uicss section .desc>div a{color: $thirdcolor$;color:$hovercolor$;}
+$uicss section .desc>div a:hover{opacity: 0.8;}
+$uicss section .img{height:100%;}
+$uicss section .img img{max-height: 100%;max-width: 100%;}
+@media (max-width:767px){
+    $uicss section .container,$uicss section .container>div,$uicss section .desc{height:auto;}
+    $uicss section .desc>div{position:static;transform: translate(0, 0);text-align: center;}
+    $uicss section:nth-child(odd) .img{margin-top:10px;}
+    $uicss section:nth-child(even) .img{margin-bottom:10px;}
+    $uicss section .img img{max-width:90%;}
+}

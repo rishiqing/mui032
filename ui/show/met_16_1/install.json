@@ -1,0 +1,87 @@
+{
+    "ui": {
+        "parent_name": "show",
+        "ui_name": "met_16_1",
+        "ui_page": "|show|",
+        "ui_title": "简介模块详情内容",
+        "ui_description": "简介模块详情内容",
+        "ui_issue": "1",
+        "ui_order": "1",
+        "ui_version": "1.1",
+        "ui_creater": "曾姣艳",
+        "ui_company": "metinfo",
+        "ui_edittime": "1516962069"
+    },
+    "config": [
+        {
+            "parent_name": "show",
+            "ui_name": "met_16_1",
+            "uip_type": "4",
+            "uip_style": "0",
+            "uip_select": "$M$全屏$T$1$M$固定宽度$T$0",
+            "uip_name": "container",
+            "uip_key": "container",
+            "uip_value": "",
+            "uip_default": "1",
+            "uip_title": "展示样式",
+            "uip_description": "",
+            "uip_order": "1"
+        },
+        {
+            "parent_name": "show",
+            "ui_name": "met_16_1",
+            "uip_type": "4",
+            "uip_style": "0",
+            "uip_select": "$M$背景色$T$1$M$背景图$T$0",
+            "uip_name": "bg_type",
+            "uip_key": "bg_type",
+            "uip_value": "",
+            "uip_default": "1",
+            "uip_title": "背景呈现方式",
+            "uip_description": "默认为背景色",
+            "uip_order": "2"
+        },
+        {
+            "parent_name": "show",
+            "ui_name": "met_16_1",
+            "uip_type": "4",
+            "uip_style": "0",
+            "uip_select": "$M$开启$T$1$M$关闭$T$0",
+            "uip_name": "ui_show",
+            "uip_key": "ui_show",
+            "uip_value": "",
+            "uip_default": "1",
+            "uip_title": "区块显示开关",
+            "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+            "uip_order": "0"
+        },
+        {
+            "parent_name": "show",
+            "ui_name": "met_16_1",
+            "uip_type": "9",
+            "uip_style": "0",
+            "uip_select": "",
+            "uip_name": "bgcolor",
+            "uip_key": "bgcolor-1",
+            "uip_value": "",
+            "uip_default": "",
+            "uip_title": "背景色",
+            "uip_description": "",
+            "uip_order": "3"
+        },
+        {
+            "parent_name": "show",
+            "ui_name": "met_16_1",
+            "uip_type": "7",
+            "uip_style": "0",
+            "uip_select": "",
+            "uip_name": "bgpic",
+            "uip_key": "bgpic-1",
+            "uip_value": "",
+            "uip_default": "",
+            "uip_title": "背景图",
+            "uip_description": "",
+            "uip_order": "4"
+        }
+    ]
+}

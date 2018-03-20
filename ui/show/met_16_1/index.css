@@ -1,0 +1,3 @@
+$uicss.met-show-body{background:$bodybgcolor$ ;}
+$uicss.met-show-body.bgcolor{background:$bgcolor$ ;}
+$uicss.met-show-body.bgpic{background:url($bgpic$) no-repeat;background-size: cover;background-position: center;}

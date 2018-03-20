@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* 底部信息 */
+$uicss{background: $bodybgcolor$;background: $bgcolor$;color:$firstcolor$;color:$titlecolor$;}
+$uicss a{color:$firstcolor$;color:$titlecolor$;}
+$uicss a:hover{color:$thirdcolor$;}
+$uicss .btn-outline.btn-default{color:$firstcolor$;color:$titlecolor$;border-color: $bordercolor$;}
+$uicss .powered_by_metinfo a{color:$thirdcolor$;color:$hovercolor$;}
+$uicss.border-top1{border-color: $linecolor$;}
+footer{line-height:1.8;}
+footer p{margin-bottom:0px;}
+footer .met-langlist{margin-top:10px;}
+.met-langlist li{display: inline-block;list-style: none;}
+.met-langlist .btn-lang .flag-icon{margin-right:3px;}
+.met-langlist .dropdown-menu{min-width:0;width: 100%;}
+.met-langlist .dropdown-menu .dropdown-item{white-space:nowrap;}
+@media (max-width:479px){
+	.met-langlist .btn-lang{padding-left:5px;padding-right:5px;}
+}
+#met-langlist-modal .modal-body .close{position:absolute;right:10px;top:0px;}
+#met-langlist-modal a.btn{border:none;font-size:16px;height:50px;line-height:50px;}
+#met-langlist-modal .flag-icon{margin-right:8px;top:7px;font-size:30px;}

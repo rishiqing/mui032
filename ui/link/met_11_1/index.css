@@ -1,13 +1,38 @@
-$uicss {  background-color: $bgcolor$; }
-$uicss .breadcrumb-item { float: none; display: inline-block; }
-$uicss .breadcrumb-item a { color: $secondcolor$; color: $desccolor$; transition: color 0.2s ease-out;}
-$uicss .breadcrumb-item a:hover { color: $thirdcolor$; color: $hovercolor$; }
-$uicss .breadcrumb-item+.breadcrumb-item::before { color: $secondcolor$; color: $desccolor$; }
-$uicss .breadcrumb-item:nth-child(1) { color: $firstcolor$; color: $titlecolor$; font-size: 16px;}
+$uicss {
+  background-color: $bgcolor$;
+  position: relative;
+  padding-top: 56px;
+  padding-bottom: 60px;
+}
 $uicss .container {
-	border-bottom: 1px solid #eee; border-top: 1px solid #eee;
-	border-bottom: 1px solid $solidcolor$; border-top: 1px solid $solidcolor$;
+  padding: 0 75px;
+}
+$uicss .container h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333333;
+  letter-spacing: 2.57px;
+  cursor: default;
+}
+$uicss .container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+$uicss .container ul li:nth-child(n+5) {
+  margin-top: 18px;
+}
+$uicss .container ul li a {
+  font-size: 13px;
+  color: #666666;
+  transition: color 0.2s ease-out;
+}
+$uicss .container ul li a:hover {
+  color: $thirdcolor$;
+  color: $hovercolor$;
 }
 @media (max-width:767px) {
-	$uicss .container { text-align: left; }
+  $uicss .container {
+    text-align: left;
+  }
 }

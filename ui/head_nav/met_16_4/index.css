@@ -1,132 +1,486 @@
 @charset "utf-8";
 /* 头部导航 */
-.hidden{display:none;}
-a:hover,a:active{text-decoration: none;}
-body.ny-nobanner.met-navfixed{padding-top:60px;}
-body.ny-nobanner.met-navfixed-navclamp{padding-top:120px;}
-.dropdown-menu.overflow-visible{overflow: visible;}
-$uicss{min-height:60px;}
-$uicss{background:transparent;}
-body.ny-nobanner $uicss{background:$bodybgcolor$;background:$bgcolor$;}
-body.ny-nobanner #tophead{background:$bodybgcolor$ !important;background:$ny_nocolor$ !important;}
-$uicss.navbar-shadow{box-shadow:0 1px 2px rgba(0,0,0,.1);background:$bodybgcolor$;background:$bgcolor$;}
-.met-head.navbar-fixed-top{z-index:100;}
-$uicss.header-zindex{z-index:1601;}
-$uicss .met-langlist .dropdown a{line-height:normal;}
-$uicss .met-logo img{max-height:50px;}
-$uicss .met-logo,
-$uicss .navbar-toggler,
-.met-navfixed-navclamp $uicss .met-langlist .dropdown{height:60px;line-height:normal;}
-$uicss .navbar-toggler{width:auto;}
-$uicss .navbar-collapse{overflow-x:hidden;}
-$uicss .navbar-collapse.flex-navlist{width:100%;}
-$uicss .navlist.flex{width:100%;margin-right:0!important;}
-$uicss .navlist.flex .nav-item{flex:auto;text-align:center;}
-$uicss .navlist.flex .nav-item .nav-link{height:50px;line-height:50px;padding:0;}
-$uicss .navlist.flex .nav-item > .dropdown-menu{top:50px;}
-$uicss .dropdown-menu{background-color: $bodybgcolor$;background-color: $menubgcolor$;border:none;}
-$uicss .navlist .nav-item > .dropdown-menu .dropdown-item{color:$firstcolor$;color:$menutextcolor$;}
-.dropdown-menu.dropdown-menu-bullet:before,.dropdown-menu.dropdown-menu-bullet:after{border-bottom-color: $bodybgcolor$;border-bottom-color: $menubgcolor$;}
-$uicss .navlist .dropdown-menu .dropdown-item:hover,
-$uicss .navlist .dropdown-menu .dropdown-item.active{background:$menuhoverbgcolor$!important;color:$thirdcolor$ !important; color:$menuhovertextcolor$ !important;}
-$uicss .met-head-user .dropdown-item:hover i{color:$thirdcolor$; color:$menuhovertextcolor$;}
-$uicss.navbar-default .navbar-nav>.open>.nav-link, $uicss.navbar-default .navbar-nav>.open>.nav-link:focus, $uicss.navbar-default .navbar-nav>.open>.nav-link:hover{color:$thirdcolor$;color:$navhovercolor$;}
-$uicss .met-head-user .shop_cart{font-size:1rem;}
-@media screen\0{
-    $uicss .navlist.flex{text-align:center;}
-    $uicss .navlist.flex .nav-item{display:inline-block;float:none;}
-    $uicss .navlist.flex .nav-item .nav-link{padding:0 20px;}
+.hidden {
+    display: none;
 }
-$uicss.navbar-shadow .navlist .nav-item a.nav-link:hover,$uicss .navlist .nav-item a.nav-link:hover{background:none!important;color:$thirdcolor$;color:$navhovercolor$;}
-$uicss .dropdown-item,$uicss .navlist .nav-item a.nav-link{color:$firstcolor$;color:$navcolor$;background:transparent;}
-.ny-nobanner .navlist .nav-item a.nav-link,$uicss.navbar-shadow .navlist .nav-item a.nav-link{color:$firstcolor$;color:$fnavcolor$;}
-$uicss .navlist .nav-item a:hover,
-$uicss .navlist .nav-item a.active{background:none!important;color:$thirdcolor$; color:$navhovercolor$;}
-.ny-nobanner .navlist .nav-item a.active,$uicss.navbar-shadow .navlist .nav-item a.active{color:$thirdcolor$; color:$navhovercolor$;}
-$uicss .dropdown-submenu > .dropdown-item.dropdown-a:after{border-top:0.286rem solid;border-right:0.286rem solid transparent;border-left:0.286rem solid transparent;}
-$uicss .dropdown-submenu .dropdown-menu.block{position:static;border-right:none;border-left:none;padding-left:10px;}
-.ny-nobanner .logo{display:none;}
-.ny-nobanner .logo1{display:block;}
-@media (max-width:767px){
-    $uicss .logo{display:none;}
-    $uicss .logo1{display:block;}
-    body.ny-nobanner.met-navfixed,body.met-navfixed{padding-top:60px;}
-    $uicss .dropdown-submenu .dropdown-menu{padding-left:10px;}
-    $uicss .dropdown-menu-right.dropdown-menu-bullet:after,$uicss .dropdown-menu-right.dropdown-menu-bullet:before{display:none;}
-    $uicss .navlist .nav-item a.active{background:none !important;}
-    $uicss .met-head-shop li{display:block !important;margin:0;}
-}
-$uicss .met-langlist .dropdown-menu{top:60px;padding:0;margin:0;}
-$uicss .met-langlist .dropdown-menu a+a{border-top: 1px solid rgba(255,255,255,0.2);}
-$uicss .met-langlist .dropdown-item{color:$firstcolor$;color:$menutextcolor$;}
-$uicss .met-langlist .modal{background:rgba(0,0,0,.3);}
 
-@media (min-width:768px){
-    $uicss .met-langlist .nav-link{padding: 0;overflow:visible;margin-left:15px;}
-    $uicss .met-langlist .dropdown{height:60px;line-height:60px;}
-    $uicss .navlist .nav-item .nav-link{padding-top:0px;padding-bottom:0px;height:60px;line-height:60px;}
-    $uicss .navlist .nav-item > .dropdown-menu{top:65px;padding:0;}
-    $uicss .navlist .nav-item >.dropdown-menu>.dropdown-submenu .dropdown-menu{padding:0}
-    $uicss .navlist .nav-item > .dropdown-menu {border:none;}
-    $uicss .navlist .nav-item > .dropdown-menu .border-top1{border-top: 1px solid rgba(255,255,255,0.2);}
-    $uicss .navlist .nav-item > .dropdown-menu.dropdown-menu-bullet{top:67px;}
-    $uicss .met-head-user{height:60px;}
-    $uicss .met-langlist,
-    $uicss .met-head-user{margin-left:15px;}
+a:hover,a:active {
+    text-decoration: none;
 }
-@media (max-width:767px){
-    #tophead{display:none;}
-    $uicss{background:$bodybgcolor$;background:$bgcolor$;}
-    $uicss .met-langlist .dropdown{padding: .715rem 1.072rem;}
-    $uicss .met-langlist a{padding: 5px 15px 5px 5px !important;}
-    $uicss .navlist .nav-item{margin-left:0!important;}
-    $uicss .met-logo{margin-left:10px;}
-    $uicss .met-logo img{max-width:150px;}
-    $uicss .navbar-collapse{width:100%;}
-    .met-head.navbar-fixed-top $uicss .navbar-collapse{max-height:340px;overflow-y:auto;}
-    $uicss .navbar-nav{margin:10px 0!important;}
-    $uicss .navlist .nav-item a.active{background:#f5f5f5;}
-    $uicss .met-langlist{margin-right:5px;}
-    $uicss .navlist .nav-item a.nav-link{color:$firstcolor$;color:$fnavcolor$;}
-    $uicss .met-langlist .btn-outline.btn-default{color:$firstcolor$;color:$fnavcolor$;border-color:$firstcolor$;border-color:$fnavcolor$;}
-    $uicss.navbar-default .navbar-nav .open .dropdown-menu .dropdown-item{color:$firstcolor$;color:$fnavcolor$;}
-    $uicss .navlist .nav-item > .dropdown-menu .border-top1{border-top: 0px solid rgba(255,255,255,0.2);}
+
+body.ny-nobanner.met-navfixed {
+    padding-top: 60px;
+}
+
+body.ny-nobanner.met-navfixed-navclamp {
+    padding-top: 120px;
+}
+
+.dropdown-menu.overflow-visible {
+    overflow: visible;
+}
+$uicss {
+    min-height: 60px;
+}
+$uicss {
+    background: transparent;
+}
+$uicss .container {
+    width: auto;
+    padding-left: 18px;
+    padding-right: 24px;
+}
+
+body.ny-nobanner $uicss {
+    background: $bodybgcolor$;
+    background: $bgcolor$;
+}
+
+body.ny-nobanner #tophead {
+    background: $bodybgcolor$ !important;
+    background: $ny_nocolor$ !important;
+}
+$uicss.navbar-shadow {
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    background: $bodybgcolor$;
+    background: $bgcolor$;
+}
+
+.met-head.navbar-fixed-top {
+    z-index: 100;
+}
+$uicss.header-zindex {
+    z-index: 1601;
+}
+$uicss .met-langlist .dropdown a {
+    line-height: normal;
+}
+$uicss .met-logo img {
+    max-height: 50px;
+}
+$uicss .met-ding-logo {
+    margin-left: 5px;
+}
+$uicss .met-ding-logo img {
+    max-height: 31px;
+}
+$uicss .met-logo,
+$uicss .met-ding-logo,
+$uicss .navbar-toggler,
+.met-navfixed-navclamp $uicss .met-langlist .dropdown {
+    height: 60px;
+    line-height: normal;
+}
+$uicss .navbar-toggler {
+    width: auto;
+}
+$uicss .navbar-collapse {
+    overflow-x: hidden;
+}
+$uicss .navbar-collapse.flex-navlist {
+    width: 100%;
+}
+$uicss .navlist.flex {
+    width: 100%;
+    margin-right: 0!important;
+}
+$uicss .navlist.flex .nav-item {
+    flex: auto;
+    text-align: center;
+}
+$uicss .navlist.flex .nav-item .nav-link {
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+}
+$uicss .navlist.flex .nav-item > .dropdown-menu {
+    top: 50px;
+}
+$uicss .dropdown-menu {
+    background-color: $bodybgcolor$;
+    background-color: $menubgcolor$;
+    border: none;
+}
+$uicss .navlist .nav-item > .dropdown-menu .dropdown-item {
+    color: $firstcolor$;
+    color: $menutextcolor$;
+}
+
+.dropdown-menu.dropdown-menu-bullet:before,.dropdown-menu.dropdown-menu-bullet:after {
+    border-bottom-color: $bodybgcolor$;
+    border-bottom-color: $menubgcolor$;
+}
+$uicss .navlist .dropdown-menu .dropdown-item:hover,
+$uicss .navlist .dropdown-menu .dropdown-item.active {
+    background: $menuhoverbgcolor$!important;
+    color: $thirdcolor$ !important;
+    color: $menuhovertextcolor$ !important;
+}
+$uicss .met-head-user .dropdown-item:hover i {
+    color: $thirdcolor$;
+    color: $menuhovertextcolor$;
+}
+$uicss.navbar-default .navbar-nav>.open>.nav-link, $uicss.navbar-default .navbar-nav>.open>.nav-link:focus, $uicss.navbar-default .navbar-nav>.open>.nav-link:hover {
+    color: $thirdcolor$;
+    color: $navhovercolor$;
+}
+$uicss .met-head-user .shop_cart {
+    font-size: 1rem;
+}
+
+@media screen\0 {
+    $uicss .navlist.flex {
+        text-align: center;
+    }
+    $uicss .navlist.flex .nav-item {
+        display: inline-block;
+        float: none;
+    }
+    $uicss .navlist.flex .nav-item .nav-link {
+        padding: 0 20px;
+    }
+}
+$uicss.navbar-shadow .navlist .nav-item a.nav-link:hover,$uicss .navlist .nav-item a.nav-link:hover {
+    background: none!important;
+    color: $thirdcolor$;
+    color: $navhovercolor$;
+}
+$uicss .dropdown-item,$uicss .navlist .nav-item a.nav-link {
+    color: $firstcolor$;
+    color: $navcolor$;
+    background: transparent;
+}
+
+.ny-nobanner .navlist .nav-item a.nav-link,$uicss.navbar-shadow .navlist .nav-item a.nav-link {
+    color: $firstcolor$;
+    color: $fnavcolor$;
+}
+$uicss .navlist .nav-item a:hover,
+$uicss .navlist .nav-item a.active {
+    background: none!important;
+    color: $thirdcolor$;
+    color: $navhovercolor$;
+}
+
+.ny-nobanner .navlist .nav-item a.active,$uicss.navbar-shadow .navlist .nav-item a.active {
+    color: $thirdcolor$;
+    color: $navhovercolor$;
+}
+$uicss .dropdown-submenu > .dropdown-item.dropdown-a:after {
+    border-top: 0.286rem solid;
+    border-right: 0.286rem solid transparent;
+    border-left: 0.286rem solid transparent;
+}
+$uicss .dropdown-submenu .dropdown-menu.block {
+    position: static;
+    border-right: none;
+    border-left: none;
+    padding-left: 10px;
+}
+
+.ny-nobanner .logo {
+    display: none;
+}
+
+.ny-nobanner .logo1 {
+    display: block;
+}
+
+@media (max-width:767px) {
+    $uicss .logo {
+        display: none;
+    }
+    $uicss .logo1 {
+        display: block;
+    }
+
+    body.ny-nobanner.met-navfixed,body.met-navfixed {
+        padding-top: 60px;
+    }
+    $uicss .dropdown-submenu .dropdown-menu {
+        padding-left: 10px;
+    }
+    $uicss .dropdown-menu-right.dropdown-menu-bullet:after,$uicss .dropdown-menu-right.dropdown-menu-bullet:before {
+        display: none;
+    }
+    $uicss .navlist .nav-item a.active {
+        background: none !important;
+    }
+    $uicss .met-head-shop li {
+        display: block !important;
+        margin: 0;
+    }
+}
+$uicss .met-langlist .dropdown-menu {
+    top: 60px;
+    padding: 0;
+    margin: 0;
+}
+$uicss .met-langlist .dropdown-menu a+a {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+$uicss .met-langlist .dropdown-item {
+    color: $firstcolor$;
+    color: $menutextcolor$;
+}
+$uicss .met-langlist .modal {
+    background: rgba(0,0,0,.3);
+}
+
+@media (min-width:768px) {
+    $uicss .met-langlist .nav-link {
+        padding: 0;
+        overflow: visible;
+        margin-left: 15px;
+    }
+    $uicss .met-langlist .dropdown {
+        height: 60px;
+        line-height: 60px;
+    }
+    $uicss .navlist .nav-item .nav-link {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 60px;
+        line-height: 60px;
+    }
+    $uicss .navlist .nav-item > .dropdown-menu {
+        top: 65px;
+        padding: 0;
+    }
+    $uicss .navlist .nav-item >.dropdown-menu>.dropdown-submenu .dropdown-menu {
+        padding: 0
+    }
+    $uicss .navlist .nav-item > .dropdown-menu {
+        border: none;
+    }
+    $uicss .navlist .nav-item > .dropdown-menu .border-top1 {
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    $uicss .navlist .nav-item > .dropdown-menu.dropdown-menu-bullet {
+        top: 67px;
+    }
+    $uicss .met-head-user {
+        height: 60px;
+    }
+    $uicss .met-langlist,
+    $uicss .met-head-user {
+        margin-left: 23px;
+    }
+}
+
+@media (max-width:767px) {
+    #tophead {
+        display: none;
+    }
+    $uicss {
+        background: $bodybgcolor$;
+        background: $bgcolor$;
+    }
+    $uicss .met-langlist .dropdown {
+        padding: .715rem 1.072rem;
+    }
+    $uicss .met-langlist a {
+        padding: 5px 15px 5px 5px !important;
+    }
+    $uicss .navlist .nav-item {
+        margin-left: 0!important;
+    }
+    $uicss .met-logo,
+    $uicss .met-ding-logo {
+        margin-left: 10px;
+    }
+    $uicss .met-logo img,
+    $uicss .met-ding-logo img {
+        max-width: 150px;
+    }
+    $uicss .navbar-collapse {
+        width: 100%;
+    }
+    .met-head.navbar-fixed-top $uicss .navbar-collapse {
+        max-height: 340px;
+        overflow-y: auto;
+    }
+    $uicss .navbar-nav {
+        margin: 10px 0!important;
+    }
+    $uicss .navlist .nav-item a.active {
+        background: #f5f5f5;
+    }
+    $uicss .met-langlist {
+        margin-right: 5px;
+    }
+    $uicss .navlist .nav-item a.nav-link {
+        color: $firstcolor$;
+        color: $fnavcolor$;
+    }
+    $uicss .met-langlist .btn-outline.btn-default {
+        color: $firstcolor$;
+        color: $fnavcolor$;
+        border-color: $firstcolor$;
+        border-color: $fnavcolor$;
+    }
+    $uicss.navbar-default .navbar-nav .open .dropdown-menu .dropdown-item {
+        color: $firstcolor$;
+        color: $fnavcolor$;
+    }
+    $uicss .navlist .nav-item > .dropdown-menu .border-top1 {
+        border-top: 0px solid rgba(255,255,255,0.2);
+    }
 }
 
 .navbar-default .navbar-nav .nav-link:focus, .navbar-default .navbar-nav .nav-link:hover {
     background-color: transparent;
 }
 
-.met-mask{width:100%;height:100%;display:none;position:fixed;left:0;top:0;z-index:99;background:rgba(0,0,0,.2);}
+.met-mask {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background: rgba(0,0,0,.2);
+}
 /* 头部会员、登录注册 */
-.met-head-user .dropdown > a{padding-top:0px;padding-bottom:0px;height:40px;line-height:40px;color:$firstcolor$;color:$navcolor$;background:transparent;}
-.ny-nobanner .met-head-user .dropdown > a,$uicss.navbar-shadow .met-head-user .dropdown > a{color:$firstcolor$;color:$fnavcolor$;}
-.met-head-user .dropdown .dropdown-item>a{color:$firstcolor$;color:$navcolor$;}
+.met-head-user .dropdown > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 40px;
+    line-height: 40px;
+    color: $firstcolor$;
+    color: $navcolor$;
+    background: transparent;
+}
 
-.met-head-user .dropdown-menu{top:45px;padding:0;}
-.met-head-user .dropdown-menu-footer{line-height:35px;}
-.met-head-user .met-head-user-column .avatar img{max-height:30px;}
-@media (min-width:768px){
-    .met-head-user > li:nth-child(2){margin-left:10px;}
+.ny-nobanner .met-head-user .dropdown > a,$uicss.navbar-shadow .met-head-user .dropdown > a {
+    color: $firstcolor$;
+    color: $fnavcolor$;
 }
-@media (max-width:767px){
-    .met-head-user > li{display:block;}
-    .met-head-user > li:first-child{margin-bottom:10px;}
+
+.met-head-user .dropdown .dropdown-item>a {
+    color: $firstcolor$;
+    color: $navcolor$;
 }
-.met-head-user-toggler.active i{display:none;}
-.met-head-user-toggler.active i:first-child{display:inline-block;}
-.met-head-user-toggler i{position:relative;top:-5px;}
-.met-head-user-toggler i:first-child{display:none;}
-.met-head-user li a.btn-outline{color: $thirdcolor$;color:$navhovercolor$;background-color: transparent;border-color: $thirdcolor$;border-color: $navhovercolor$;border-radius: 3px;}
-.met-head-user li a.btn-outline:hover{border-color: $thirdcolor$;background-color:$thirdcolor$;color:#fff;border-color: $navhovercolor$;background-color:$navhovercolor$;}
-.met-head-user li a.btn-success{border-color: $thirdcolor$;background-color: $thirdcolor$;color:#fff;border-color: $navhovercolor$;background-color: $navhovercolor$;border-radius: 3px;}
-.met-head-user li a.btn-success:hover{opacity: 0.8;}
-$uicss .met-head-user li .dropdown-menu li+li .dropdown-item{border-top: 1px solid rgba(255,255,255,0.2);}
-$uicss .met-head-user .dropdown i,$uicss .met-head-user li .dropdown-menu .dropdown-item{color:$firstcolor$;color:$menutextcolor$;}
-$uicss .met-head-user li .dropdown-menu .dropdown-item:hover{background:$menuhoverbgcolor$!important;color:$thirdcolor$; color:$menuhovertextcolor$;}
-$uicss.navbar-default .hamburger .hamburger-bar, $uicss.navbar-default .hamburger:after, $uicss.navbar-default .hamburger:before{background-color:$secondcolor$;}
-.met-langlist .btn-outline.btn-default{color: $thirdcolor$;color: $navhovercolor$;background-color: transparent;border-color: $thirdcolor$;border-color: $navhovercolor$;border-radius: 3px;}
-.met-langlist .btn-outline.btn-default:hover,.met-langlist .btn-outline.btn-default:active,.met-langlist .btn-outline.btn-default:focus{border-color: $thirdcolor$;border-color: $navhovercolor$;background-color:$thirdcolor$;background-color:$navhovercolor$;color:#fff;}
-$uicss .met-head-shop .shop_cart i{color: $firstcolor$;color: $navcolor$;}
-.ny-nobanner .met-head-shop .shop_cart i,$uicss.navbar-shadow .met-head-shop .shop_cart i{color: $firstcolor$;color: $fnavcolor$;}
-#topcart-body{color:$firstcolor$;color:$menutextcolor$;}
+
+.met-head-user .dropdown-menu {
+    top: 45px;
+    padding: 0;
+}
+
+.met-head-user .dropdown-menu-footer {
+    line-height: 35px;
+}
+
+.met-head-user .met-head-user-column .avatar img {
+    max-height: 30px;
+}
+
+@media (min-width:768px) {
+    .met-head-user > li:nth-child(2) {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .met-head-user > li {
+        display: block;
+    }
+
+    .met-head-user > li:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+.met-head-user-toggler.active i {
+    display: none;
+}
+
+.met-head-user-toggler.active i:first-child {
+    display: inline-block;
+}
+
+.met-head-user-toggler i {
+    position: relative;
+    top: -5px;
+}
+
+.met-head-user-toggler i:first-child {
+    display: none;
+}
+
+.met-head-user li a.btn-outline {
+    color: $thirdcolor$;
+    color: $navhovercolor$;
+    background-color: transparent;
+    border-color: $thirdcolor$;
+    border-color: $navhovercolor$;
+    border-radius: 4px;
+}
+
+.met-head-user li a.btn-outline:hover {
+    border-color: $thirdcolor$;
+    background-color: $thirdcolor$;
+    color: #fff;
+    border-color: $navhovercolor$;
+    background-color: $navhovercolor$;
+}
+
+.met-head-user li a.btn-success {
+    border-color: $thirdcolor$;
+    background-color: $thirdcolor$;
+    color: #fff;
+    border-color: $navhovercolor$;
+    background-color: $navhovercolor$;
+    border-radius: 4px;
+}
+
+.met-head-user li a.btn-success:hover {
+    opacity: 0.8;
+}
+$uicss .met-head-user li .dropdown-menu li+li .dropdown-item {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+$uicss .met-head-user .dropdown i,$uicss .met-head-user li .dropdown-menu .dropdown-item {
+    color: $firstcolor$;
+    color: $menutextcolor$;
+}
+$uicss .met-head-user li .dropdown-menu .dropdown-item:hover {
+    background: $menuhoverbgcolor$!important;
+    color: $thirdcolor$;
+    color: $menuhovertextcolor$;
+}
+$uicss.navbar-default .hamburger .hamburger-bar, $uicss.navbar-default .hamburger:after, $uicss.navbar-default .hamburger:before {
+    background-color: $secondcolor$;
+}
+
+.met-langlist .btn-outline.btn-default {
+    color: $thirdcolor$;
+    color: $navhovercolor$;
+    background-color: transparent;
+    border-color: $thirdcolor$;
+    border-color: $navhovercolor$;
+    border-radius: 4px;
+}
+
+.met-langlist .btn-outline.btn-default:hover,.met-langlist .btn-outline.btn-default:active,.met-langlist .btn-outline.btn-default:focus {
+    border-color: $thirdcolor$;
+    border-color: $navhovercolor$;
+    background-color: $thirdcolor$;
+    background-color: $navhovercolor$;
+    color: #fff;
+}
+$uicss .met-head-shop .shop_cart i {
+    color: $firstcolor$;
+    color: $navcolor$;
+}
+
+.ny-nobanner .met-head-shop .shop_cart i,$uicss.navbar-shadow .met-head-shop .shop_cart i {
+    color: $firstcolor$;
+    color: $fnavcolor$;
+}
+
+#topcart-body {
+    color: $firstcolor$;
+    color: $menutextcolor$;
+}

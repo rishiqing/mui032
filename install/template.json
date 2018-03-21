@@ -1,5 +1,22 @@
 [
     {
+        "id": "100",
+        "no": "mui032",
+        "pos": "0",
+        "no_order": "5",
+        "type": "2",
+        "style": "3",
+        "selectd": "",
+        "name": "know_text",
+        "value": "了解详情  >",
+        "defaultvalue": "了解详情  >",
+        "valueinfo": "了解详情",
+        "tips": "首页service_list模块链接文字",
+        "lang": "cn",
+        "bigclass": "0",
+        "sub": null
+    },
+    {
         "id": "98",
         "no": "mui032",
         "pos": "0",
@@ -11,7 +28,7 @@
         "value": "http:\/\/rishiiqng",
         "defaultvalue": "http:\/\/rishiiqng",
         "valueinfo": "了解详情",
-        "tips": "首页service_list模块链接文字",
+        "tips": "首页service_list模块链接地址",
         "lang": "cn",
         "bigclass": "0",
         "sub": null

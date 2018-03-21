@@ -1,13 +1,11 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
-<div class="$uicss border-top1 text-xs-center" m-id='{$ui.mid}' m-type='foot_nav'>
+<div class="$uicss" m-id='{$ui.mid}' m-type='foot_nav'>
 	<div class="container">
 		<div class="row mob-masonry">
 			<tag action='category' type='foot'>
 			<if value="$m['_index'] lt 4">
-			<div class="col-lg-2 col-md-3 col-xs-6 list masonry-item">
-				<h4 class='font-size-16 m-t-0'>
-					<a href="{$m.url}" {$m.urlnew}  title="{$m.name}">{$m.name}</a>
-				</h4>
+			<div class="col-lg-3 col-md-3 col-xs-6 list masonry-item">
+				<h4 class='font-size-20 m-t-0' title="{$m.name}">{$m.name}</h4>
 				<if value="$m['sub']">
 				<ul class='ulstyle m-b-0'>
 					<tag action='category' cid="$m['id']" type='son' num={$ui.num}>
@@ -20,7 +18,7 @@
 			</div>
 			</if>
 			</tag>
-			<div class="col-lg-3 col-md-12 col-xs-12 info masonry-item">
+			<!-- <div class="col-lg-3 col-md-12 col-xs-12 info masonry-item">
 				<if value="$ui['footinfo_tel']">
 				<em class='font-size-26'><a href="tel:{$ui.footinfo_tel}" title="">{$ui.footinfo_tel}</a></em>
 				</if>
@@ -70,7 +68,8 @@
 					<i class="fa fa-envelope red-600"></i>
 				</a>
 				</if>
-			</div>
+			</div> -->
 		</div>
 	</div>
+	<div class="cutting-line"></div>
 </div>

@@ -28,7 +28,7 @@ if($data['title']){
 <if value="$hide">
 <tag action="banner.list"></tag>
 <if value="$sub || $data['classnow'] eq 10001">
-<div class="$uicss page-bg <if value="$data['classnow'] eq 10001">index-page</if>" data-height='' style='' m-id='{$ui.mid}' m-type='banner'>
+<div class="$uicss <if value="$data['classnow'] eq 10001">index-page</if>" data-height='' style='' m-id='{$ui.mid}' m-type='banner'>
     <tag action='banner.list' >
     <div class="slick-slide">
         <!-- <img class="cover-image" src="{$v.img_path}" srcset='{$v.img_path} 767w,{$v.img_path}' sizes="(max-width: 767px) 767px" alt="{$v.img_title}" data-height='{$v.height}|{$v.height_t}|{$v.height_m}' > -->

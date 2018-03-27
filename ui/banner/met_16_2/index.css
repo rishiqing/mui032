@@ -7,7 +7,7 @@ $uicss {
     min-height: 200px;
     position: relative;
 }
-$uicss.page-bg.index-page {
+$uicss.index-page {
     background-image: linear-gradient(-180deg, #F5FAFF 0%, #FFFFFF 99%);
     padding-top: 190px;
     padding-bottom: 265px;
@@ -263,7 +263,7 @@ $uicss .banner-text .play-btn i {
         top: -16.6%;
         right: -2.5%;
     }
-    $uicss.page-bg.index-page {
+    $uicss.index-page {
     padding-top: 10%;
     padding-bottom: 14%;
 }

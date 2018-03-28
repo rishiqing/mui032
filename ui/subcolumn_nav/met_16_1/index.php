@@ -1,10 +1,10 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
 <tag action='category' cid="$data[releclass1]" type='son'>
 <if value="$m['_first']">
-<div class="$uicss border-bottom1" m-id='{$ui.mid}' m-type='nocontent'>
+<div class="$uicss" m-id='{$ui.mid}' m-type='nocontent'>
 	<div class="container">
 		<div class="subcolumn-nav text-xs-center">
-			<ul class="$uicss-ul m-b-0 p-y-10 p-x-0 ulstyle">
+			<ul class="$uicss-ul m-b-0 p-y-30 p-x-0 ulstyle">
 				<tag action='category' cid="$data[releclass1]">
 				<if value="$m[module] neq 1">
 					<li>

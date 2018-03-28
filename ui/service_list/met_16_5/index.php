@@ -28,7 +28,7 @@
 	            <h3>{$m.name}</h3>
 							<p>{$m.description}</p>
 							<if value="$data['classnow'] eq 10001">
-							<a href="{$lang.know_url} + $m['_index']">{$lang.know_text}</a>
+							<a href="{$lang.know_url}">{$lang.know_text}</a>
 							</if>
 	          </div>
 					<if value="$ui['link_ok']">

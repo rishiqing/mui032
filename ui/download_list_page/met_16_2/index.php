@@ -30,14 +30,14 @@
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading">
-                                        <a class="name" title="{$v.title}" {$g.urlnew}>
+                                        <a class="name" href="{$v.downloadurl}" title="{$v.title}" {$g.urlnew}>
                                             {$v.title}
                                         </a>
                                     </h4>
-                                    <p>{$v.description}</p>
+                                    <!-- <p>{$v.description}</p>
                                     <div>
                                         <a class="btn btn-outline btn-primary" href="{$v.downloadurl}" title="{$v.title}">{$ui.download}</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </li>

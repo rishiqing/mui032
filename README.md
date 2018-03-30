@@ -449,3 +449,105 @@
 -----
 * 上面表格中的 一级栏目--产品介绍，是在首页`service_list`部分中用到的，其下面有9个二级栏目，这9个二级栏目还需要进一步进行设置。点击其操作选项中的 设置 按钮，在设置页中找到 搜索引擎优化设置(seo) ，在其简短描述中，进行描述设置。 然后是 其它设置（根据模板配置说明设置） ，在其栏目图片中，上传对应的展示的图片即可。 
 * 还有上面表格中的 一级栏目--产品动画列表，是在首页`custom_list`部分中用到的，其下面的一个二级栏目，也需要进一步进行设置。同理，需要进行描述和栏目图片的设置。
+
+模板制作助手中增加的变量
+-----
+* 在后台系统--我的应用--模板制作助手--模板管理，找到所使用的模板，点击自定义标签，进入标签自定义页面。
+* 点击添加自定义标签，依次设置 类型--变量名--默认值--标题--说明--位置。以下列表按照顺序，列出所设置的变量。
+* 建议先设置分区，后设置所属分区的变量，便于查找和修改。
+* 如果选择 类型 为分区，可点击 编辑 选项中的 添加子选项 进行变量的添加。下面列表中的非分区类型(简短文本，多行文本等) 变量都是在最近一个分区下添加的（向上查找所属分区）。
+<table>
+   <tr>
+      <td>类型</td>
+      <td>变量名</td>
+      <td>默认值</td>
+      <td>标题</td>
+      <td>说明</td>
+      <td>位置</td>
+   </tr>
+   <tr>
+      <td>分区</td>
+      <td>met_head</td>
+      <td></td>
+      <td>顶部导航</td>
+      <td></td>
+      <td>全局</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>met_dinglogo</td>
+      <td>/metinfo/upload/201803/1521540762.png</td>
+      <td>钉钉logo图片设置</td>
+      <td></td>
+      <td>全局</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>ding_url</td>
+      <td>http://appcenter.dingtalk.com/detail.html?goodsCode=FW_GOODS-1000330934</td>
+      <td>点击钉钉图片的跳转地址</td>
+      <td></td>
+      <td>全局</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>met_dingname</td>
+      <td>钉钉</td>
+      <td>图片的alt显示名字</td>
+      <td></td>
+      <td>全局</td>
+   </tr>
+   <tr>
+      <td>分区</td>
+      <td>banner</td>
+      <td></td>
+      <td>广告栏</td>
+      <td></td>
+      <td>首页</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>banner_img</td>
+      <td>/metinfo/upload/201803/1521538015.png</td>
+      <td>日事清</td>
+      <td>首页banner大图</td>
+      <td>首页</td>
+   </tr>
+   <tr>
+      <td>分区</td>
+      <td>service_list</td>
+      <td></td>
+      <td>服务列表</td>
+      <td></td>
+      <td>首页</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>know_url</td>
+      <td>xxx</td>
+      <td>service_list模块链接地址</td>
+      <td></td>
+      <td>首页</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>know_text</td>
+      <td>了解详情  ></td>
+      <td>service_list模块链接文字</td>
+      <td></td>
+      <td>首页</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>solution_title</td>
+      <td>为各行各业提供全方位的解决方案</td>
+      <td>标题</td>
+      <td></td>
+      <td>首页</td>
+   </tr>
+</table>
+
+
+
+
+

@@ -55,8 +55,13 @@
 	    			<tag action='product.list' num="$c['met_product_list']">
 	    				<div class="pricing-column">
 							<div class="pricing-header">
-								<if value="$v[_index] eq 1"><div class="column-shadow"></div></if>
-								<div class="package-title">{$v.title}</div>
+								<div class="package-title">
+                                    <h2>{$v.title}</h2>
+                                    <if value="$v[_index] eq 0"><p>{$lang.price_desc_0}</p></if>
+                                    <if value="$v[_index] eq 1"><p>{$lang.price_desc_1}</p></if>
+                                    <if value="$v[_index] eq 2"><p>{$lang.price_desc_2}</p></if>
+                                    <if value="$v[_index] eq 3"><p>{$lang.price_desc_3}</p></if>
+                                </div>
 								<div class="package-value">
 									<list data="$v['para']"  name='$para'>
 										<if value="$para[value]">
@@ -80,14 +85,14 @@
                                     </if>
 					            </list>
 							</ul>
-							<div class="signup">
+							<!-- <div class="signup">
                                 <list data="$v['para']"  name='$para2'>
                                     <if value="$para2['_last']">
                                     <?php $url=explode('<m',$para2[value])[0]; ?>
 							             <a href="{$url}" class="btn white" target="_blank">{$para2.name}</a>
                                     </if>
                                 </list>
-							</div>
+							</div> -->
 						</div>
 	    			</tag>
     			</div>

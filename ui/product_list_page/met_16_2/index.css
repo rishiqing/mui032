@@ -146,69 +146,165 @@ $uicss.met-product.type-2 .overlay-panel{color: $firstcolor$;color: $titlecolor$
   }
 }
 /*栏目标志等于1*/
-$uicss{min-height: 200px;}
-$uicss section{height:600px;padding:50px 0;position: relative;background:$bodybgcolor$;}
-$uicss section:nth-child(odd){ background: $oddbgcolor$;}
-$uicss section:nth-child(even){background: $evenbgcolor$;}
-$uicss section .container{height:100%;}
-$uicss section .container>div,$uicss section .desc{height:100%;}
-$uicss section .desc>div{position: absolute; top: 50%; transform: translate(0, -50%);}
-$uicss section .desc>div h4{font-size: 36px;color:$firstcolor$;color:$titlecolor$;margin-top:0;}
-$uicss section .desc>div p{color:$secondcolor$;color:$desccolor$;font-size:14px;}
-$uicss section .img{height:100%;}
-$uicss section .img img{max-height: 100%;max-width: 100%;}
+$uicss {
+  min-height: 200px;
+}
+$uicss section {
+  height: 600px;
+  padding: 50px 0;
+  position: relative;
+  background: $bodybgcolor$;
+}
+$uicss section:nth-child(odd) {
+  background: $oddbgcolor$;
+}
+$uicss section:nth-child(even) {
+  background: $evenbgcolor$;
+}
+$uicss section .container {
+  height: 100%;
+}
+$uicss section .container>div,$uicss section .desc {
+  height: 100%;
+}
+$uicss section .desc>div {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+$uicss section .desc>div h4 {
+  font-size: 36px;
+  color: $firstcolor$;
+  color: $titlecolor$;
+  margin-top: 0;
+}
+$uicss section .desc>div p {
+  color: $secondcolor$;
+  color: $desccolor$;
+  font-size: 14px;
+}
+$uicss section .img {
+  height: 100%;
+}
+$uicss section .img img {
+  max-height: 100%;
+  max-width: 100%;
+}
 /*栏目标识等于22*/
-$uicss .pricing{text-align:center;}
-$uicss .pricing h1{font-size: 28px; color:$firstcolor$;color:$titlecolor$;font-weight: normal;margin-bottom: 12px; }
-$uicss .pricing h3{font-size: 16px; color:$firstcolor$;color:$titlecolor$;font-weight: normal; margin-top: 0; margin-bottom: 60px;}
-$uicss .pricing .pricing-column {position: relative; display: inline-block; width: 280px; border-bottom: 1px solid #dbdbdb; text-align: center; }
-$uicss .pricing .pricing-column .package-features {padding: 0; list-style: none; margin-bottom: 0; }
-$uicss .pricing .pricing-column .column-shadow {background: $lineheight$; height: 10px; position: relative; z-index: 10; box-shadow: 0px -1px 2px #dadada; }
-$uicss .pricing .pricing-column .package-title {background: #686868; color: #fff; font-size: 16px; height: 40px; line-height: 40px; border-bottom: 3px solid #545454; border-right: 1px solid #545454; }
-$uicss .pricing .pricing-column .package-value {background: #f9f9f9; height: 95px; line-height: 95px; border-left: 1px solid #dbdbdb; }
-$uicss .pricing .pricing-column .package-value .package-currency {font-size: 16px; position: relative; top: -20px; }
-$uicss .pricing .pricing-column .package-value .package-price {font-size: 48px; font-weight: 600; }
-$uicss .pricing .pricing-column .package-value .package-time {font-size: 16px; }
-$uicss .pricing .pricing-column ul.package-features li {height: 40px; border-left: 1px solid #dbdbdb; width: 100%; display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 14px; line-height: 40px; background: #fff; }
-$uicss .pricing .pricing-column ul.package-features li:nth-child(even) {background: #f9f9f9; } .pricing .pricing-column .signup {border-left: 1px solid #dbdbdb; padding: 20px 0; background: #F9F9F9; }
+$uicss .pricing {
+  text-align: center;
+}
+$uicss .pricing .container {
+  width: 100%;
+}
+$uicss .pricing h1 {
+  font-size: 28px;
+  color: $firstcolor$;
+  color: $titlecolor$;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+$uicss .pricing h3 {
+  font-size: 16px;
+  color: $firstcolor$;
+  color: $titlecolor$;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+$uicss .pricing .pricing-column {
+  position: relative;
+  display: inline-block;
+  width: 270px;
+  border: 1px solid #CDE6FF;
+  text-align: center;
+  margin-right: 3.2857rem;
+}
+$uicss .pricing .pricing-column:last-child {
+  margin-right: 0;
+}
+$uicss .pricing .pricing-column .package-features {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+$uicss .pricing .pricing-column .package-title {
+  background:  #FAFCFF;
+  color: #fff;
+  font-size: 24px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+$uicss .pricing .pricing-column .package-title h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 24px;
+}
+$uicss .pricing .pricing-column .package-title p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+}
+$uicss .pricing .pricing-column:nth-child(1) .package-title {
+  border-bottom: 1px solid #CDE6FF;
+}
+$uicss .pricing .pricing-column:nth-child(1) .package-title h2 {
+  color: #3D3D3D;
+}
+$uicss .pricing .pricing-column:nth-child(1) .package-title p {
+  color: #8C8C8C;
+}
+$uicss .pricing .pricing-column:nth-child(2) .package-title {
+  background: #6DB0F3;
+}
+$uicss .pricing .pricing-column:nth-child(3) .package-title {
+  background: #5698DB;
+}
+$uicss .pricing .pricing-column:nth-child(4) .package-title {
+  background-image: linear-gradient(90deg, #0E6DCE 2%, #5698DB 99%);
+}
+$uicss .pricing .pricing-column .package-value {
+  height: 116px;
+  line-height: 116px;
+  border-bottom: 1px solid #CDE6FF;
+}
+$uicss .pricing .pricing-column .package-value .package-currency {
+  font-size: 48px;
+}
+$uicss .pricing .pricing-column .package-value .package-price {
+  font-size: 48px;
+  font-weight: 600;
+}
+$uicss .pricing .pricing-column .package-value .package-time {
+  font-size: 16px;
+}
+$uicss .pricing .pricing-column ul.package-features li {
+  height: 40px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 40px;
+  background: #fff;
+}
+.pricing .pricing-column .signup {
+  padding: 20px 0;
+  background: #F9F9F9;
+}
 $uicss .pricing .pricing-column .signup .white {
   background: #eaeaea;
-  color: #686868 !important;border-radius: 3px;
+  color: #686868 !important;
+  border-radius: 3px;
 }
 $uicss .pricing .pricing-column .signup .white:hover {
   color: #686868;
   background: #d2d2d2;
-}
-$uicss .pricing .pricing-column:nth-child(2) {
-  top: 3px;
-  box-shadow: 0px 2px 10px #dadada;
-  z-index: 1;
-}
-$uicss .pricing .pricing-column:nth-child(2) .package-title {
-  border-bottom: 3px solid rgba(0,0,0,0.3);
-  background: $lineheight$;
-  height: 40px;
-  line-height: 30px;
-  position: relative;
-  font-weight: 600;
-  box-shadow: 0px -1px 10px #000000;
-  z-index: -1;
-}
-$uicss .pricing .pricing-column:nth-child(2) .signup {
-  padding: 25px 0;
-}
-$uicss .pricing .pricing-column:nth-child(2) .signup .white {
-  background: $lineheight$;
-  color: #fff !important;
-}
-$uicss .pricing .pricing-column:last-child .package-value {
-  border-right: 1px solid #dbdbdb;
-}
-$uicss .pricing .pricing-column:last-child ul.package-features li {
-  border-right: 1px solid #dbdbdb;
-}
-$uicss .pricing .pricing-column:last-child .signup {
-  border-right: 1px solid #dbdbdb;
 }
 @media (max-width: 1200px) {
   $uicss .pricing .pricing-column {

@@ -275,6 +275,12 @@ $uicss .pricing .pricing-column .package-value {
 $uicss .pricing .pricing-column .package-value .package-currency {
   font-size: 48px;
 }
+$uicss .pricing .pricing-column .package-value .package-currency sub {
+  font-size: 14px;
+  color: rgba(0,0,0,0.60);
+  position: relative;
+  bottom: 2px;
+}
 $uicss .pricing .pricing-column .package-value .package-price {
   font-size: 48px;
   font-weight: 600;
@@ -282,16 +288,23 @@ $uicss .pricing .pricing-column .package-value .package-price {
 $uicss .pricing .pricing-column .package-value .package-time {
   font-size: 16px;
 }
+$uicss .pricing .pricing-column ul.package-features {
+  padding: 30px 0;
+}
 $uicss .pricing .pricing-column ul.package-features li {
-  height: 40px;
+  height: 30px;
   width: 100%;
   display: block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 30px;
   background: #fff;
+  color: #666666;
+}
+$uicss .pricing .pricing-column ul.package-features li span {
+  color: #057EFF;
 }
 .pricing .pricing-column .signup {
   padding: 20px 0;

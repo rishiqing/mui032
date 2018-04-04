@@ -52,8 +52,8 @@
 					<h3 class="text-xs-center">{$m.description}</h3>
     			</tag>
     			<div class="font-size-0">
-	    			<tag action='product.list' num="$c['met_product_list']">
-	    				<div class="pricing-column">
+                    <tag action='product.list' num="$c['met_product_list']">
+                        <div class="pricing-column">
 							<div class="pricing-header">
 								<div class="package-title">
                                     <h2>{$v.title}</h2>
@@ -80,7 +80,7 @@
 							</div>
 							<ul class="package-features">
 								<list data="$v['para']"  name='$para1'>
-									<if value="$para1['_index'] gt 0 && !$para1['_last']">
+                                    <if value="$para1['_index'] gt 0 && !$para1['_last']">
                                         <li>{$para1.value}</li>
                                     </if>
 					            </list>

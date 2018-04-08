@@ -1,76 +1,187 @@
-$uicss{ padding: 70px 0;text-align: left; color: $firstcolor$;color: $titlecolor$;}
-$uicss.bgcolor{background: $bodybgcolor$ !important;background: $bgcolor$ !important;}
-$uicss.met-index-body.bgpic{background:url($bgpic$) no-repeat;background-size: cover;background-position: center;}
-$uicss .title{font-size: 24px; margin-top: 0px; text-align: center; font-weight: 300; color: $firstcolor$;color: $tcolor$; margin-bottom: 20px;}
-$uicss p.desc {font-size: 16px; font-weight: 300; text-align: center; width: 80%; color: $secondcolor$;color: $desccolor$;  margin: 0px auto 10px auto; }
-$uicss .form{width:300px;margin:0 auto;}
-$uicss select{background:$formbgcolor$;border:none; color: $firstcolor$;color: $titlecolor$; }
-$uicss select option{color: #333;}
-$uicss .form-control,$uicss input{
-    background:$formbgcolor$;
-    border-radius: 4px;
-    width: 100%;
-    border:none;
-    color: $firstcolor$;color: $titlecolor$;
+$uicss {
+  text-align: left;
+  color: $firstcolor$;
+  color: $titlecolor$;
+  position: relative;
+  height: 436px;
 }
-$uicss textarea{border:none;background:$formbgcolor$; }
-.checkbox-custom label::before{background-color: transparent;border: 1px solid #fff;}
+$uicss.bgcolor {
+  background: $bodybgcolor$ !important;
+  background: $bgcolor$ !important;
+}
+$uicss.met-index-body .img-container {
+  background: url($bgpic$) no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 157px;
+  bottom: 0;
+  left: 42px;
+  right: 42px;
+}
+$uicss.met-index-body .container {
+  margin-top: -65px;
+}
+$uicss .title {
+  font-size: 26px;
+  margin-top: 0px;
+  text-align: center;
+  color: $firstcolor$;
+  color: $tcolor$;
+  margin-bottom: 44px;
+}
+$uicss p.desc {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  width: 80%;
+  color: $secondcolor$;
+  color: $desccolor$;
+  margin: 0px auto 10px auto;
+}
+$uicss .second-btn {
+  width: 3.4286rem;
+  height: 3.4286rem;
+  background: #FFFFFF;
+  box-shadow: 0 0 13px 0 rgba(120,185,255,0.39);
+  border-radius: 7.1429rem;
+  position: relative;
+}
+$uicss .second-btn i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-left: 12px solid #0E6DCE;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  margin-top: -8px;
+  margin-left: -4px;
+}
+$uicss .form {
+  width: 300px;
+  margin: 0 auto;
+}
+$uicss select {
+  background: $formbgcolor$;
+  border: none;
+  color: $firstcolor$;
+  color: $titlecolor$;
+}
+$uicss select option {
+  color: #333;
+}
+$uicss .form-control,$uicss input {
+  background: $formbgcolor$;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  color: $firstcolor$;
+  color: $titlecolor$;
+}
+$uicss textarea {
+  border: none;
+  background: $formbgcolor$;
+}
+
+.checkbox-custom label::before {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
 
 
-$uicss .btn-primary{
-    border-radius:0;
-    background:$btnbgcolor$;
-    border-color:$btnbgcolor$;
-    color:$btntextcolor$;
-    border-radius:3px;
-    width:100px;padding:6px 15px;font-size:14px;margin: 0 auto;
+$uicss .btn-primary {
+  border-radius: 0;
+  background: $btnbgcolor$;
+  border-color: $btnbgcolor$;
+  color: $btntextcolor$;
+  border-radius: 100px;
+  width: 150px;
+  padding: 9px 0;
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 60px;
 }
-$uicss img{max-width:100%;}
-$uicss .btn-primary:hover{
-    background:$thirdcolor$;background:$hovercolor$;
-    border-color: $thirdcolor$;border-color: $hovercolor$;
-    color:$hovertxtcolor$;
+$uicss img {
+  max-width: 100%;
 }
-$uicss .form-control.focus, .form-control:focus{
-        border-color: $thirdcolor$;border-color: $hovercolor$;
+$uicss .btn-primary:hover {
+  background: $thirdcolor$;
+  background: $hovercolor$;
+  border-color: $thirdcolor$;
+  border-color: $hovercolor$;
+  color: $hovertxtcolor$;
+}
+$uicss .form-control.focus, .form-control:focus {
+  border-color: $thirdcolor$;
+  border-color: $hovercolor$;
 }
 
-$uicss .checkbox-primary input[type=radio]:checked+label::before, .checkbox-primary input[type=checkbox]:checked+label::before{
-    background:$thirdcolor$;background:$hovercolor$;
-    border-color: $thirdcolor$;border-color: $hovercolor$;
+$uicss .checkbox-primary input[type=radio]:checked+label::before, .checkbox-primary input[type=checkbox]:checked+label::before {
+  background: $thirdcolor$;
+  background: $hovercolor$;
+  border-color: $thirdcolor$;
+  border-color: $hovercolor$;
 }
-$uicss .radio-primary input[type=radio]:checked+label::before{border-color: $thirdcolor$;border-color: $hovercolor$;}
-$uicss .checkbox-custom input[type=radio]:focus+label::before, .checkbox-custom input[type=checkbox]:focus+label::before{
-    outline: 5px auto $thirdcolor$;
-    outline: 5px auto $hovercolor$;
+$uicss .radio-primary input[type=radio]:checked+label::before {
+  border-color: $thirdcolor$;
+  border-color: $hovercolor$;
 }
-$uicss .btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover{
-    background:$thirdcolor$;
-    border-color:$hovercolor$;
+$uicss .checkbox-custom input[type=radio]:focus+label::before, .checkbox-custom input[type=checkbox]:focus+label::before {
+  outline: 5px auto $thirdcolor$;
+  outline: 5px auto $hovercolor$;
+}
+$uicss .btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+  background: $thirdcolor$;
+  border-color: $hovercolor$;
 }
 $uicss ::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: $firstcolor$;color: $titlecolor$;
+  color: $firstcolor$;
+  color: $titlecolor$;
 }
 $uicss :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: $firstcolor$;color: $titlecolor$;
+  color: $firstcolor$;
+  color: $titlecolor$;
 }
 $uicss ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: $firstcolor$;color: $titlecolor$;
+  color: $firstcolor$;
+  color: $titlecolor$;
 }
 $uicss :-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  color: $firstcolor$;color: $titlecolor$;
+  color: $firstcolor$;
+  color: $titlecolor$;
 }
-$uicss .input-group-addon{padding: 0 !important; border: 0;border-bottom-right-radius: 4px;border-top-right-radius: 4px;}
-$uicss .input-group-addon img{max-width:none;height: 20px;}
-@media (max-width:991px){
-    $uicss.met-index-body{padding:$padding_p$px 0px;}
-    $uicss .title{margin-bottom: 20px;}
+$uicss .input-group-addon {
+  padding: 0 !important;
+  border: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
-@media (max-width:767px){
-    $uicss.met-index-body{padding:$padding_m$px 0px;}
-    $uicss .title{margin-bottom: 15px;}
+$uicss .input-group-addon img {
+  max-width: none;
+  height: 20px;
+}
+
+@media (max-width:991px) {
+    $uicss.met-index-body {
+    padding: $padding_p$px 0px;
+  }
+    $uicss .title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:767px) {
+    $uicss.met-index-body {
+    padding: $padding_m$px 0px;
+  }
+    $uicss .title {
+    margin-bottom: 15px;
+  }
 }

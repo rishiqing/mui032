@@ -20,6 +20,12 @@
                             <img src="{$ui.logo}" alt="{$c.met_webname}" class="logo1  hidden">
                         </div>
                     </a>
+                    <a href="{$lang.ding_url}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$lang.met_dingname}" target="_blank">
+                        <div class="vertical-align-middle">
+                            <img src="{$lang.met_dinglogo}" alt="{$lang.met_dingname}" class="logo">
+                            <img src="{$lang.met_dinglogo}" alt="{$lang.met_dingname}" class="logo1  hidden">
+                        </div>
+                    </a>
                 </div>
                 <!-- logo -->
                 <button type="button" class="navbar-toggler hamburger hamburger-close collapsed p-x-5 $uicss-toggler" data-target="#$uicss-collapse" data-toggle="collapse">
@@ -141,13 +147,13 @@
                 <!-- 导航 -->
                 <div class="collapse navbar-collapse navbar-collapse-toolbar pull-md-right p-0" id="$uicss-collapse">
                     <ul class="nav navbar-nav navlist">
-                        <li class='nav-item'>
+                        <!-- <li class='nav-item'>
                             <a href="{$c.index_url}" title="{$word.home}" class="nav-link
                             <if value="$data['classnow'] eq 10001">
                             active
                             </if>
                             ">{$word.home}</a>
-                        </li>
+                        </li> -->
                         <tag action='category' type='head' class='active' hide="$ui['hide']">
                         <?php 
                             $nav=explode('|', $ui[onenavlink]);

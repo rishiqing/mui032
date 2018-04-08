@@ -28,10 +28,10 @@ if($data['title']){
 <if value="$hide">
 <tag action="banner.list"></tag>
 <if value="$sub || $data['classnow'] eq 10001">
-<div class="$uicss page-bg" data-height='' style='' m-id='{$ui.mid}' m-type='banner'>
+<div class="$uicss <if value="$data['classnow'] eq 10001">index-page</if>" data-height='' style='' m-id='{$ui.mid}' m-type='banner'>
     <tag action='banner.list' >
     <div class="slick-slide">
-        <img class="cover-image" src="{$v.img_path}" srcset='{$v.img_path} 767w,{$v.img_path}' sizes="(max-width: 767px) 767px" alt="{$v.img_title}" data-height='{$v.height}|{$v.height_t}|{$v.height_m}' >
+        <!-- <img class="cover-image" src="{$v.img_path}" srcset='{$v.img_path} 767w,{$v.img_path}' sizes="(max-width: 767px) 767px" alt="{$v.img_title}" data-height='{$v.height}|{$v.height_t}|{$v.height_m}' > -->
         <if value="$v['img_title']">
         <div class="banner-text p-{$v.img_text_position}" met-imgmask>
             <div class='container'>
@@ -63,6 +63,9 @@ if($data['title']){
                                 <if value="$ui[btn2]">
                                     <a href="{$ui.btnlink2}" target="_blank" class="btn animation-slide-bottom second-btn">{$ui.btn2}</a>
                                 </if>
+                                <div class="btn animation-slide-bottom play-btn">
+                                    <i></i>
+                                </div>
                             </if>
                             <else/>
                             <if value="$data['classnow'] eq 10001">
@@ -75,6 +78,9 @@ if($data['title']){
                             </if>
                         </if>
                     </div>
+                    <if value="$data['classnow'] eq 10001">
+                    <img src="{$lang.banner_img}">
+                    </if>
                 </div>
             </div>
         </div>
@@ -84,6 +90,9 @@ if($data['title']){
         </if>
     </div>
     </tag>
+    <if value="$data['classnow'] eq 10001">
+    <div class="cutting-line"></div>
+    </if>
 </div>
 <else/>
     <tag action='category' type="current" cid="$data['class1']">

@@ -1,5 +1,5 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
-<footer class='$uicss met-foot p-y-20 border-top1' m-id='{$ui.mid}' m-type='foot'>
+<footer class='$uicss met-foot ' m-id='{$ui.mid}' m-type='foot'>
 	<div class="container text-xs-center">
 		<if value="$c['met_footright'] || $c['met_footstat']">
 		<p>{$c.met_footright}</p>
@@ -13,12 +13,7 @@
 		<if value="$c['met_footother']">
 			<p>{$c.met_footother}</p>
 		</if>
-		<div class="powered_by_metinfo">
-			Powered&nbsp;by&nbsp;
-			<a href="http://www.MetInfo.cn/#copyright" target="_blank" title="{$word.Info1}">MetInfo</a>
-			&nbsp;{$c.metcms_v}
-		</div>
-		<ul class="met-langlist p-0">
+		<!-- <ul class="met-langlist p-0">
 		<if value="$c['met_lang_mark'] && $ui[langlist_ok]">
 		<li class="vertical-align m-x-5" m-id='lang' m-type='lang'>
 			<div class="inline-block dropup">
@@ -56,6 +51,6 @@
 	        </li>
 	        </if>
 	    </if>
-	    </ul>
+	    </ul> -->
 	</div>
 </footer>

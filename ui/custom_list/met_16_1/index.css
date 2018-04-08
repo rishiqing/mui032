@@ -1,21 +1,140 @@
-$uicss{min-height: 200px;}
-$uicss section{height:600px;padding:50px 0;position: relative;background:$bodybgcolor$;}
-$uicss section:nth-child(odd){ background: $oddbgcolor$;}
-$uicss section:nth-child(even){background: $evenbgcolor$;}
-$uicss section .container{height:100%;}
-$uicss section .container>div,$uicss section .desc{height:100%;}
-$uicss section .desc>div{position: absolute; top: 50%; transform: translate(0, -50%);}
-$uicss section .desc>div h4{font-size: 24px;color:$firstcolor$;color:$titlecolor$;margin-top:0;}
-$uicss section .desc>div h6{font-size: 18px;color:$firstcolor$;color:$ctitlecolor$;}
-$uicss section .desc>div p{color:$secondcolor$;color:$desccolor$;}
-$uicss section .desc>div a{color: $thirdcolor$;color:$hovercolor$;}
-$uicss section .desc>div a:hover{opacity: 0.8;}
-$uicss section .img{height:100%;}
-$uicss section .img img{max-height: 100%;max-width: 100%;}
-@media (max-width:767px){
-    $uicss section .container,$uicss section .container>div,$uicss section .desc{height:auto;}
-    $uicss section .desc>div{position:static;transform: translate(0, 0);text-align: center;}
-    $uicss section:nth-child(odd) .img{margin-top:10px;}
-    $uicss section:nth-child(even) .img{margin-bottom:10px;}
-    $uicss section .img img{max-width:90%;}
+$uicss {
+  min-height: 200px;
+}
+$uicss section {
+  height: 600px;
+  padding: 50px 0;
+  position: relative;
+  background: $bodybgcolor$;
+}
+$uicss.index-page section {
+  height: auto;
+  padding: 0;
+  padding-top: 7.5714rem;
+}
+$uicss section:nth-child(odd) {
+  background: $oddbgcolor$;
+}
+$uicss section:nth-child(even) {
+  background: $evenbgcolor$;
+}
+$uicss section .container {
+  height: 100%;
+}
+$uicss section .container .row {
+  position: relative;
+}
+$uicss section .container>div,$uicss section .desc {
+  height: 100%;
+}
+$uicss.index-page section .desc {
+  width: 56%;
+  height: 24.1429rem;
+  background-image: linear-gradient(-90deg, #4187CD 0%, #5698DB 100%);
+  box-shadow: 1px 1px 7px 0 rgba(49,149,251,0.59);
+  border-radius: 4px;
+  margin-bottom: 25.4286rem;
+}
+$uicss section .desc>div {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+$uicss.index-page section .desc>div {
+  position: static;
+  transform: none;
+  width: 100%;
+  height: 100%;
+  padding: 3.2143rem 2.4286rem;
+}
+
+$uicss section .desc>div h4 {
+  font-size: 36px;
+  color: $firstcolor$;
+  color: $titlecolor$;
+  margin: 0;
+  margin-bottom: 1.4286rem;
+}
+$uicss section .desc>div h6 {
+  font-size: 18px;
+  color: $firstcolor$;
+  color: $ctitlecolor$;
+}
+$uicss section .desc>div p {
+  font-size: 16px;
+  color: $secondcolor$;
+  color: $desccolor$;
+  margin-bottom: 8.2143rem;
+}
+$uicss section .desc>div a {
+  font-size: 20px;
+  color: $thirdcolor$;
+  color: $hovercolor$;
+  margin-left: 4px;
+}
+$uicss section .desc>div a:hover {
+  opacity: 0.8;
+}
+$uicss section .img {
+  height: 100%;
+}
+$uicss.index-page section .img {
+  width: 55.9%;
+  height: 29.3571rem;
+  position: absolute;
+  top: 7.5714rem;
+  right: 0;
+}
+$uicss section .img img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width:767px) {
+    $uicss section .container,$uicss section .container>div,$uicss section .desc {
+      height: auto;
+    }
+    $uicss section .desc>div {
+      position: static;
+      transform: translate(0, 0);
+      text-align: center;
+    }
+    $uicss section:nth-child(odd) .img {
+      margin-top: 10px;
+    }
+    $uicss section:nth-child(even) .img {
+      margin-bottom: 10px;
+    }
+    $uicss section .img img {
+      max-width: 90%;
+    }
+    $uicss.index-page section .desc {
+      padding-bottom: 0.5rem;
+    }
+    $uicss.index-page section .desc > div {
+      padding-top: 1rem;
+    }
+    $uicss section .desc > div h4 {
+      font-size: 18px;
+      margin-bottom: 1rem!important;
+    }
+    $uicss section .desc > div p {
+      font-size: 12px;
+      margin-bottom: 0!important;
+    }
+    $uicss.index-page section .img {
+      top: -5rem!important;
+    }
+}
+@media (max-width:991px) {
+  $uicss.index-page section .desc {
+    height: 46.5%;
+    padding-bottom: 
+  }
+  $uicss section .desc > div p {
+    margin-bottom: 1.2143rem;
+  }
+  $uicss.index-page section .img {
+    top: 0.5714rem;
+  }
 }

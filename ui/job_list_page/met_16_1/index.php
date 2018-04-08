@@ -2,7 +2,7 @@
 <main class="$uicss page-content" m-id='{$ui.mid}'>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="job-list">
             <div class="row">
             <tag action='job.list' num="$c['met_job_list']"></tag>
             <if value="$sub">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 	</div>
-	<if value="$sub">
+<!-- <if value="$sub">
 <div class="modal fade modal-primary" id="met-job-cv" aria-hidden="true" role="dialog" tabindex="-1">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -40,5 +40,5 @@
 		</div>
 	</div>
 </div>
-</if>
+</if> -->
 </main>

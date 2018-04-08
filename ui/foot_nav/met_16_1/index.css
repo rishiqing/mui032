@@ -1,28 +1,88 @@
 @charset "utf-8";
 /* 底部导航 */
-$uicss{background:$bodybgcolor$;}
-$uicss{padding:40px 0px;background:$bgcolor$;border-color: $bordercolor$;}
-$uicss .list h4 a{color:$firstcolor$;}
-$uicss .list h4 a{color:$cur_color$;}
-$uicss .list h4 a:hover{color:$thirdcolor$;color:$hovercolor$;}
-@media (max-width:991px){
-    $uicss{padding:30px 0;}
-    $uicss .list{margin-bottom:20px;}
+$uicss {
+  position: relative;
+  padding: 54px 0px 25px;
+  background-image: linear-gradient(-179deg, #F6FAFF 0%, #FFFFFF 98%);
 }
-@media (max-width:767px){
-    $uicss{padding:20px 0;}
-    $uicss .list{margin-bottom:15px;}
+$uicss .container .masonry-item {
+  padding-left: 75px;
 }
-$uicss .list h4{text-shadow:none;}
-$uicss .list ul li{margin-bottom:3px;}
-$uicss .list ul li a{color:$firstcolor$;}
-$uicss .list ul li a{color:$son_color$;}
-$uicss .info a{color:$thirdcolor$;}
-$uicss .info p{color:$firstcolor$;}
-$uicss .info p{color:$son_color$;}
-$uicss .list ul li a:hover{color:$thirdcolor$;color:$hovercolor$;}
-$uicss .info em{font-style:normal;}
-$uicss .info i{font-size:26px;cursor:pointer;}
-$uicss .info a{display:inline-block;margin:0px 8px;}
-$uicss .info a:hover{opacity:0.8;}
-#met-weixin-img{background:url(../../../../../../public/ui/v2/static/img/loading.gif) no-repeat center;}
+$uicss .container .row .masonry-item:nth-child(4) ul li:nth-child(1) a,
+$uicss .container .row .masonry-item:nth-child(4) ul li:nth-child(2) a {
+  cursor: default;
+}
+$uicss .container .row .masonry-item:nth-child(4) ul li:nth-child(1) a:hover,
+$uicss .container .row .masonry-item:nth-child(4) ul li:nth-child(2) a:hover {
+  color: #8C8C8C;
+}
+$uicss .list h4 {
+  color: $firstcolor$;
+  cursor: default;
+}
+$uicss .list h4 {
+  color: $cur_color$;
+}
+
+@media (max-width:991px) {
+    $uicss {
+    padding: 30px 0;
+  }
+    $uicss .list {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:767px) {
+    $uicss {
+    padding: 20px 0;
+  }
+    $uicss .list {
+    margin-bottom: 15px;
+  }
+}
+$uicss .list h4 {
+  margin: 0;
+  margin-bottom: 16px;
+}
+$uicss .list ul li {
+  margin-bottom: 10px;
+}
+$uicss .list ul li a {
+  color: $firstcolor$;
+  font-size: 13px;
+}
+$uicss .list ul li a {
+  color: $son_color$;
+}
+$uicss .info a {
+  color: $thirdcolor$;
+}
+$uicss .info p {
+  color: $firstcolor$;
+}
+$uicss .info p {
+  color: $son_color$;
+}
+$uicss .list ul li a:hover {
+  color: $thirdcolor$;
+  color: $hovercolor$;
+}
+$uicss .info em {
+  font-style: normal;
+}
+$uicss .info i {
+  font-size: 26px;
+  cursor: pointer;
+}
+$uicss .info a {
+  display: inline-block;
+  margin: 0px 8px;
+}
+$uicss .info a:hover {
+  opacity: 0.8;
+}
+
+#met-weixin-img {
+  background: url(../../../../../../public/ui/v2/static/img/loading.gif) no-repeat center;
+}

@@ -532,7 +532,7 @@
    <tr>
       <td>简短文本</td>
       <td>know_text</td>
-      <td>了解详情  ></td>
+      <td>了解详情 ></td>
       <td>service_list模块链接文字</td>
       <td></td>
       <td>首页</td>
@@ -544,6 +544,46 @@
       <td>标题</td>
       <td></td>
       <td>首页</td>
+   </tr>
+   <tr>
+      <td>分区</td>
+      <td>met_price</td>
+      <td></td>
+      <td>价格</td>
+      <td></td>
+      <td>列表页</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>price_desc_0</td>
+      <td>适用于个人</td>
+      <td>免费版描述</td>
+      <td></td>
+      <td>列表页</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>price_desc_1</td>
+      <td>适用于个人或微型团队</td>
+      <td>专业版描述</td>
+      <td></td>
+      <td>列表页</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>price_desc_2</td>
+      <td>适用于部门或企业</td>
+      <td>企业版描述</td>
+      <td></td>
+      <td>列表页</td>
+   </tr>
+   <tr>
+      <td>简短文本</td>
+      <td>price_desc_3</td>
+      <td>适用于大中型企业</td>
+      <td>旗舰版描述</td>
+      <td></td>
+      <td>列表页</td>
    </tr>
 </table>
 

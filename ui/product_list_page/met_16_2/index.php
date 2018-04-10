@@ -5,17 +5,20 @@
 	<tag action='category' cid="$data['classnow']" type='son'>
         <if value="$m['_index'] lt $c['met_product_list']">
             <if value="$m[_index]%2 eq 0">
-                <section class="" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false"
+                <section class="<if value='$m[_index] eq 0'>animation-slide-bottom50 appear-no-repeat</if>" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false"
                  <if value="!$ui[bg_type] && $m[indeximg]"> style="background:url({$m.indeximg}) no-repeat center;background-size:cover;"</if>>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4 desc invisible" data-plugin="appear" data-animate="slide-left" data-repeat="false">
+                            <div class="col-md-4 desc <if value='$m[_index] eq 0'>animation-slide-left appear-no-repeat</if>" data-plugin="appear" data-animate="slide-left" data-repeat="false">
                                 <div>
-                                    <h4>{$m.namemark}</h4>
+                                    <h4>{$m.name}</h4>
                                     <p>{$m.description}</p>
+                                    <if value='$m[_index] eq 0 || $m[_index] eq 2' >
+                                        <a href="{$lang.ding_url}" title="{$lang.ding_btntext}" target="_blank" class="btn first-btn about_link">{$lang.ding_btntext}</a>
+                                    </if>
                                 </div>
                             </div>
-                            <div class="col-md-8 img text-xs-center vertical-align invisible" data-plugin="appear" data-animate="slide-right" data-repeat="false">
+                            <div class="col-md-8 img text-xs-right <if value='$m[_index] eq 0'>animation-slide-right appear-no-repeat</if>" data-plugin="appear" data-animate="slide-right" data-repeat="false">
                                 <div class="vertical-align-middle">
                                     <img src="{$m.columnimg}" alt="{$m.name}" />
                                 </div>
@@ -27,14 +30,14 @@
                 <section class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false" <if value="!$ui[bg_type] && $m[indeximg]"> style="background:url({$m.indeximg}) no-repeat center;background-size:cover;"</if>>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 text-xs-center img vertical-align invisible" data-plugin="appear" data-animate="slide-left" data-repeat="false">
+                            <div class="col-md-8 text-xs-left img vertical-align invisible" data-plugin="appear" data-animate="slide-left" data-repeat="false">
                                 <div class="vertical-align-middle">
                                     <img src="{$m.columnimg}" alt="{$m.name}" />
                                 </div>
                             </div>
                             <div class="col-md-4 desc invisible" data-plugin="appear" data-animate="slide-right" data-repeat="false">
                                 <div>
-                                    <h4>{$m.namemark}</h4>
+                                    <h4>{$m.name}</h4>
                                     <p>{$m.description}</p>
                                 </div>
                             </div>

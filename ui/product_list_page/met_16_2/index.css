@@ -150,38 +150,77 @@ $uicss {
   min-height: 200px;
 }
 $uicss section {
-  height: 600px;
-  padding: 50px 0;
   position: relative;
   background: $bodybgcolor$;
+}
+$uicss section:nth-child(odd) {
+  height: 535px;
+}
+$uicss section:nth-child(even) {
+  height: 480px;
 }
 $uicss section:nth-child(odd) {
   background: $oddbgcolor$;
 }
 $uicss section:nth-child(even) {
   background: $evenbgcolor$;
+  padding-top: 44px;
 }
 $uicss section .container {
   height: 100%;
+  padding: 0!important;
 }
 $uicss section .container>div,$uicss section .desc {
   height: 100%;
 }
-$uicss section .desc>div {
+$uicss section .desc > div {
   position: absolute;
+  width: 87%;
+}
+$uicss section:nth-child(odd) .img > div {
+  padding-right: 5rem;
+}
+$uicss section:nth-child(odd) .desc > div {
+  left: 5.7143rem;
+  top: 26%;
+}
+$uicss section:nth-child(even) .img > div {
+  padding-left: 5.7143rem;
+}
+$uicss section:nth-child(even) .desc > div {
+  right: 5rem;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
 }
 $uicss section .desc>div h4 {
-  font-size: 36px;
+  font-size: 28px;
+  letter-spacing: 0.78px;
   color: $firstcolor$;
   color: $titlecolor$;
   margin-top: 0;
+  margin-bottom: 16px;
 }
-$uicss section .desc>div p {
+$uicss section .desc > div p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
   color: $secondcolor$;
   color: $desccolor$;
-  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+$uicss section:nth-child(even) .desc > div p {
+  text-align: right;
+}
+$uicss section .desc>div .first-btn {
+  background-color: #0E6DCE;
+  width: 150px;
+  height: 46px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 $uicss section .img {
   height: 100%;

@@ -155,14 +155,22 @@
                             ">{$word.home}</a>
                         </li> -->
                         <tag action='category' type='head' class='active' hide="$ui['hide']">
-                        <?php 
+                        <?php
                             $nav=explode('|', $ui[onenavlink]);
                             foreach ($nav as $value) {
-                                if($value==$m[name]){
+                                if($value && strcmp($value, $m[name]) < -1){
                                     $m[url]='';
                                 }
                             }
-                         ?>
+                            $navDropdownHide=explode('|', $ui[hide]);
+                            foreach ($navDropdownHide as $value) {
+                                if ($value) {
+                                    if(strcmp($value, $m[name]) < -1){
+                                        $m['sub']=0;
+                                    }
+                                }
+                            }
+                        ?>
                         <if value="$ui['navdropdown_ok'] && $m['sub']">
                         <li class="nav-item dropdown m-l-{$ui.nav_ml}">
                             <if value="$ui['navdropdown_type']">

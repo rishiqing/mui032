@@ -180,6 +180,9 @@ $uicss section .desc > div {
 $uicss section:nth-child(odd) .img > div {
   padding-right: 5rem;
 }
+$uicss section:nth-child(1) .img > div {
+  padding-right: 1.4285rem;
+}
 $uicss section:nth-child(odd) .desc > div {
   left: 5.7143rem;
   top: 26%;
@@ -230,6 +233,26 @@ $uicss section .img img {
   max-width: 100%;
 }
 /*栏目标识等于22*/
+/*功能*/
+$uicss .product_introduce {
+  height: 640px;
+}
+$uicss .product_introduce:nth-child(odd) {
+  background: #ffffff;
+}
+$uicss .product_introduce:nth-child(even) {
+  background: #f9fcff;
+}
+$uicss .product_introduce h3 {
+  font-size: 28px;
+  color: #5B5B5B;
+}
+$uicss .product_introduce p {
+  font-size: 16px;
+  color: #8C8C8C;
+  line-height: 22px;
+}
+/*价格*/
 $uicss .pricing {
   text-align: center;
 }

@@ -48,6 +48,7 @@
         </if>
     </tag>
     <elseif value="$m[index_num] eq 22"/>
+        <if value="$data['classnow'] eq 137">
     	<div class="pricing">
     		<div class="container">
     			<tag action='category' cid="$data['classnow']" type='current'>
@@ -101,6 +102,21 @@
     			</div>
     		</div>
     	</div>
+        <elseif value="$data['classnow'] eq 153"/>
+        <tag action='category' cid="$data['classnow']" type='son'>
+        <if value="$m['_index'] lt $c['met_product_list']">
+            <div class="product_introduce text-xs-center">
+                <div class="container">
+                    <h3 class="m-t-15 m-b-35">{$m.name}</h3>
+                    <p class="m-b-20">{$m.description}</p>
+                    <div class="vertical-align-middle">
+                        <img src="{$m.columnimg}" alt="{$m.name}" />
+                    </div>
+                </div>
+            </div>
+        </if>
+        </tag>
+        </if>
 	<else/>
 	<div class="<if value="$ui['product_pagetype'] eq 1">container<else/>container-fluid</if>">
     	<tag action='product.list' num="$c['met_product_list']"></tag>

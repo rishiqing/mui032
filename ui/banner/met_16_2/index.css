@@ -220,14 +220,19 @@ $uicss .banner-text .btn {
     text-align: center;
     display: inline-block;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 46px;
 }
 $uicss .banner-text .first-btn {
     background-color: $btncolor$;
+    width: 151px;
+    height: 46px;
+    border-radius: 4px;
+}
+$uicss.index-page .banner-text .first-btn {
     width: 180px;
     height: 55px;
-    border-radius: 4px;
+    font-size: 18px;
 }
 $uicss .banner-text .second-btn {
     border-color: $btncolor$;

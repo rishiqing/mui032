@@ -5,17 +5,20 @@
 	<tag action='category' cid="$data['classnow']" type='son'>
         <if value="$m['_index'] lt $c['met_product_list']">
             <if value="$m[_index]%2 eq 0">
-                <section class="" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false"
+                <section class="<if value='$m[_index] eq 0'>animation-slide-bottom50 appear-no-repeat</if>" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false"
                  <if value="!$ui[bg_type] && $m[indeximg]"> style="background:url({$m.indeximg}) no-repeat center;background-size:cover;"</if>>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4 desc invisible" data-plugin="appear" data-animate="slide-left" data-repeat="false">
+                            <div class="col-md-4 desc <if value='$m[_index] eq 0'>animation-slide-left appear-no-repeat</if>" data-plugin="appear" data-animate="slide-left" data-repeat="false">
                                 <div>
-                                    <h4>{$m.namemark}</h4>
+                                    <h4>{$m.name}</h4>
                                     <p>{$m.description}</p>
+                                    <if value='$m[_index] eq 0 || $m[_index] eq 2' >
+                                        <a href="{$lang.ding_url}" title="{$lang.btn_text1}" target="_blank" class="btn first-btn about_link">{$lang.btn_text1}</a>
+                                    </if>
                                 </div>
                             </div>
-                            <div class="col-md-8 img text-xs-center vertical-align invisible" data-plugin="appear" data-animate="slide-right" data-repeat="false">
+                            <div class="col-md-8 img text-xs-right <if value='$m[_index] eq 0'>animation-slide-right appear-no-repeat</if>" data-plugin="appear" data-animate="slide-right" data-repeat="false">
                                 <div class="vertical-align-middle">
                                     <img src="{$m.columnimg}" alt="{$m.name}" />
                                 </div>
@@ -27,14 +30,14 @@
                 <section class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false" <if value="!$ui[bg_type] && $m[indeximg]"> style="background:url({$m.indeximg}) no-repeat center;background-size:cover;"</if>>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 text-xs-center img vertical-align invisible" data-plugin="appear" data-animate="slide-left" data-repeat="false">
+                            <div class="col-md-8 text-xs-left img vertical-align invisible" data-plugin="appear" data-animate="slide-left" data-repeat="false">
                                 <div class="vertical-align-middle">
                                     <img src="{$m.columnimg}" alt="{$m.name}" />
                                 </div>
                             </div>
                             <div class="col-md-4 desc invisible" data-plugin="appear" data-animate="slide-right" data-repeat="false">
                                 <div>
-                                    <h4>{$m.namemark}</h4>
+                                    <h4>{$m.name}</h4>
                                     <p>{$m.description}</p>
                                 </div>
                             </div>
@@ -45,6 +48,7 @@
         </if>
     </tag>
     <elseif value="$m[index_num] eq 22"/>
+        <if value="$data['classnow'] eq 137">
     	<div class="pricing">
     		<div class="container">
     			<tag action='category' cid="$data['classnow']" type='current'>
@@ -79,7 +83,7 @@
 								</div>
 							</div>
 							<ul class="package-features">
-								<list data="$v['para']"  name='$para1'>
+                                <list data="$v['para']"  name='$para1'>
                                     <if value="$para1['_index'] gt 0 && !$para1['_last']">
                                         <li>{$para1.value}</li>
                                     </if>
@@ -88,7 +92,7 @@
 							<!-- <div class="signup">
                                 <list data="$v['para']"  name='$para2'>
                                     <if value="$para2['_last']">
-                                    <?php $url=explode('<m',$para2[value])[0]; ?>
+                                    <?php // $url=explode('<m',$para2[value])[0]; ?>
 							             <a href="{$url}" class="btn white" target="_blank">{$para2.name}</a>
                                     </if>
                                 </list>
@@ -98,6 +102,21 @@
     			</div>
     		</div>
     	</div>
+        <elseif value="$data['classnow'] eq 153"/>
+        <tag action='category' cid="$data['classnow']" type='son'>
+        <if value="$m['_index'] lt $c['met_product_list']">
+            <div class="product_introduce text-xs-center">
+                <div class="container">
+                    <h3 class="m-t-15 m-b-35">{$m.name}</h3>
+                    <p class="m-b-20">{$m.description}</p>
+                    <div class="vertical-align-middle">
+                        <img src="{$m.columnimg}" alt="{$m.name}" />
+                    </div>
+                </div>
+            </div>
+        </if>
+        </tag>
+        </if>
 	<else/>
 	<div class="<if value="$ui['product_pagetype'] eq 1">container<else/>container-fluid</if>">
     	<tag action='product.list' num="$c['met_product_list']"></tag>

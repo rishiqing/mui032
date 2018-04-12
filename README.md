@@ -704,23 +704,6 @@
       <td></td>
       <td>全局</td>
    </tr>
-   <tr>
-      <td>分区</td>
-      <td>banner</td>
-      <td></td>
-      <td>广告栏</td>
-      <td></td>
-      <td>首页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>banner_img</td>
-      <td>/metinfo/upload/201803/1521538015.png</td>
-      <td>日事清</td>
-      <td>首页banner大图</td>
-      <td>首页</td>
-   </tr>
-   <tr>
       <td>分区</td>
       <td>service_list</td>
       <td></td>

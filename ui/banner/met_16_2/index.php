@@ -76,7 +76,7 @@ if($data['title']){
                         </if>
                     </div>
                     <if value="$data['classnow'] eq 10001">
-                    <img src="{$lang.banner_img}">
+                    <img src="{$v.img_path}" srcset="{$v.img_path}">
                     </if>
                 </div>
             </div>

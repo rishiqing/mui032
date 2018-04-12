@@ -14,7 +14,7 @@
                                     <h4>{$m.name}</h4>
                                     <p>{$m.description}</p>
                                     <if value='$m[_index] eq 0 || $m[_index] eq 2' >
-                                        <a href="{$lang.ding_url}" title="{$lang.ding_btntext}" target="_blank" class="btn first-btn about_link">{$lang.ding_btntext}</a>
+                                        <a href="{$lang.ding_url}" title="{$lang.btn_text1}" target="_blank" class="btn first-btn about_link">{$lang.btn_text1}</a>
                                     </if>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
 								</div>
 							</div>
 							<ul class="package-features">
-								<list data="$v['para']"  name='$para1'>
+                                <list data="$v['para']"  name='$para1'>
                                     <if value="$para1['_index'] gt 0 && !$para1['_last']">
                                         <li>{$para1.value}</li>
                                     </if>
@@ -92,7 +92,7 @@
 							<!-- <div class="signup">
                                 <list data="$v['para']"  name='$para2'>
                                     <if value="$para2['_last']">
-                                    <?php $url=explode('<m',$para2[value])[0]; ?>
+                                    <?php // $url=explode('<m',$para2[value])[0]; ?>
 							             <a href="{$url}" class="btn white" target="_blank">{$para2.name}</a>
                                     </if>
                                 </list>

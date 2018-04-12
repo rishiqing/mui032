@@ -264,15 +264,14 @@ $uicss .pricing h1 {
   color: $firstcolor$;
   color: $titlecolor$;
   font-weight: normal;
-  margin-bottom: 12px;
+  margin: 0;
 }
 $uicss .pricing h3 {
   font-size: 16px;
   color: $firstcolor$;
   color: $titlecolor$;
   font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 60px;
+  margin: 0;
 }
 $uicss .pricing .pricing-column {
   position: relative;

@@ -15,27 +15,29 @@
 			</if>
 			<if value="$data['classnow'] eq 10001">index-page</if>
 		 	blocks-md-{$ui.column_md} blocks-lg-{$ui.column_lg} blocks-xxl-{$ui.column_xxl} index-service-list">
-			<tag action='category' cid="$ui['id']" type='son'>
-			<if value="$m['_index'] lt $ui[num]">
-				<li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
-					<if value="$ui['link_ok']">
-					<a href="{$m.url}" title="{$m.name}" {$m.urlnew}>
+			<tag action='category' cid="$ui['id']" type='current'>
+				<tag action='list' cid="$m['id']" num="$ui['num']">
+					<if value="$v['_index'] lt $ui[num]">
+						<li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+							<!-- <if value="$ui['link_ok']">
+							<a href="{$v.url}" title="{$v.title}" {$v.urlnew}>
+							</if> -->
+								<div class="service_img pull-xs-left">
+									<img data-original="{$v.imgurl}" alt="{$v.title}">
+			          </div>
+			          <div class="service_des pull-xs-left">
+			            <h3>{$v.title}</h3>
+									<p>{$v.description}</p>
+									<if value="$data['classnow'] eq 10001">
+						      <a href="{$v.url}">{$lang.know_text}</a>
+									</if>
+			          </div>
+							<!-- <if value="$ui['link_ok']">
+							</a>
+							</if> -->
+						</li>
 					</if>
-						<div class="service_img pull-xs-left">
-							<img data-original="{$m.columnimg}" alt="{$m.name}">
-	          </div>
-	          <div class="service_des pull-xs-left">
-	            <h3>{$m.name}</h3>
-							<p>{$m.description}</p>
-							<if value="$data['classnow'] eq 10001">
-							<a href="{$lang.know_url}">{$lang.know_text}</a>
-							</if>
-	          </div>
-					<if value="$ui['link_ok']">
-					</a>
-					</if>
-				</li>
-			</if>
+				</tag>
 			</tag>
 		</ul>
 	</div>

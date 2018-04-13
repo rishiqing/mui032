@@ -21,22 +21,6 @@
 * 下面表格中的 `-`仅仅是为了对照方便查看而插入的分割线，表格太长，设置项较多，分割线便于对照。
 <table>
    <tr>
-      <td>栏目等级</td>
-      <td>排序</td>
-      <td>栏目名称</td>
-      <td>导航栏显示</td>
-      <td>所属模块</td>
-      <td>目录名称</td>
-   </tr>
-   <tr>
-      <td>一级</td>
-      <td>0</td>
-      <td>产品</td>
-      <td>尾部导航条</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
       <td>二级</td>
       <td>0</td>
       <td>功能</td>
@@ -369,7 +353,7 @@
       <td>2</td>
       <td>申请友情链接</td>
       <td>不显示</td>
-      <td colspan="2">外部模块(tencent://message/uin=3500636638&Site=&Menu=yes)</td>
+      <td  colspan="2">外部模块(tencent://message/uin=3500636638&Site=&Menu=yes)</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -408,79 +392,7 @@
       <td>103</td>
       <td>产品介绍</td>
       <td>不显示</td>
-      <td>简介模块</td>
-      <td>introduce</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>0</td>
-      <td>日程安排</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>introduce</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>1</td>
-      <td>计划管理</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>introduce</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>2</td>
-      <td>工作笔记</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>introduce</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>3</td>
-      <td>在线云盘</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>introduce</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>4</td>
-      <td>思维导图</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>introduce</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>5</td>
-      <td>番茄钟</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>introduce</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>6</td>
-      <td>档案</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>introduce</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>7</td>
-      <td>公司同事</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>introduce</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>8</td>
-      <td>甘特图</td>
-      <td>不显示</td>
-      <td>简介模块</td>
+      <td>产品模块</td>
       <td>introduce</td>
    </tr>
    <tr>
@@ -516,10 +428,9 @@
 
 需要进一步进行设置的二级栏目和三级栏目
 -----
-* 1.一级栏目--产品介绍，是在首页`service_list`部分中用到的，其下面有9个二级栏目，这9个二级栏目还需要进一步进行设置。点击其操作选项中的 设置 按钮，在设置页中找到 搜索引擎优化设置(seo) ，在其简短描述中，进行描述设置。 然后是 其它设置（根据模板配置说明设置） ，在其栏目图片中，上传对应的展示的图片即可。 
-* 2.一级栏目--产品动画列表，是在首页`custom_list`部分中用到的，其下面的1个二级栏目，也需要进一步进行设置。同理，需要进行描述和栏目图片的设置。
-* 3.二级栏目--功能，是在 功能 这个列表页用到的，其下面的5个三级栏目，需要进一步设置描述以及栏目图片。
-* 4.一级栏目--钉钉，是在 钉钉 这个列表页用到的，其下面的3个二级栏目，需要进一步设置描述以及栏目图片。
+* 1.一级栏目--产品动画列表，是在首页`custom_list`部分中用到的，其下面的1个二级栏目，也需要进一步进行设置。同理，需要进行描述和栏目图片的设置。
+* 2.二级栏目--功能，是在 功能 这个列表页用到的，其下面的5个三级栏目，需要进一步设置描述以及栏目图片。
+* 3.一级栏目--钉钉，是在 钉钉 这个列表页用到的，其下面的3个二级栏目，需要进一步设置描述以及栏目图片。
 
 风格--Banner管理
 -----
@@ -548,108 +459,108 @@
    <tr>
       <td>1</td>
       <td>覆盖工作方方面面</td>
-      <td>#5699db</td>
+      <td>#5698db</td>
       <td>高效之旅，远不止于此</td>
-      <td>#97acc2</td>
+      <td#97acc1</td>
       <td>居中</td>
       <td>功能</td>
    </tr>
    <tr>
       <td>2</td>
       <td>永久免费，按需付费</td>
-      <td>#5700db</td>
+      <td>#5698db</td>
       <td>做最适合你的选择，用最低的价格</td>
-      <td>#97acc3</td>
+      <td#97acc1</td>
       <td>居中</td>
       <td>价格</td>
    </tr>
    <tr>
       <td>3</td>
       <td>让工作超越距离</td>
-      <td>#5701db</td>
+      <td>#5698db</td>
       <td>全平台支持，只为时刻准备着的你</td>
-      <td>#97acc4</td>
+      <td#97acc1</td>
       <td>居中</td>
       <td>下载</td>
    </tr>
    <tr>
       <td>4</td>
       <td>全方位企业管理解决方案</td>
-      <td>#5702db</td>
+      <td>#5698db</td>
       <td>让每个行业、每份工作都能运转自如</td>
-      <td>#97acc5</td>
+      <td#97acc1</td>
       <td>居中</td>
       <td>解决方案</td>
    </tr>
    <tr>
       <td>5</td>
       <td>深入场景，玩转日事清</td>
-      <td>#5703db</td>
+      <td>#5698db</td>
       <td>完美解决办公场景中的每一个问题</td>
-      <td>#97acc6</td>
+      <td#97acc1</td>
       <td>居中</td>
       <td>使用方法</td>
    </tr>
    <tr>
       <td>6</td>
       <td>日事清 X 钉钉</td>
-      <td>#5704db</td>
+      <td>#5698db</td>
       <td>保持高昂生产力</td>
-      <td>#97acc7</td>
+      <td#97acc1</td>
       <td>居中</td>
       <td>钉钉</td>
    </tr>
    <tr>
       <td>7</td>
       <td>帮助中心</td>
-      <td>#5705db</td>
+      <td>#5698db</td>
       <td>获悉你想要的一切</td>
-      <td>#97acc8</td>
+      <td#97acc1</td>
       <td>居中</td>
       <td>帮助中心</td>
    </tr>
    <tr>
       <td>8</td>
       <td>产品手册</td>
-      <td>#5706db</td>
+      <td>#5698db</td>
       <td>欢迎使用日事清！</td>
-      <td>#97acc9</td>
+      <td#97acc1</td>
       <td>居中</td>
       <td>产品手册</td>
    </tr>
    <tr>
       <td>9</td>
       <td>培训课程</td>
-      <td>#5707db</td>
+      <td>#5698db</td>
       <td>走进企业    了解企业    服务企业</td>
-      <td>#97acc10</td>
+      <td>#97acc1</td>
       <td>居中</td>
       <td>培训课程</td>
    </tr>
    <tr>
       <td>10</td>
       <td>官方博客</td>
-      <td>#5708db</td>
+      <td>#5698db</td>
       <td>记录日事清的点滴</td>
-      <td>#97acc11</td>
+      <td>#97acc1</td>
       <td>居中</td>
       <td>官方博客</td>
    </tr>
    <tr>
       <td>11</td>
       <td>更新日志</td>
-      <td>#5709db</td>
+      <td>#5698db</td>
       <td>变化之间，无不洞悉</td>
-      <td>#97acc12</td>
+      <td>#97acc1</td>
       <td>居中</td>
       <td>更新日志</td>
    </tr>
    <tr>
       <td>12</td>
       <td>日事清，工作开始的地方</td>
-      <td>#5710db</td>
+      <td>#5698db</td>
       <td></td>
-      <td>#97acc13</td>
+      <td>#97acc1</td>
       <td>居中</td>
       <td>加入我们</td>
    </tr>
@@ -1045,6 +956,32 @@
    <tr>
       <td>描述颜色</td>
       <td></td>
+   </tr>
+</table>
+
+* 2.内容
+* 点击添加内容，设置以下几项
+* 下面以日程安排为例，其它八项同理按设计图上一一设置添加即可
+<table>
+   <tr>
+      <td>所属栏目</td>
+      <td>产品介绍</td>
+   </tr>
+   <tr>
+      <td>标题</td>
+      <td>日程安排</td>
+   </tr>
+   <tr>
+      <td>展示图片</td>
+      <td>上传对应图片即可</td>
+   </tr>
+   <tr>
+      <td>详细内容</td>
+      <td>工作任务分轻重缓急逐一破，日、周、月视图任意切换</td>
+   </tr>
+   <tr>
+      <td>其他设置--链接至</td>
+      <td>写入对应链接即可</td>
    </tr>
 </table>
 

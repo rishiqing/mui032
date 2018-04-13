@@ -22,8 +22,8 @@
                     </a>
                     <a href="{$lang.ding_url}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$lang.met_dingname}" target="_blank">
                         <div class="vertical-align-middle">
-                            <img src="{$lang.met_dinglogo}" alt="{$lang.met_dingname}" class="logo">
-                            <img src="{$lang.met_dinglogo}" alt="{$lang.met_dingname}" class="logo1  hidden">
+                            <img src="{$ui.server_logo}" alt="{$lang.met_dingname}" class="logo">
+                            <img src="{$ui.server_logo}" alt="{$lang.met_dingname}" class="logo1  hidden">
                         </div>
                     </a>
                 </div>

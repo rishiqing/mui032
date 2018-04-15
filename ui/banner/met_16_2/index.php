@@ -67,16 +67,16 @@ if($data['title']){
                                     <i></i>
                                 </div>
                             </if>
-                            <if value="$data['classnow'] eq 153 || $data['classnow'] eq 105 || $data['classnow'] eq 110 || $data['classnow'] eq 115 || $data['classnow'] eq 116">
-                                <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$lang.btn_text1}</a>
+                            <if value="$v.btn_text_1">
+                                <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$v.btn_text_1}</a>
                             </if>
-                            <if value="$data['classnow'] eq 137">
-                                <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$lang.btn_text2}</a>
+                            <if value="$v.btn_text_2">
+                                <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$v.btn_text_2}</a>
                             </if>
                         </if>
                     </div>
                     <if value="$data['classnow'] eq 10001">
-                    <img src="{$lang.banner_img}">
+                    <img src="{$v.img_path}">
                     </if>
                 </div>
             </div>

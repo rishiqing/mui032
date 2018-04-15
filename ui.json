@@ -1293,7 +1293,7 @@
                         "uip_value": "免费体验",
                         "uip_default": "",
                         "uip_title": "按钮1文字",
-                        "uip_description": "默认为空，不填则不显示",
+                        "uip_description": "默认为空，不填则不显示（该项配置只对首页有效，其他页面的按钮文字请到 Banner管理 里进行配置）",
                         "uip_order": "5"
                     },
                     {
@@ -1323,7 +1323,7 @@
                         "uip_value": "在线咨询",
                         "uip_default": "",
                         "uip_title": "按钮2文字",
-                        "uip_description": "默认为空，不填则不显示",
+                        "uip_description": "默认为空，不填则不显示（该项配置只对首页有效，其他页面的按钮文字请到 Banner管理 里进行配置）",
                         "uip_order": "7"
                     },
                     {

@@ -155,16 +155,15 @@ $uicss section {
 }
 $uicss section:nth-child(odd) {
   height: 535px;
-}
-$uicss section:nth-child(even) {
-  height: 480px;
-}
-$uicss section:nth-child(odd) {
   background: $oddbgcolor$;
 }
 $uicss section:nth-child(even) {
+  height: 480px;
   background: $evenbgcolor$;
   padding-top: 44px;
+}
+$uicss section:nth-child(1) {
+  margin-top: 28px;
 }
 $uicss section .container {
   height: 100%;

@@ -15,24 +15,22 @@
                 	<tag action='download.list' num="$c['met_download_list']">
                         <li class="list-group-item col-md-4 col-xs-6">
                             <div class="media">
-                                <div class="media-icon">
-                                    <a title="{$v.title}">
-                                        <list data="$v[para]" name="$para">
-                                            <if value="$para['_index'] eq 0">
-                                                <?php
-                                                    $img=explode('<m',explode('href=\'', $para['value'])[1])[0];
-                                                    $img=explode('\'>', $img)[0];
-                                                ?>
-                                                <img src="{$img}"/>
-                                            </if>
-                                        </list>
-                                    </a>
-                                </div>
+                                <div class="media-icon">{$v.content}</div>
                                 <div class="media-body">
                                     <h4 class="media-heading">
-                                        <a class="name" href="{$v.downloadurl}" title="{$v.title}" {$g.urlnew}>
-                                            {$v.title}
-                                        </a>
+                                        <?php
+                                            $downloadUrl = $v['downloadurl'];
+                                            if (strpos($downloadUrl, 'void(0)')) {
+                                                $v['downloadurl']='';
+                                            }
+                                        ?>
+                                        <a class="name" href="{$v.downloadurl}">{$v.title}</a>
+                                        <if value="$v['para'][0][value] && $v['para'][1][value]">
+                                        <div class="download-menu">
+                                            <a class="win-download-item" href="{$v['para'][0][value]}">{$v['para'][0][name]}</a>
+                                            <a class="win-download-item" href="{$v['para'][1][value]}">{$v['para'][1][name]}</a>
+                                        </div>
+                                        </if>
                                     </h4>
                                     <!-- <p>{$v.description}</p>
                                     <div>

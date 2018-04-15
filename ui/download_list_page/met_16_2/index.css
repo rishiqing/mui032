@@ -1,14 +1,13 @@
 @charset "utf-8";
 $uicss {
   background: $bodybgcolor$;
-  padding: 30px 0px;
 }
 $uicss {
   background: $bgcolor$;
 }
 /* 下载列表 */
 $uicss .list-group {
-  margin-bottom: 30px;
+  margin-bottom: 145px;
 } 
 $uicss .download-info {
   text-align: center;
@@ -17,36 +16,107 @@ $uicss .download-info {
 } 
 $uicss .list-group-item {
   text-align: center;
-  padding: 10px 0;
+  padding: 0;
   background-color: transparent;
   border: none !important;
+}
+$uicss .list-group-item:nth-child(n+4) {
+  margin-top: 30px;
 }
 $uicss .list-group-item > .media {
   padding: 30px;
   background-color: #fff;
   margin: 0 10px;
+  overflow: visible;
 }
 $uicss .media-icon {
   padding-right: 5px;
   padding-left: 10px;
 }
-$uicss h4.media-heading {
-  margin-top: 20px;
+$uicss .media-body {
+  position: relative;
+  overflow: visible;
+}
+$uicss .list-group-item:nth-child(-n+3) h4.media-heading {
+  margin-top: 26px;
+}
+$uicss .list-group-item:nth-child(n+4) h4.media-heading {
+  margin-top: 16px;
+  cursor: default;
 }
 $uicss p {
   font-size: 13px;
   color: $secondcolor$;
   color: $desccolor$;
 }
-$uicss .list-group-item .media-heading a {
+$uicss .list-group-item .media-heading {
+  display: flex;
+  justify-content: center;
+}
+$uicss .list-group-item .media-heading > a {
   color: $firstcolor$;
   color: $titlecolor$;
   font-size: 14px;
   opacity: 0.7;
 }
-$uicss h4.media-heading a:hover {
-  color: $thirdcolor$ !important;
-  color: $hovercolor$ !important;
+$uicss .list-group-item:nth-child(-n+3) .media-heading > a {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 122px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+$uicss .list-group-item h4.media-heading > a:hover {
+  color: $thirdcolor$;
+  color: $hovercolor$;
+  border-color: #5698db;
+}
+$uicss .list-group-item:nth-child(n+4) h4.media-heading > a:hover {
+  color: #000000;
+  opacity: 0.7;
+  cursor: default;
+}
+$uicss .download-menu {
+  width: 122px;
+  flex-direction: column;
+  display: none;
+}
+$uicss .download-menu .win-download-item {
+  background: rgba(14, 109, 206, 1);
+}
+$uicss .download-menu .win-download-item:last-child {
+  border-radius: 0 0 5px 5px;
+}
+$uicss .download-menu .win-download-item:hover {
+  background: rgba(14, 109, 206, 0.9);
+  color: #ffffff!important;
+}
+$uicss .list-group-item .download-menu .win-download-item {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+$uicss .list-group-item:nth-child(1) h4.media-heading:hover > a {
+  border: none;
+  border-radius: 5px 5px 0 0;
+  background: #0E6DCE;
+  color: #fff!important;
+  opacity: 1;
+}
+$uicss .list-group-item:nth-child(1) h4.media-heading {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+}
+$uicss h4.media-heading:hover .download-menu {
+  display: flex;
 }
 $uicss small {
   color: #76838f;

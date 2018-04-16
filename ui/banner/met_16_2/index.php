@@ -57,21 +57,22 @@ if($data['title']){
                         </tag>
                         <if value="$ui[btn_ok]">
                             <if value="$data['classnow'] eq 10001 && $v[_first]">
-                                <if value="$ui[btn1]">
-                                    <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$ui.btn1}</a>
+                                <if value="$v.btn_text_1">
+                                    <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$v.btn_text_1}</a>
                                 </if>
-                                <if value="$ui[btn2]">
-                                    <a href="{$ui.btnlink2}" target="_blank" class="btn animation-slide-bottom second-btn">{$ui.btn2}</a>
+                                <if value="$v.btn_text_2">
+                                    <a href="{$ui.btnlink2}" target="_blank" class="btn animation-slide-bottom second-btn">{$v.btn_text_2}</a>
                                 </if>
                                 <div class="btn animation-slide-bottom play-btn">
                                     <i></i>
                                 </div>
-                            </if>
-                            <if value="$v.btn_text_1">
-                                <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$v.btn_text_1}</a>
-                            </if>
-                            <if value="$v.btn_text_2">
-                                <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$v.btn_text_2}</a>
+                            <else/>
+                                <if value="$v.btn_text_1">
+                                    <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$v.btn_text_1}</a>
+                                </if>
+                                <if value="$v.btn_text_2">
+                                    <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$v.btn_text_2}</a>
+                                </if>
                             </if>
                         </if>
                     </div>

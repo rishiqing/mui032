@@ -572,7 +572,6 @@
 * 点击添加自定义标签，依次设置 类型--变量名--默认值--标题--说明--位置。以下列表按照顺序，列出所设置的变量。
 * 建议先设置分区，后设置所属分区的变量，便于查找和修改。
 * 如果选择 类型 为分区，可点击 编辑 选项中的 添加子选项 进行变量的添加。下面列表中的非分区类型(简短文本，多行文本等) 变量都是在最近一个分区下添加的（向上查找所属分区）。
-* 【说明】：下面表格中的`-----`分割线表示开发时每次提交代码所增加的自定义变量，方便协同开发时，增加设置对照。分区已经存在的，代表只是在这个分区下新增了变量而已。
 
 <table>
    <tr>
@@ -593,14 +592,6 @@
    </tr>
    <tr>
       <td>简短文本</td>
-      <td>met_dinglogo</td>
-      <td>/metinfo/upload/201803/1521540762.png</td>
-      <td>钉钉logo图片设置</td>
-      <td></td>
-      <td>全局</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
       <td>ding_url</td>
       <td>http://appcenter.dingtalk.com/detail.html?goodsCode=FW_GOODS-1000330934</td>
       <td>点击钉钉图片的跳转地址</td>
@@ -615,36 +606,13 @@
       <td></td>
       <td>全局</td>
    </tr>
-      <td>分区</td>
-      <td>service_list</td>
-      <td></td>
-      <td>服务列表</td>
-      <td></td>
-      <td>首页</td>
-   </tr>
    <tr>
       <td>简短文本</td>
-      <td>know_url</td>
-      <td>xxx</td>
-      <td>service_list模块链接地址</td>
+      <td>btn_text1</td>
+      <td>立即体验</td>
+      <td>按钮文字</td>
       <td></td>
-      <td>首页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>know_text</td>
-      <td>了解详情 ></td>
-      <td>service_list模块链接文字</td>
-      <td></td>
-      <td>首页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>solution_title</td>
-      <td>为各行各业提供全方位的解决方案</td>
-      <td>标题</td>
-      <td></td>
-      <td>首页</td>
+      <td>全局</td>
    </tr>
    <tr>
       <td>分区</td>
@@ -683,46 +651,6 @@
       <td>price_desc_3</td>
       <td>适用于大中型企业</td>
       <td>旗舰版描述</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-   </tr>
-   <tr>
-      <td>分区</td>
-      <td>met_banner</td>
-      <td></td>
-      <td>广告栏</td>
-      <td></td>
-      <td>全局</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>btn_text1</td>
-      <td>立即体验</td>
-      <td>banner按钮文字1</td>
-      <td></td>
-      <td>全局</td>
-   </tr>
-   <tr>
-      <td>分区</td>
-      <td>met_price</td>
-      <td></td>
-      <td>价格</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>btn_text2</td>
-      <td>免费使用</td>
-      <td>banner按钮文字2</td>
       <td></td>
       <td>列表页</td>
    </tr>
@@ -786,9 +714,6 @@
    <tr>
       <td>一级导航菜单禁止跳转</td>
       <td>支持|</td>
-   </tr>
-   <tr>
-      <td></td>
    </tr>
 </table>
 
@@ -1247,3 +1172,73 @@
 * 接着 返回到 内容设置页面，点击参数管理后面的 刷新 按钮，就可以看到刚才添加的参数了，依次按设计图上文字设置，注意价格一栏由于下角标的特殊显示，其参数需要填充为html形式，如免费版中是`0<sub>元/年</sub>`
 * 按照以上设置，依次设置免费版，专业版，企业版，旗舰版参数
 * 其中专业版，企业版，旗舰版的存储空间和文件大小一栏，同样由于一些文字的特殊样式显示，其参数也需要填充为html形式，如专业版中存储空间为`<span>50G</span>储存空间`，文件大小为`上传单个文件最大支持<span>1G</span>`。企业版和旗舰版同理。
+
+下载页`download_list_page`内容
+-----
+* 1.设置
+<table>
+   <tr>
+      <td>标题颜色</td>
+      <td>#000000</td>
+   </tr>
+   <tr>
+      <td>鼠标经过颜色和按钮颜色及当前页的颜色</td>
+      <td>#5698db</td>
+   </tr>
+</table>
+
+* 2.内容
+* 点击 内容，右上角选择 下载，然后点击 添加内容，按照下面进行设置即可
+* 在弹窗的添加内容框中，先找到点击参数管理，新增两个参数，Windows 32位---所属栏目选择下载---排序0；Windows 64位---所属栏目选择下载---排序1，然后保存，回到内容设置弹窗页面，点击 刷新 按钮，即可看到参数设置中多了两个选项 Windows 32位 和 Windows 64位.
+* 然后只在 Windows 下载 中设置这两项参数，其它下载中这两项参数值为空
+* Windows 下载 中：
+* 1.Windows 32位---https://rishiqing-client.oss-cn-shenzhen.aliyuncs.com/pc-autoupdate/win/ia32/release/rishiqing-win-ia32-release-3.1.6.exe
+* 2.Windows 64位---https://rishiqing-client.oss-cn-shenzhen.aliyuncs.com/pc-autoupdate/win/x64/release/rishiqing-win-x64-release-3.1.6.exe
+
+<table>
+   <tr>
+      <td>所属栏目</td>
+      <td>标题</td>
+      <td>下载地址</td>
+      <td>详细内容</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>Windows 下载</td>
+      <td>void(0)</td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>MAC 下载</td>
+      <td colspan="2">https://rishiqing-client.oss-cn-shenzhen.aliyuncs.com/pc-autoupdate/mac/release/rishiqing-mac-release-3.1.4.dmg</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>网页版</td>
+      <td></td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>Android 下载</td>
+      <td>void(0)</td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>iOS 下载</td>
+      <td>void(0)</td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>微信公众号</td>
+      <td>void(0)</td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+</table>
+
+
+
+

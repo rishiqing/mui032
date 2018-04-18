@@ -83,11 +83,19 @@
 								</div>
 							</div>
 							<ul class="package-features">
-                                <list data="$v['para']"  name='$para1'>
+                            <?php
+                                $arr = $v['para'];
+                                foreach($arr as $key => $value) {
+                                    if ($key > 0) {
+                                        echo '<li>'.$value['value'].'</li>';
+                                    }
+                                }
+                            ?>
+                                <!-- <list data="$v['para']"  name='$para1'>
                                     <if value="$para1['_index'] gt 0 && !$para1['_last']">
                                         <li>{$para1.value}</li>
                                     </if>
-					            </list>
+					            </list> -->
 							</ul>
 							<!-- <div class="signup">
                                 <list data="$v['para']"  name='$para2'>

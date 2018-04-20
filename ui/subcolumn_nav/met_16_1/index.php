@@ -15,6 +15,8 @@
 						>{$ui.all}</a>
 					</li>
 				<else/>
+					<if value="$data['index_num'] eq 50"> <!-- 官方博客 -->
+					<else/>
 					<if value="$m[isshow]">
 						<li>
 							<a href="{$m.url}"  title="{$m.name}"
@@ -23,6 +25,7 @@
 							</if>
 							>{$m.name}</a>
 						</li>
+					</if>
 					</if>
 				</if>
 				<tag action='category' cid="$m['id']" type='son' class="active">

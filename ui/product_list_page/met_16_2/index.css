@@ -145,7 +145,7 @@ $uicss.met-product.type-2 .overlay-panel{color: $firstcolor$;color: $titlecolor$
     filter: alpha(opacity=100);
   }
 }
-/*栏目标志等于1*/
+/*一级栏目标志等于1*/
 $uicss {
   min-height: 200px;
 }
@@ -231,10 +231,13 @@ $uicss section .img img {
   max-height: 100%;
   max-width: 100%;
 }
-/*栏目标识等于22*/
-/*功能*/
+/*一级栏目标识等于22*/
+/*功能 所在二级栏目标识100*/
 $uicss .product_introduce {
   height: 640px;
+}
+$uicss .product_introduce:last-child {
+  height: 616px;
 }
 $uicss .product_introduce:nth-child(odd) {
   background: #ffffff;
@@ -250,6 +253,9 @@ $uicss .product_introduce p {
   font-size: 16px;
   color: #8C8C8C;
   line-height: 22px;
+}
+$uicss .product_introduce:last-child .container > div {
+  margin-top: 30px;
 }
 /*价格*/
 $uicss .pricing {

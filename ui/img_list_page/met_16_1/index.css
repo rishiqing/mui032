@@ -7,9 +7,9 @@
 }
 $uicss {
   background: $bgcolor$;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
-$uicss .container li {
+$uicss .container li.card {
   padding: 10px;
   background: transparent;
 }
@@ -122,4 +122,29 @@ $uicss #met-pager-btn {
   background-color: $thirdcolor$;
   border-color: $hovercolor$;
   background-color: $hovercolor$;
+}
+
+/*价格页面的使用伙伴图片列表*/
+$uicss.partners-list {
+  margin-top: 108px;
+}
+$uicss h3 {
+  font-size: 28px;
+  color: #5b5b5b;
+}
+$uicss .partners-img-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+$uicss .partners-img-list li {
+    list-style: none;
+    margin-right: 3.2857rem;
+}
+$uicss .partners-img-list li:nth-child(4n) {
+    margin-right: 0;
+}
+$uicss .partners-img-list li:nth-child(n+5) {
+    margin-top: 30px;
 }

@@ -1,31 +1,29 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
  <tag action="category" type="current" cid="$data['classnow']">
-    <if value="$m[index_num] eq 2">
-        <div class="panel-group" id="faq" aria-multiselectable="true" role="tablist" m-id='{$ui.mid}'>
-         <tag action="category" cid="$data[classnow]" type="son">
-                  <div class="panel">
-                    <div class="panel-heading" id="a{$m._index}" role="tab">
-                      <a class="panel-title" data-toggle="collapse" href="#b{$m._index}" data-parent="faq" aria-expanded="true" aria-controls="b{$m._index}">
-                      {$m.name}
-                    </a>
+    <if value="$data['index_num'] eq 99">
+        <div class="$uicss common-questions-list">
+            <div class="container">
+                <h3 class="text-xs-center m-t-0">{$data['namemark']}</h3>
+                <div class="panel-group" id="faq" aria-multiselectable="true" role="tablist" m-id='{$ui.mid}'>
+                <tag action='list' cid="$m['id']" num="$v['sub']">
+                    <if value="$v['_index'] gt 3 && $v['_index'] lt 9">
+                    <div class="panel">
+                        <div class="panel-heading" id="<?php echo 'a'.($v['_index'] - 4) ?>" role="tab">
+                          <a class="panel-title" data-toggle="collapse" href="<?php echo '#b'.($v['_index'] - 4) ?>" data-parent="faq" aria-expanded="true" aria-controls="<?php echo 'b'.($v['_index'] - 4) ?>">
+                          {$v.title}
+                        </a>
+                        </div>
+                        <div class="panel-collapse collapse in" id="<?php echo 'b'.($v['_index'] - 4) ?>" aria-labelledby="<?php echo 'a'.($v['_index'] - 4) ?>" role="tabpanel" aria-expanded="false">
+                          <div class="panel-body">
+                            <p>{$v.description}</p>
+                          </div>
+                        </div>
                     </div>
-                    <div class="panel-collapse collapse in" id="b{$m._index}" aria-labelledby="a{$m._index}" role="tabpanel" aria-expanded="false">
-                      <div class="panel-body">
-                        <ul class="list--vertical article-list">
-                            <tag action="list" cid="$m['id']" num="$ui[num]">
-                                <li class="list__item">
-                                    <a href="{$v.url}" title="{$v.title}" class="link">
-                                        {$v.title}
-                                    </a>
-                                </li>
-                            </tag>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-            </tag>
+                    </if>
+                </tag>
+                </div>
+            </div>
         </div>
-        
     <else/>
     <main class="$uicss met-news">
         <div class="container">

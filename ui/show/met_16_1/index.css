@@ -1,3 +1,19 @@
-$uicss.met-show-body{background:$bodybgcolor$ ;}
-$uicss.met-show-body.bgcolor{background:$bgcolor$ ;}
-$uicss.met-show-body.bgpic{background:url($bgpic$) no-repeat;background-size: cover;background-position: center;}
+$uicss.met-show-body {
+  background: $bodybgcolor$;
+}
+$uicss.met-show-body.bgcolor {
+  background: $bgcolor$;
+}
+$uicss.met-show-body.bgpic {
+  background: url($bgpic$) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*服务条款*/
+$uicss.met-show-body.tos .met-editor {
+  width: auto;
+  margin: 10px 100px 42px;
+  padding: 66px 70px 46px;
+  border: 1px solid #CDE6FF;
+  box-shadow: 0 6px 6px 0 #D2E5FA;
+}

@@ -3,7 +3,6 @@ $uicss.met-news {
 }
 $uicss.met-news {
   padding: 30px 0px;
-  border-top: 1px solid #f0f2f5;
 }
 
 .width-full {
@@ -74,49 +73,85 @@ $uicss.met-news .met-news-body {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 $uicss .met-news-list {
-  padding: 30px;
+  padding: 0 30px;
   background: #fff;
 }
+$uicss .met-news-list .ulstyle {
+  display: flex;
+  flex-wrap: wrap;
+}
 $uicss .met-news-list li {
-  padding: 30px 0;
+  width: 264px;
+  height: 320px;
+  border: 1px solid #E5E5E5;
+  padding: 16px 16px 10px;
+  margin-left: 32px;
+  display: flex;
+}
+$uicss .met-news-list li:nth-child(4n+1) {
+  margin-left: 0;
+}
+$uicss .met-news-list li:nth-child(n+5) {
+  margin-top: 32px;
+}
+$uicss .met-news-list li a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+$uicss .met-news-list li .img-wrap {
+  flex: 0 0 152px;
+}
+$uicss .met-news-list li .img-wrap img {
+  width: 100%;
+  height: 152px;
+}
+$uicss .met-news-list li .title-des {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 $uicss .met-news-list li h4 {
-  margin: 0 0 20px;
-  font-size: 22px;
-}
-$uicss .met-news-list li h4 a {
-  color: $firstcolor$;
-  color: $titlecolor$;
-}
-$uicss .met-news-list li h4 a:hover {
-  color: $thirdcolor$;
-  color: $hovercolor$;
-}
-$uicss .met-news-list li p {
-  font-size: 16px;
+  margin-bottom: 7px;
+  font-size: 20px;
+  color: #3D3D3D;
+  flex: 0 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 $uicss .met-news-list li p.des {
   color: $secondcolor$;
   color: $desccolor$;
-  margin-bottom: 10px;
+  font-size: 15px;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
-$uicss .met-news-list li p.des {
-  color: $secondcolor$;
-  color: $desccolor$;
-}
-$uicss .met-news-list li p.info,$uicss .met-news-list .card-body .card-metas {
+$uicss .met-news-list li p,$uicss .met-news-list .card-body .card-metas {
   margin-bottom: 0px;
-  font-size: 16px;
+  font-size: 12px;
   color: $hitscolor$;
+}
+$uicss .met-news-list li p.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 18px;
+}
+$uicss .met-news-list li p.info .info-tag {
+  color: #5698DB;
 }
 $uicss .met-news-list .card-body .card-metas {
   margin-bottom: 5px;
-}
-$uicss .met-news-list li p.info span {
-  margin-left: 10px;
-}
-$uicss .met-news-list li p.info span:first-child {
-  margin: 0;
 }
 $uicss .met-news-list li p.info i {
   color: $hitscolor$;
@@ -208,7 +243,6 @@ $uicss.common-questions-list h3 {
 }
 #faq {
   position: relative;
-  z-index: 9999;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -245,6 +279,9 @@ $uicss.common-questions-list h3 {
   color: $titlecolor$;
   text-align: left;
 }
+#faq .panel-body {
+  padding: 15px 20px;
+}
 
 #faq .article-list {
   padding: 0;
@@ -264,7 +301,8 @@ $uicss.common-questions-list h3 {
 }
 /*分页*/
 .met_pager {
-  margin-top: 20px;
+  margin-top: 67px;
+  margin-bottom: 27px;
   text-align: center;
 }
 

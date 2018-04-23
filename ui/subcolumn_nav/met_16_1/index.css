@@ -25,6 +25,9 @@ $uicss-ul {
   align-items: center;
   justify-content: center;
 }
+$uicss-ul.left {
+  justify-content: left;
+}
 
 @media (max-width:767px) {
     $uicss-ul {
@@ -41,8 +44,11 @@ $uicss-ul li {
   flex-wrap: nowrap;
   margin: 0 15px;
 }
+$uicss-ul.left li:first-child {
+  margin-left: 0;
+}
 $uicss-ul li > a {
-  padding: 5px 11px;
+  padding: 5px 24px;
   font-size: 20px;
 }
 $uicss-ul li a {

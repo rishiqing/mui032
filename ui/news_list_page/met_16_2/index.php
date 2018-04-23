@@ -1,6 +1,6 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
 <tag action="category" type="current" cid="$data['classnow']">
-    <if value="$data['index_num'] eq 99">
+    <if value="$data['index_num'] eq 99"><!-- 价格页 常见问题部分 -->
         <div class="$uicss common-questions-list">
             <div class="container">
                 <h3 class="text-xs-center m-t-0">{$data['namemark']}</h3>

@@ -93,70 +93,6 @@
       <td>product</td>
    </tr>
    <tr>
-      <td>三级</td>
-      <td>0</td>
-      <td>中国铁塔</td>
-      <td>不显示</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
-      <td>三级</td>
-      <td>1</td>
-      <td>SYKES</td>
-      <td>不显示</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
-      <td>三级</td>
-      <td>2</td>
-      <td>亚洲保理</td>
-      <td>不显示</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
-      <td>三级</td>
-      <td>3</td>
-      <td>昌河汽车</td>
-      <td>不显示</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
-      <td>三级</td>
-      <td>4</td>
-      <td>中原物流</td>
-      <td>不显示</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
-      <td>三级</td>
-      <td>5</td>
-      <td>华生集团</td>
-      <td>不显示</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
-      <td>三级</td>
-      <td>6</td>
-      <td>通威太阳能</td>
-      <td>不显示</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
-      <td>三级</td>
-      <td>7</td>
-      <td>四达人才</td>
-      <td>不显示</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
       <td>二级</td>
       <td>2</td>
       <td>下载</td>
@@ -333,12 +269,68 @@
       <td>article</td>
    </tr>
    <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>官方公告</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>article</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>1</td>
+      <td>媒体报道</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>article</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>2</td>
+      <td>活动沙龙</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>article</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>3</td>
+      <td>用户故事</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>article</td>
+   </tr>
+   <tr>
       <td>二级</td>
       <td>4</td>
       <td>更新日志</td>
       <td>不显示</td>
-      <td>简介模块</td>
-      <td>about</td>
+      <td>文章模块</td>
+      <td>toplog</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>Web</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>toplog</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>1</td>
+      <td>Android</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>toplog</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>2</td>
+      <td>iOS</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>toplog</td>
    </tr>
    <tr>
       <td>－</td>
@@ -507,6 +499,9 @@
 * 2.一级栏目--钉钉，标识设置为 1
 * 3.二级栏目--功能，标识设置为 100
 * 4.三级栏目--价格，标识设置为 99
+* 5.二级栏目--官方博客，以及此栏目下的所有三级栏目，标识设置为 50
+* 6.二级栏目--更新日志，以及此栏目下的所有三级栏目，标识设置为 49
+* 7.二级栏目--服务条款，标识设置为 48
 
 需要进一步进行设置的二级栏目和三级栏目
 -----
@@ -1331,6 +1326,41 @@
    </tr>
 </table>
 
+官方博客页`news_list_page`
+-----
+1.设置
+<table>
+   <tr>
+      <td>列表展示</td>
+      <td>图文</td>
+   </tr>
+   <tr>
+      <td>新闻头条</td>
+      <td>关闭</td>
+   </tr>
+   <tr>
+      <td>区块背景色</td>
+      <td>#ffffff</td>
+   </tr>
+   <tr>
+      <td>标题字体颜色</td>
+      <td>#3d3d3d</td>
+   </tr>
+   <tr>
+      <td>描述字体颜色</td>
+      <td>#8c8c8c</td>
+   </tr>
+   <tr>
+      <td>点缀颜色</td>
+      <td>#b1b1b1</td>
+   </tr>
+</table>
 
+2.内容
+* 点击 内容，右上角选择 官方博客--官方公告，然后点击 添加内容，按照文章标题--详细内容--封面图上传设置即可
+* 依次按上面操作给几个部分添加文章
 
+3.点击任何一篇博客，进入博客详情页也可进行单独具体设置和内容
 
+更新日志页`news_list_page`
+* 同上面 官方博客 操作

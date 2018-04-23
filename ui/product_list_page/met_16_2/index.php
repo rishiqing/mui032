@@ -131,7 +131,25 @@
         </if>
         </tag>
         </if>
-	<else/>
+	<elseif value="$data['index_num'] eq 98"/> <!-- 代理合作 -->
+    <tag action='product.list' num="$c['met_product_list']">
+        <div class="multi-agent text-xs-center">
+            <div class="container">
+                <h3 class="m-t-15 m-b-35">{$v.title}</h3>
+                <if value="$v['_index'] eq 0">
+                <ul class="list">
+                    <?php
+                       // 拿到相关参数
+                    ?>
+                </ul>
+                <elseif value="$v['_index'] eq 1"/>
+                <elseif value="$v['_index'] eq 2"/>
+                <elseif value="$v['_index'] eq 3"/>
+                </if>
+            </div>
+        </div>
+    </tag>
+    <else/>
 	<div class="<if value="$ui['product_pagetype'] eq 1">container<else/>container-fluid</if>">
     	<tag action='product.list' num="$c['met_product_list']"></tag>
 		<if value="$sub">

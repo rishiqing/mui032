@@ -10,6 +10,9 @@ $uicss.met-show-body.bgpic {
   background-position: center;
 }
 /*服务条款*/
+$uicss.met-show-body.tos {
+  margin-top: -150px;
+}
 $uicss.met-show-body.tos .met-editor {
   width: auto;
   margin: 10px 100px 42px;

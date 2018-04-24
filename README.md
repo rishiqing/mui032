@@ -21,6 +21,22 @@
 * 下面表格中的 `-`仅仅是为了对照方便查看而插入的分割线，表格太长，设置项较多，分割线便于对照。
 <table>
    <tr>
+      <td>栏目等级</td>
+      <td>排序</td>
+      <td>栏目名称</td>
+      <td>导航栏显示</td>
+      <td>所属模块</td>
+      <td>目录名称</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>0</td>
+      <td>产品</td>
+      <td>尾部导航条</td>
+      <td>产品模块</td>
+      <td>product</td>
+   </tr>
+   <tr>
       <td>二级</td>
       <td>0</td>
       <td>功能</td>
@@ -253,12 +269,68 @@
       <td>article</td>
    </tr>
    <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>官方公告</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>article</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>1</td>
+      <td>媒体报道</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>article</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>2</td>
+      <td>活动沙龙</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>article</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>3</td>
+      <td>用户故事</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>article</td>
+   </tr>
+   <tr>
       <td>二级</td>
       <td>4</td>
       <td>更新日志</td>
       <td>不显示</td>
-      <td>简介模块</td>
-      <td>about</td>
+      <td>文章模块</td>
+      <td>toplog</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>Web</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>toplog</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>1</td>
+      <td>Android</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>toplog</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>2</td>
+      <td>iOS</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>toplog</td>
    </tr>
    <tr>
       <td>－</td>
@@ -353,7 +425,7 @@
       <td>2</td>
       <td>申请友情链接</td>
       <td>不显示</td>
-      <td  colspan="2">外部模块(tencent://message/uin=3500636638&Site=&Menu=yes)</td>
+      <td colspan="2">外部模块(tencent://message/uin=3500636638&Site=&Menu=yes)</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -425,6 +497,11 @@
 -----
 * 1.一级栏目--产品，标识设置为 22
 * 2.一级栏目--钉钉，标识设置为 1
+* 3.二级栏目--功能，标识设置为 100
+* 4.三级栏目--价格，标识设置为 99
+* 5.二级栏目--官方博客，以及此栏目下的所有三级栏目，标识设置为 50
+* 6.二级栏目--更新日志，以及此栏目下的所有三级栏目，标识设置为 49
+* 7.二级栏目--服务条款，标识设置为 48
 
 需要进一步进行设置的二级栏目和三级栏目
 -----
@@ -572,7 +649,6 @@
 * 点击添加自定义标签，依次设置 类型--变量名--默认值--标题--说明--位置。以下列表按照顺序，列出所设置的变量。
 * 建议先设置分区，后设置所属分区的变量，便于查找和修改。
 * 如果选择 类型 为分区，可点击 编辑 选项中的 添加子选项 进行变量的添加。下面列表中的非分区类型(简短文本，多行文本等) 变量都是在最近一个分区下添加的（向上查找所属分区）。
-* 【说明】：下面表格中的`-----`分割线表示开发时每次提交代码所增加的自定义变量，方便协同开发时，增加设置对照。分区已经存在的，代表只是在这个分区下新增了变量而已。
 
 <table>
    <tr>
@@ -593,14 +669,6 @@
    </tr>
    <tr>
       <td>简短文本</td>
-      <td>met_dinglogo</td>
-      <td>/metinfo/upload/201803/1521540762.png</td>
-      <td>钉钉logo图片设置</td>
-      <td></td>
-      <td>全局</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
       <td>ding_url</td>
       <td>http://appcenter.dingtalk.com/detail.html?goodsCode=FW_GOODS-1000330934</td>
       <td>点击钉钉图片的跳转地址</td>
@@ -615,36 +683,13 @@
       <td></td>
       <td>全局</td>
    </tr>
-      <td>分区</td>
-      <td>service_list</td>
-      <td></td>
-      <td>服务列表</td>
-      <td></td>
-      <td>首页</td>
-   </tr>
    <tr>
       <td>简短文本</td>
-      <td>know_url</td>
-      <td>xxx</td>
-      <td>service_list模块链接地址</td>
+      <td>btn_text1</td>
+      <td>立即体验</td>
+      <td>按钮文字</td>
       <td></td>
-      <td>首页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>know_text</td>
-      <td>了解详情 ></td>
-      <td>service_list模块链接文字</td>
-      <td></td>
-      <td>首页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>solution_title</td>
-      <td>为各行各业提供全方位的解决方案</td>
-      <td>标题</td>
-      <td></td>
-      <td>首页</td>
+      <td>全局</td>
    </tr>
    <tr>
       <td>分区</td>
@@ -683,46 +728,6 @@
       <td>price_desc_3</td>
       <td>适用于大中型企业</td>
       <td>旗舰版描述</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-   </tr>
-   <tr>
-      <td>分区</td>
-      <td>met_banner</td>
-      <td></td>
-      <td>广告栏</td>
-      <td></td>
-      <td>全局</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>btn_text1</td>
-      <td>立即体验</td>
-      <td>banner按钮文字1</td>
-      <td></td>
-      <td>全局</td>
-   </tr>
-   <tr>
-      <td>分区</td>
-      <td>met_price</td>
-      <td></td>
-      <td>价格</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>btn_text2</td>
-      <td>免费使用</td>
-      <td>banner按钮文字2</td>
       <td></td>
       <td>列表页</td>
    </tr>
@@ -786,9 +791,6 @@
    <tr>
       <td>一级导航菜单禁止跳转</td>
       <td>支持|</td>
-   </tr>
-   <tr>
-      <td></td>
    </tr>
 </table>
 
@@ -1247,3 +1249,118 @@
 * 接着 返回到 内容设置页面，点击参数管理后面的 刷新 按钮，就可以看到刚才添加的参数了，依次按设计图上文字设置，注意价格一栏由于下角标的特殊显示，其参数需要填充为html形式，如免费版中是`0<sub>元/年</sub>`
 * 按照以上设置，依次设置免费版，专业版，企业版，旗舰版参数
 * 其中专业版，企业版，旗舰版的存储空间和文件大小一栏，同样由于一些文字的特殊样式显示，其参数也需要填充为html形式，如专业版中存储空间为`<span>50G</span>储存空间`，文件大小为`上传单个文件最大支持<span>1G</span>`。企业版和旗舰版同理。
+
+价格页`img_list_page`
+-----
+* 这部分的设置显示比较特殊，需从 栏目管理--价格--设置--栏目标题，设置为'谁在用日事清？'，就是此部分展示的标题；所以修改也需要到这里修改。图片的展示按照设计图上，在可视化后台中这部分的对应图片点击上传即可。
+
+价格页`news_list_page`
+-----
+* 同样，这部分的标题也需要从 栏目管理--价格--设置--栏目修饰名称，设置为'常见问题'；
+* 然后点击 内容，右上角选择 产品--价格--三级栏目，再添加内容，只需要设置标题(名称)和详细信息即可，这两个分别对应页面中的问题标题和答案。
+* 注意：点击 内容，选择 产品--价格--三级栏目 后，能看到四个已经存在的 免费版，专业版，企业版，旗舰版 列表，继续添加内容即可，只不过最后添加完问题以后，将列表排序更新正确即可。即前四个是价格详情中展示需要的，从第5个开始，是展示在此部分中的。
+
+下载页`download_list_page`内容
+-----
+* 1.设置
+<table>
+   <tr>
+      <td>标题颜色</td>
+      <td>#000000</td>
+   </tr>
+   <tr>
+      <td>鼠标经过颜色和按钮颜色及当前页的颜色</td>
+      <td>#5698db</td>
+   </tr>
+</table>
+
+* 2.内容
+* 点击 内容，右上角选择 下载，然后点击 添加内容，按照下面进行设置即可
+* 在弹窗的添加内容框中，先找到点击参数管理，新增两个参数，Windows 32位---所属栏目选择下载---排序0；Windows 64位---所属栏目选择下载---排序1，然后保存，回到内容设置弹窗页面，点击 刷新 按钮，即可看到参数设置中多了两个选项 Windows 32位 和 Windows 64位.
+* 然后只在 Windows 下载 中设置这两项参数，其它下载中这两项参数值为空
+* Windows 下载 中：
+* 1.Windows 32位---https://rishiqing-client.oss-cn-shenzhen.aliyuncs.com/pc-autoupdate/win/ia32/release/rishiqing-win-ia32-release-3.1.6.exe
+* 2.Windows 64位---https://rishiqing-client.oss-cn-shenzhen.aliyuncs.com/pc-autoupdate/win/x64/release/rishiqing-win-x64-release-3.1.6.exe
+
+<table>
+   <tr>
+      <td>所属栏目</td>
+      <td>标题</td>
+      <td>下载地址</td>
+      <td>详细内容</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>Windows 下载</td>
+      <td>void(0)</td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>MAC 下载</td>
+      <td colspan="2">https://rishiqing-client.oss-cn-shenzhen.aliyuncs.com/pc-autoupdate/mac/release/rishiqing-mac-release-3.1.4.dmg</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>网页版</td>
+      <td></td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>Android 下载</td>
+      <td>void(0)</td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>iOS 下载</td>
+      <td>void(0)</td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+   <tr>
+      <td>下载</td>
+      <td>微信公众号</td>
+      <td>void(0)</td>
+      <td>上传图片对应要展示的图片即可</td>
+   </tr>
+</table>
+
+官方博客页`news_list_page`
+-----
+1.设置
+<table>
+   <tr>
+      <td>列表展示</td>
+      <td>图文</td>
+   </tr>
+   <tr>
+      <td>新闻头条</td>
+      <td>关闭</td>
+   </tr>
+   <tr>
+      <td>区块背景色</td>
+      <td>#ffffff</td>
+   </tr>
+   <tr>
+      <td>标题字体颜色</td>
+      <td>#3d3d3d</td>
+   </tr>
+   <tr>
+      <td>描述字体颜色</td>
+      <td>#8c8c8c</td>
+   </tr>
+   <tr>
+      <td>点缀颜色</td>
+      <td>#b1b1b1</td>
+   </tr>
+</table>
+
+2.内容
+* 点击 内容，右上角选择 官方博客--官方公告，然后点击 添加内容，按照文章标题--详细内容--封面图上传设置即可
+* 依次按上面操作给几个部分添加文章
+
+3.点击任何一篇博客，进入博客详情页也可进行单独具体设置和内容
+
+更新日志页`news_list_page`
+* 同上面 官方博客 操作

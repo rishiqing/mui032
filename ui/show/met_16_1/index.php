@@ -1,5 +1,5 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
-<article class="$uicss met-show-body panel panel-body m-b-0 <if value="$ui['bg_type']">bgcolor<else/>bgpic</if>" boxmh-mh m-id='{$ui.mid}'>
+<article class="$uicss met-show-body panel panel-body m-b-0 <if value="$ui['bg_type']">bgcolor<else/>bgpic</if> <if value="$data['index_num'] eq 48">tos</if>" boxmh-mh m-id='{$ui.mid}'>
 <if value="$ui['container']">
 <div class="container-fluid">
 <else/>

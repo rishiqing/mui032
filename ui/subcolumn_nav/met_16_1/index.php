@@ -4,8 +4,21 @@
 <div class="$uicss" m-id='{$ui.mid}' m-type='nocontent'>
 	<div class="container">
 		<div class="subcolumn-nav text-xs-center">
-			<ul class="$uicss-ul m-b-0 p-y-30 p-x-0 ulstyle">
+			<ul class="$uicss-ul m-b-0 p-y-30 p-x-30 ulstyle <if value="$data['index_num'] eq 50">left</if>">
 				<tag action='category' cid="$data[releclass1]">
+				<if value="$data['index_num'] eq 50 || $data['index_num'] eq 49">
+					<tag action='category' cid="$m['id']" type='son' class="active">
+						<if value="$m['sub']">
+							<tag action='category' cid="$m['id']" type='son' class="active">
+							<if value="$data['bigclass'] eq $m['bigclass']">
+							<li>
+								<a href="{$m.url}" title="{$m.name}" class='{$m.class}'>{$m.name}</a>
+							</li>
+							</if>
+							</tag>
+						</if>
+					</tag>
+				<else/>
 				<if value="$m[module] neq 1">
 					<li>
 						<a href="{$m.url}"  title="{$ui.all}"
@@ -25,6 +38,8 @@
 						</li>
 					</if>
 				</if>
+				</if>
+				<if value="$data['index_num'] neq 50">
 				<tag action='category' cid="$m['id']" type='son' class="active">
 				<if value="$m['sub']">
 				<li class="dropdown">
@@ -44,6 +59,7 @@
 				</li>
 				</if>
 				</tag>
+				</if>
 				</tag>
 			</ul>
 		</div>

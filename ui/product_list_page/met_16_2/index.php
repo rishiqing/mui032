@@ -1,6 +1,7 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
 <tag action="category" type="current" cid="$data['class1']">
 <div class="$uicss met-product animsition <if value="$ui[product_pagetype] eq 1 && $m[index_num] neq 1">type-1</if><if value="$ui[product_pagetype] eq 2 && $m[index_num] neq 1">type-2</if><if value="$ui[product_pagetype] eq 3 && $m[index_num] neq 1">type-3</if>" m-id='{$ui.mid}'>
+<!-- 产品 一级栏目标识1 -->
 <if value="$m[index_num] eq 1 && !$c['met_product_page']">
 	<tag action='category' cid="$data['classnow']" type='son'>
         <if value="$m['_index'] lt $c['met_product_list']">
@@ -47,8 +48,10 @@
             </if>
         </if>
     </tag>
+    <!-- 产品 一级栏目标识22 -->
     <elseif value="$m[index_num] eq 22"/>
-        <if value="$data['classnow'] eq 137">
+    <!-- 价格页 栏目标识99 -->
+        <if value="$data['index_num'] eq 99">
     	<div class="pricing">
     		<div class="container">
     			<tag action='category' cid="$data['classnow']" type='current'>
@@ -57,6 +60,7 @@
     			</tag>
     			<div class="font-size-0">
                     <tag action='product.list' num="$c['met_product_list']">
+                        <if value="$v['_index'] lt 4">
                         <div class="pricing-column">
 							<div class="pricing-header">
 								<div class="package-title">
@@ -83,11 +87,19 @@
 								</div>
 							</div>
 							<ul class="package-features">
-                                <list data="$v['para']"  name='$para1'>
+                            <?php
+                                $arr = $v['para'];
+                                foreach($arr as $key => $value) {
+                                    if ($key > 0) {
+                                        echo '<li>'.$value['value'].'</li>';
+                                    }
+                                }
+                            ?>
+                                <!-- <list data="$v['para']"  name='$para1'>
                                     <if value="$para1['_index'] gt 0 && !$para1['_last']">
                                         <li>{$para1.value}</li>
                                     </if>
-					            </list>
+					            </list> -->
 							</ul>
 							<!-- <div class="signup">
                                 <list data="$v['para']"  name='$para2'>
@@ -98,11 +110,13 @@
                                 </list>
 							</div> -->
 						</div>
+                        </if>
 	    			</tag>
     			</div>
     		</div>
     	</div>
-        <elseif value="$data['classnow'] eq 153"/>
+        <!-- 功能页 栏目标识100 -->
+        <elseif value="$data['index_num'] eq 100"/>
         <tag action='category' cid="$data['classnow']" type='son'>
         <if value="$m['_index'] lt $c['met_product_list']">
             <div class="product_introduce text-xs-center">
@@ -117,7 +131,25 @@
         </if>
         </tag>
         </if>
-	<else/>
+	<elseif value="$data['index_num'] eq 98"/> <!-- 代理合作 -->
+    <tag action='product.list' num="$c['met_product_list']">
+        <div class="multi-agent text-xs-center">
+            <div class="container">
+                <h3 class="m-t-15 m-b-35">{$v.title}</h3>
+                <if value="$v['_index'] eq 0">
+                <ul class="list">
+                    <?php
+                       // 拿到相关参数
+                    ?>
+                </ul>
+                <elseif value="$v['_index'] eq 1"/>
+                <elseif value="$v['_index'] eq 2"/>
+                <elseif value="$v['_index'] eq 3"/>
+                </if>
+            </div>
+        </div>
+    </tag>
+    <else/>
 	<div class="<if value="$ui['product_pagetype'] eq 1">container<else/>container-fluid</if>">
     	<tag action='product.list' num="$c['met_product_list']"></tag>
 		<if value="$sub">

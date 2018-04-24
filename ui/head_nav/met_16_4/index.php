@@ -210,7 +210,21 @@
                                     </div>
                                 </div>
                                 <else/>
+                                <if value="$m['sub']">
+                                    <?php
+                                        $urlnew = $m['urlnew'];
+                                        $name = $m['name'];
+                                        $class = $m['class'];
+                                    ?>
+                                    <tag action='category' cid="$m['id']" type='son'>
+                                    <if value="$m['_index'] eq 0">
+                                    <?php $firstSubUrl = $m['url']; ?>
+                                    </if>
+                                    </tag>
+                                    <a href="<?php echo $firstSubUrl; ?>" <?php echo $urlnew.'title='.$name.'" class="dropdown-item border-top1 hassub "'.$class.'>'.$name.'</a>'; ?>
+                                <else/>
                                 <a href="{$m.url}" {$m.urlnew} title="{$m.name}" class='dropdown-item border-top1 hassub {$m.class}'>{$m.name}</a>
+                                </if>
                                 </if>
                                 </tag>
                             </div>

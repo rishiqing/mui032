@@ -27,142 +27,250 @@
       <td>导航栏显示</td>
       <td>所属模块</td>
       <td>目录名称</td>
+      <td>标识</td>
    </tr>
    <tr>
       <td>一级</td>
-      <td>0</td>
-      <td>产品</td>
-      <td>尾部导航条</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
-      <td>二级</td>
       <td>0</td>
       <td>功能</td>
       <td>头部主导航条</td>
       <td>产品模块</td>
       <td>product</td>
+      <td>100</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>0</td>
       <td>日程安排</td>
       <td>不显示</td>
       <td>产品模块</td>
       <td>product</td>
+      <td>0</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>1</td>
       <td>计划管理</td>
       <td>不显示</td>
       <td>产品模块</td>
       <td>product</td>
+      <td>0</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>2</td>
       <td>工作笔记</td>
       <td>不显示</td>
       <td>产品模块</td>
       <td>product</td>
+      <td>0</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>3</td>
       <td>在线云盘</td>
       <td>不显示</td>
       <td>产品模块</td>
       <td>product</td>
+      <td>0</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>4</td>
       <td>公司同事</td>
       <td>不显示</td>
       <td>产品模块</td>
       <td>product</td>
+      <td>0</td>
    </tr>
    <tr>
-      <td>二级</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>一级</td>
       <td>1</td>
       <td>价格</td>
       <td>头部主导航条</td>
       <td>产品模块</td>
-      <td>product</td>
+      <td>price</td>
+      <td>99</td>
    </tr>
    <tr>
       <td>二级</td>
+      <td>0</td>
+      <td>中国铁塔</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+      <td>0</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>1</td>
+      <td>SYKES</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+      <td>0</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>2</td>
+      <td>亚洲保理</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+      <td>0</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>3</td>
+      <td>昌河汽车</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+      <td>0</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>4</td>
+      <td>中原物流</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+      <td>0</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>5</td>
+      <td>华生集团</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+      <td>0</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>6</td>
+      <td>通威太阳能</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+      <td>0</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>7</td>
+      <td>四达人才</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+      <td>0</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>一级</td>
       <td>2</td>
       <td>下载</td>
       <td>头部主导航条</td>
       <td>下载模块</td>
       <td>download</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>3</td>
+      <td>解决方案</td>
+      <td>头部主导航条</td>
+      <td>文章模块</td>
+      <td>solution</td>
+      <td>46</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>0</td>
+      <td>互联网</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>solution</td>
+      <td>46</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>互联网文章1</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>solution</td>
+      <td>46</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>1</td>
+      <td>建筑</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>solution</td>
+      <td>46</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>建筑文章1</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>solution</td>
+      <td>46</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>2</td>
+      <td>制造业</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>solution</td>
+      <td>46</td>
    </tr>
    <tr>
       <td>二级</td>
       <td>3</td>
-      <td>更新日志</td>
+      <td>电商</td>
       <td>不显示</td>
       <td>文章模块</td>
-      <td>log</td>
-   </tr>
-   <tr>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-   </tr>
-   <tr>
-      <td>一级</td>
-      <td>1</td>
-      <td>使用</td>
-      <td>尾部导航条</td>
-      <td>简介模块</td>
-      <td>usage</td>
+      <td>solution</td>
+      <td>46</td>
    </tr>
    <tr>
       <td>二级</td>
       <td>4</td>
-      <td>解决方案</td>
-      <td>头部主导航条</td>
-      <td>图片模块</td>
+      <td>法律</td>
+      <td>不显示</td>
+      <td>文章模块</td>
       <td>solution</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>5</td>
-      <td>使用技巧</td>
-      <td>不显示</td>
-      <td>图片模块</td>
-      <td>skill</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>6</td>
-      <td>帮助中心</td>
-      <td>不显示</td>
-      <td>图片模块</td>
-      <td>help</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>7</td>
-      <td>产品手册</td>
-      <td>不显示</td>
-      <td>文章模块</td>
-      <td>manual</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>8</td>
-      <td>培训课程</td>
-      <td>不显示</td>
-      <td>文章模块</td>
-      <td>course</td>
+      <td>46</td>
    </tr>
    <tr>
       <td>－</td>
@@ -171,14 +279,34 @@
       <td>－</td>
       <td>－</td>
       <td>－</td>
+      <td></td>
    </tr>
    <tr>
       <td>一级</td>
-      <td>10</td>
+      <td>4</td>
       <td>使用方法</td>
       <td>头部主导航条</td>
-      <td>简介模块</td>
+      <td>文章模块</td>
       <td>method</td>
+      <td>45</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>0</td>
+      <td>使用方法1</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>method</td>
+      <td>45</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>使用方法文章1</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>method</td>
+      <td>45</td>
    </tr>
    <tr>
       <td>－</td>
@@ -187,14 +315,16 @@
       <td>－</td>
       <td>－</td>
       <td>－</td>
+      <td></td>
    </tr>
    <tr>
       <td>一级</td>
-      <td>11</td>
+      <td>5</td>
       <td>钉钉</td>
       <td>头部主导航条</td>
       <td>产品模块</td>
       <td>ding</td>
+      <td>1</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -203,6 +333,7 @@
       <td>不显示</td>
       <td>产品模块</td>
       <td>ding</td>
+      <td>0</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -211,6 +342,7 @@
       <td>不显示</td>
       <td>产品模块</td>
       <td>ding</td>
+      <td>0</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -219,6 +351,7 @@
       <td>不显示</td>
       <td>产品模块</td>
       <td>ding</td>
+      <td>0</td>
    </tr>
    <tr>
       <td>－</td>
@@ -227,14 +360,16 @@
       <td>－</td>
       <td>－</td>
       <td>－</td>
+      <td></td>
    </tr>
    <tr>
       <td>一级</td>
-      <td>12</td>
+      <td>6</td>
       <td>支持</td>
       <td>头部主导航条</td>
       <td>简介模块</td>
       <td>about</td>
+      <td>0</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -243,6 +378,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>about</td>
+      <td>0</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -251,6 +387,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>about</td>
+      <td>0</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -259,6 +396,7 @@
       <td>不显示</td>
       <td>图片模块</td>
       <td>img</td>
+      <td>0</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -267,6 +405,7 @@
       <td>不显示</td>
       <td>文章模块</td>
       <td>article</td>
+      <td>50</td>
    </tr>
    <tr>
       <td>三级</td>
@@ -275,6 +414,7 @@
       <td>不显示</td>
       <td>文章模块</td>
       <td>article</td>
+      <td>50</td>
    </tr>
    <tr>
       <td>三级</td>
@@ -283,6 +423,7 @@
       <td>不显示</td>
       <td>文章模块</td>
       <td>article</td>
+      <td>50</td>
    </tr>
    <tr>
       <td>三级</td>
@@ -291,6 +432,7 @@
       <td>不显示</td>
       <td>文章模块</td>
       <td>article</td>
+      <td>50</td>
    </tr>
    <tr>
       <td>三级</td>
@@ -299,6 +441,7 @@
       <td>不显示</td>
       <td>文章模块</td>
       <td>article</td>
+      <td>50</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -307,6 +450,7 @@
       <td>不显示</td>
       <td>文章模块</td>
       <td>toplog</td>
+      <td>49</td>
    </tr>
    <tr>
       <td>三级</td>
@@ -315,6 +459,7 @@
       <td>不显示</td>
       <td>文章模块</td>
       <td>toplog</td>
+      <td>49</td>
    </tr>
    <tr>
       <td>三级</td>
@@ -323,6 +468,7 @@
       <td>不显示</td>
       <td>文章模块</td>
       <td>toplog</td>
+      <td>49</td>
    </tr>
    <tr>
       <td>三级</td>
@@ -331,6 +477,7 @@
       <td>不显示</td>
       <td>文章模块</td>
       <td>toplog</td>
+      <td>49</td>
    </tr>
    <tr>
       <td>－</td>
@@ -339,6 +486,7 @@
       <td>－</td>
       <td>－</td>
       <td>－</td>
+      <td></td>
    </tr>
    <tr>
       <td>一级</td>
@@ -347,6 +495,7 @@
       <td>尾部导航条</td>
       <td>简介模块</td>
       <td>company</td>
+      <td>0</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -355,6 +504,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>company</td>
+      <td>47</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -363,6 +513,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>company</td>
+      <td></td>
    </tr>
    <tr>
       <td>二级</td>
@@ -371,6 +522,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>company</td>
+      <td></td>
    </tr>
    <tr>
       <td>二级</td>
@@ -379,6 +531,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>company</td>
+      <td></td>
    </tr>
    <tr>
       <td>二级</td>
@@ -387,6 +540,7 @@
       <td>不显示</td>
       <td>招聘模块</td>
       <td>job</td>
+      <td></td>
    </tr>
    <tr>
       <td>－</td>
@@ -395,6 +549,7 @@
       <td>－</td>
       <td>－</td>
       <td>－</td>
+      <td></td>
    </tr>
    <tr>
       <td>一级</td>
@@ -403,6 +558,7 @@
       <td>尾部导航条</td>
       <td>简介模块</td>
       <td>other</td>
+      <td></td>
    </tr>
    <tr>
       <td>二级</td>
@@ -411,6 +567,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>other</td>
+      <td></td>
    </tr>
    <tr>
       <td>二级</td>
@@ -419,6 +576,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>other</td>
+      <td></td>
    </tr>
    <tr>
       <td>二级</td>
@@ -426,6 +584,7 @@
       <td>申请友情链接</td>
       <td>不显示</td>
       <td colspan="2">外部模块(tencent://message/uin=3500636638&Site=&Menu=yes)</td>
+      <td></td>
    </tr>
    <tr>
       <td>二级</td>
@@ -434,6 +593,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>other</td>
+      <td></td>
    </tr>
    <tr>
       <td>－</td>
@@ -442,6 +602,7 @@
       <td>－</td>
       <td>－</td>
       <td>－</td>
+      <td></td>
    </tr>
    <tr>
       <td>一级</td>
@@ -450,6 +611,7 @@
       <td>不显示</td>
       <td>图片模块</td>
       <td>use</td>
+      <td></td>
    </tr>
    <tr>
       <td>－</td>
@@ -458,6 +620,7 @@
       <td>－</td>
       <td>－</td>
       <td>－</td>
+      <td></td>
    </tr>
    <tr>
       <td>一级</td>
@@ -466,6 +629,7 @@
       <td>不显示</td>
       <td>产品模块</td>
       <td>introduce</td>
+      <td></td>
    </tr>
    <tr>
       <td>－</td>
@@ -474,6 +638,7 @@
       <td>－</td>
       <td>－</td>
       <td>－</td>
+      <td></td>
    </tr>
    <tr>
       <td>一级</td>
@@ -482,6 +647,7 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>animate</td>
+      <td></td>
    </tr>
    <tr>
       <td>二级</td>
@@ -490,23 +656,14 @@
       <td>不显示</td>
       <td>产品模块</td>
       <td>show</td>
+      <td></td>
    </tr>
 </table>
-
-需要特殊设置标识的栏目(其它无说明的默认为0即可)
------
-* 1.一级栏目--产品，标识设置为 22
-* 2.一级栏目--钉钉，标识设置为 1
-* 3.二级栏目--功能，标识设置为 100
-* 4.三级栏目--价格，标识设置为 99
-* 5.二级栏目--官方博客，以及此栏目下的所有三级栏目，标识设置为 50
-* 6.二级栏目--更新日志，以及此栏目下的所有三级栏目，标识设置为 49
-* 7.二级栏目--服务条款，标识设置为 48
 
 需要进一步进行设置的二级栏目和三级栏目
 -----
 * 1.一级栏目--产品动画列表，是在首页`custom_list`部分中用到的，其下面的1个二级栏目，也需要进一步进行设置。同理，需要进行描述和栏目图片的设置。
-* 2.二级栏目--功能，是在 功能 这个列表页用到的，其下面的5个三级栏目，需要进一步设置描述以及栏目图片。
+* 2.一级栏目--功能，是在 功能 这个列表页用到的，其下面的5个二级栏目，需要进一步设置描述以及栏目图片。
 * 3.一级栏目--钉钉，是在 钉钉 这个列表页用到的，其下面的3个二级栏目，需要进一步设置描述以及栏目图片。
 
 风格--Banner管理
@@ -690,46 +847,6 @@
       <td>按钮文字</td>
       <td></td>
       <td>全局</td>
-   </tr>
-   <tr>
-      <td>分区</td>
-      <td>met_price</td>
-      <td></td>
-      <td>价格</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>price_desc_0</td>
-      <td>适用于个人</td>
-      <td>免费版描述</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>price_desc_1</td>
-      <td>适用于个人或微型团队</td>
-      <td>专业版描述</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>price_desc_2</td>
-      <td>适用于部门或企业</td>
-      <td>企业版描述</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>price_desc_3</td>
-      <td>适用于大中型企业</td>
-      <td>旗舰版描述</td>
-      <td></td>
-      <td>列表页</td>
    </tr>
 </table>
 
@@ -1229,20 +1346,109 @@
 
 <table>
    <tr>
+      <td>名称</td>
+      <td>字段类型</td>
       <td>所属栏目</td>
+      <td>访问权限</td>
+      <td>排序</td>
+   </tr>
+   <tr>
       <td>价格</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>0</td>
    </tr>
    <tr>
-      <td>标题（名称）</td>
-      <td>免费版</td>
+      <td>储存空间</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>1</td>
    </tr>
    <tr>
-      <td>展示图片</td>
-      <td></td>
+      <td>文件大小</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>2</td>
    </tr>
    <tr>
-      <td>参数管理</td>
-      <td>按下面表格新增参数</td>
+      <td>功能1</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>3</td>
+   </tr>
+   <tr>
+      <td>功能2</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>4</td>
+   </tr>
+   <tr>
+      <td>功能3</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>5</td>
+   </tr>
+   <tr>
+      <td>功能4</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>6</td>
+   </tr>
+   <tr>
+      <td>功能5</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>7</td>
+   </tr>
+   <tr>
+      <td>功能6</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>8</td>
+   </tr>
+   <tr>
+      <td>功能7</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>9</td>
+   </tr>
+   <tr>
+      <td>功能8</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>10</td>
+   </tr>
+   <tr>
+      <td>功能9</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>11</td>
+   </tr>
+   <tr>
+      <td>功能10</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>12</td>
+   </tr>
+   <tr>
+      <td>功能11</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>13</td>
    </tr>
 </table>
 

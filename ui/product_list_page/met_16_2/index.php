@@ -48,10 +48,8 @@
             </if>
         </if>
     </tag>
-    <!-- 产品 一级栏目标识22 -->
-    <elseif value="$m[index_num] eq 22"/>
     <!-- 价格页 栏目标识99 -->
-        <if value="$data['index_num'] eq 99">
+    <elseif value="$data['index_num'] eq 99"/>
     	<div class="pricing">
     		<div class="container">
     			<tag action='category' cid="$data['classnow']" type='current'>
@@ -65,10 +63,7 @@
 							<div class="pricing-header">
 								<div class="package-title">
                                     <h2>{$v.title}</h2>
-                                    <if value="$v[_index] eq 0"><p>{$lang.price_desc_0}</p></if>
-                                    <if value="$v[_index] eq 1"><p>{$lang.price_desc_1}</p></if>
-                                    <if value="$v[_index] eq 2"><p>{$lang.price_desc_2}</p></if>
-                                    <if value="$v[_index] eq 3"><p>{$lang.price_desc_3}</p></if>
+                                    {$v.content}
                                 </div>
 								<div class="package-value">
 									<list data="$v['para']"  name='$para'>
@@ -116,7 +111,7 @@
     		</div>
     	</div>
         <!-- 功能页 栏目标识100 -->
-        <elseif value="$data['index_num'] eq 100"/>
+    <elseif value="$data['index_num'] eq 100"/>
         <tag action='category' cid="$data['classnow']" type='son'>
         <if value="$m['_index'] lt $c['met_product_list']">
             <div class="product_introduce text-xs-center">
@@ -130,7 +125,6 @@
             </div>
         </if>
         </tag>
-        </if>
 	<elseif value="$data['index_num'] eq 98"/> <!-- 代理合作 -->
     <tag action='product.list' num="$c['met_product_list']">
         <div class="multi-agent text-xs-center">

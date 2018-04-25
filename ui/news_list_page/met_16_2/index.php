@@ -25,7 +25,7 @@
             </div>
         </div>
     <else/>
-    <main class="$uicss met-news <if value="$data['index_num'] eq 46 || $data['index_num'] eq 45">m-t-70</if>">
+    <main class="$uicss met-news <if value="!$m['nav'] && ($data['index_num'] eq 46 || $data['index_num'] eq 45)">m-t-70</if>">
         <div class="container">
             <div class="row">
                 <tag action='news.list' num="$c['met_news_list']"></tag>

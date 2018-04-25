@@ -4,12 +4,7 @@
         <div class="row">
             <tag action='img.list' num="$c['met_img_list']"></tag>
             <if value="$sub">
-            <ul class="<if value="$ui['img_column_xs'] eq 1">
-                        blocks-100
-                        <else/>
-                        blocks-xs-{$ui.img_column_xs}
-                        </if>
-                        blocks-md-{$ui.img_column_sm} blocks-lg-{$ui.img_column_md} blocks-xxl-{$ui.img_column_xlg}  no-space met-pager-ajax imagesize met-img-list" data-scale='{$c.met_imgs_y}x{$c.met_imgs_x}' m-id='{$ui.mid}'>
+            <ul class="no-space met-pager-ajax imagesize met-img-list" data-scale='{$c.met_imgs_y}x{$c.met_imgs_x}' m-id='{$ui.mid}'>
                 <include file='ui_ajax/img'/>
             </ul>
             <if value="!$c['met_img_page'] || !$data['sub']">

@@ -1,22 +1,22 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
-<div class="$uicss" m-id='{$ui.mid}' m-type='foot_nav'>
+<div class="$uicss" m-id='{$ui.mid}'>
 	<div class="container">
 		<div class="row mob-masonry">
-			<tag action='category' type='foot'>
-			<if value="$m['_index'] lt 4">
+			<tag action='category' cid="$ui['id']" type='son'>
 			<div class="col-lg-3 col-md-3 col-xs-6 list masonry-item">
 				<h4 class='font-size-20 m-t-0' title="{$m.name}">{$m.name}</h4>
-				<if value="$m['sub']">
 				<ul class='ulstyle m-b-0'>
-					<tag action='category' cid="$m['id']" type='son' num={$ui.num}>
+					<tag action='list' cid="$m['id']">
 					<li>
-						<a href="{$m.url}" {$m.urlnew} title="{$m.name}">{$m.name}</a>
+						<if value="$v.links">
+							<a href="{$v.links}" title="{$v.title}">{$v.title}</a>
+						<else/>
+							<span>{$v.title}</span>
+						</if>
 					</li>
 					</tag>
 				</ul>
-				</if>
 			</div>
-			</if>
 			</tag>
 			<!-- <div class="col-lg-3 col-md-12 col-xs-12 info masonry-item">
 				<if value="$ui['footinfo_tel']">

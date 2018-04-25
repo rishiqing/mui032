@@ -24,6 +24,7 @@ $uicss-ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 $uicss-ul.left {
   justify-content: left;
@@ -57,8 +58,22 @@ $uicss-ul li a {
 $uicss-ul li a {
   color: $titlecolor$;
 }
-$uicss-ul li .dropdown-menu {
-  top: 40px;
+$uicss-ul li .sub-list {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+$uicss-ul li .sub-list a {
+  font-size: 14px;
+  color: #97ACC1;
+  padding: 3px 16px;
+}
+$uicss-ul li .sub-list div:nth-child(n+2) {
+  margin-left: 34px;
 }
 $uicss .product-search .form-control:focus {
   border-color: $thirdcolor$;

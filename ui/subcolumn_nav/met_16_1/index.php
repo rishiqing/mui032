@@ -6,11 +6,11 @@
 		<div class="subcolumn-nav text-xs-center">
 			<ul class="$uicss-ul m-b-0 p-y-30 p-x-30 ulstyle <if value="$data['index_num'] eq 50">left</if>">
 				<tag action='category' cid="$data[releclass1]">
-				<if value="$data['index_num'] eq 50 || $data['index_num'] eq 49">
+				<if value="$data['index_num'] eq 50 || $data['index_num'] eq 49 || $data['index_num'] eq 47">
 					<tag action='category' cid="$m['id']" type='son' class="active">
 						<if value="$m['sub']">
 							<tag action='category' cid="$m['id']" type='son' class="active">
-							<if value="$data['bigclass'] eq $m['bigclass']">
+							<if value="$data['bigclass'] eq $m['bigclass'] || $data['classnow'] eq $m['bigclass']">
 							<li>
 								<a href="{$m.url}" title="{$m.name}" class='{$m.class}'>{$m.name}</a>
 							</li>
@@ -42,16 +42,22 @@
 				<if value="$data['index_num'] neq 50">
 				<tag action='category' cid="$m['id']" type='son' class="active">
 				<if value="$m['sub']">
-				<li class="dropdown">
-					<a href="{$m.url}" title="{$m.name}" class="dropdown-toggle {$m.class}" data-toggle="dropdown">{$m.name}</a>
-					<div class="dropdown-menu animate">
+				<li>
+					<a href="{$m.url}" title="{$m.name}" class="{$m.class}">{$m.name}</a>
+					<if value="$m['id'] eq $data['class2']">
+					<div class="sub-list">
 						<if value="$m['module'] neq 1">
-							<a href="{$m.url}"  title="{$ui.all}" class='dropdown-item {$m.class}'>{$ui.all}</a>
+							<div>
+								<a href="{$m.url}"  title="{$ui.all}" class='{$m.class}'>{$ui.all}</a>
+							</div>
 						</if>
 						<tag action='category' cid="$m['id']" type='son' class="active">
-						<a href="{$m.url}" title="{$m.name}" class='dropdown-item {$m.class}'>{$m.name}</a>
+						<div>
+						<a href="{$m.url}" title="{$m.name}" class='{$m.class}'>{$m.name}</a>
+						</div>
 						</tag>
 					</div>
+					</if>
 				</li>
 				<else/>
 				<li>

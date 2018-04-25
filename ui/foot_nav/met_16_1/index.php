@@ -9,9 +9,24 @@
 				<if value="$m['sub']">
 				<ul class='ulstyle m-b-0'>
 					<tag action='category' cid="$m['id']" type='son' num={$ui.num}>
+					<if value="$m['index_num'] eq 47 && $m['sub']">
+							<?php
+                 $urlnew = $m['urlnew'];
+                 $name = $m['name'];
+              ?>
+              <tag action='category' cid="$m['id']" type='son'>
+	              <if value="$m['_index'] eq 0">
+	              <?php $firstSubUrl = $m['url']; ?>
+	              </if>
+              </tag>
+              <li>
+              	<a href="<?php echo $firstSubUrl; ?>" <?php echo $urlnew.'title='.$name.'>'.$name.'</a>'; ?>
+              </li>
+					<else/>
 					<li>
 						<a href="{$m.url}" {$m.urlnew} title="{$m.name}">{$m.name}</a>
 					</li>
+					</if>
 					</tag>
 				</ul>
 				</if>

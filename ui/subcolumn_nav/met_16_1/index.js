@@ -23,6 +23,12 @@ METUI_FUN['$uicss'] = {
                 }
             })
         }
+        // 其它子栏目active时去掉"全部"的active
+        var $link_list = METUI['$uicss'].find('.sub-list div+div a.active');
+        if ($link_list && $link_list.length) {
+            var $all_link = METUI['$uicss'].find('.sub-list div:first-child a');
+            $all_link.removeClass('active');
+        }
     }
 };
 var x = new metui(METUI_FUN['$uicss']);

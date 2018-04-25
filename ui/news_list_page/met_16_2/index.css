@@ -73,7 +73,6 @@ $uicss.met-news .met-news-body {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 $uicss .met-news-list {
-  padding: 0 30px;
   background: #fff;
 }
 $uicss .met-news-list .ulstyle {
@@ -85,7 +84,7 @@ $uicss .met-news-list li {
   height: 320px;
   border: 1px solid #E5E5E5;
   padding: 16px 16px 10px;
-  margin-left: 32px;
+  margin-left: 52px;
   display: flex;
 }
 $uicss .met-news-list li:nth-child(4n+1) {
@@ -231,6 +230,25 @@ $uicss .met-news-list .card-body p.m-b-0 {
     $uicss .met-news-list li .media-body {
     margin-top: 15px;
   }
+}
+/*使用方法页三列 其它四列*/
+$uicss .met-news-list .usage-list li {
+  width: 360px;
+  height: 278px;
+  margin-left: 66px;
+  margin-top: 0;
+}
+$uicss .met-news-list .usage-list li:nth-child(3n+1) {
+  margin-left: 0;
+}
+$uicss .met-news-list .usage-list li:nth-child(n+4) {
+  margin-top: 48px;
+}
+$uicss .met-news-list .usage-list li h4 {
+  -webkit-line-clamp: 1;
+}
+$uicss .met-news-list .usage-list li p.des {
+  -webkit-line-clamp: 1;
 }
 /*价格页 常见问题列表*/
 $uicss.common-questions-list {

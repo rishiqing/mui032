@@ -25,7 +25,7 @@
             </div>
         </div>
     <else/>
-    <main class="$uicss met-news">
+    <main class="$uicss met-news <if value="$data['index_num'] eq 46 || $data['index_num'] eq 45">m-t-70</if>">
         <div class="container">
             <div class="row">
                 <tag action='news.list' num="$c['met_news_list']"></tag>
@@ -35,7 +35,7 @@
                         <div class="row">
                     </if>
                     <div class="met-news-list">
-                        <ul class="ulstyle met-pager-ajax imagesize" data-scale='{$c.met_newsimg_y}x{$c.met_newsimg_x}' m-id='{$ui.mid}'>
+                        <ul class="ulstyle met-pager-ajax imagesize <if value="$data['index_num'] eq 45">usage-list</if>" data-scale='{$c.met_newsimg_y}x{$c.met_newsimg_x}' m-id='{$ui.mid}'>
                             <include file='ui_ajax/news'/>
                         </ul>
                         <div class='m-t-20 text-xs-center hidden-sm-down' m-type="nosysdata">

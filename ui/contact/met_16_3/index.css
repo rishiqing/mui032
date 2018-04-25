@@ -1,0 +1,37 @@
+$uicss {
+  text-align: center;
+  background: #F9FCFF;
+  padding: 50px 0;
+}
+$uicss .title {
+  font-size: 23px;
+  color: #3D3D3D;
+  letter-spacing: 0.64px;
+  line-height: 43px;
+}
+$uicss .detail {
+  margin-bottom: 47px;
+}
+$uicss .detail > div {
+  display: inline-block;
+  width: 220px;
+}
+$uicss .detail > div > i {
+  color: #5698DB;
+  font-size: 25px;
+}
+$uicss .detail > div > span {
+  display: inline-block;
+  line-height: 39px;
+  font-size: 18px;
+  color: #3D3D3D;
+  vertical-align: top;
+}
+$uicss .operate > a {
+  background: #0E6DCE;
+  border-radius: 100px;
+  font-size: 14px;
+  color: #FFF;
+  padding: 10px 25px;
+  display: inline-block;
+}

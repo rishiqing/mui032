@@ -6028,6 +6028,111 @@
                     }
                 ]
             }
+        },
+        "agency": {
+            "50": {
+                "installid": "50",
+                "parent_name": "contact",
+                "ui_name": "met_16_3",
+                "skin_name": "mui032",
+                "ui_page": "agency",
+                "ui_title": "联系人模块",
+                "ui_description": "联系人模块",
+                "ui_order": "0",
+                "ui_version": "1.0",
+                "config": [
+                    {
+                        "pid": "50",
+                        "parent_name": "contact",
+                        "ui_name": "met_16_3",
+                        "uip_type": "2",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "title",
+                        "uip_key": "title-1",
+                        "uip_value": "申请代理方式",
+                        "uip_default": "标题",
+                        "uip_title": "标题",
+                        "uip_description": "",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "50",
+                        "parent_name": "contact",
+                        "ui_name": "met_16_3",
+                        "uip_type": "2",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "name",
+                        "uip_key": "name-1",
+                        "uip_value": "袁小蛟",
+                        "uip_default": "名字",
+                        "uip_title": "联系人名字",
+                        "uip_description": "",
+                        "uip_order": "1"
+                    },
+                    {
+                        "pid": "50",
+                        "parent_name": "contact",
+                        "ui_name": "met_16_3",
+                        "uip_type": "2",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "phone",
+                        "uip_key": "phone-1",
+                        "uip_value": "13501197217",
+                        "uip_default": "电话",
+                        "uip_title": "联系人电话",
+                        "uip_description": "",
+                        "uip_order": "2"
+                    },
+                    {
+                        "pid": "50",
+                        "parent_name": "contact",
+                        "ui_name": "met_16_3",
+                        "uip_type": "2",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "wx",
+                        "uip_key": "wx-1",
+                        "uip_value": "bjyxj8888",
+                        "uip_default": "rishiqing_123",
+                        "uip_title": "联系人微信号",
+                        "uip_description": "",
+                        "uip_order": "3"
+                    },
+                    {
+                        "pid": "50",
+                        "parent_name": "contact",
+                        "ui_name": "met_16_3",
+                        "uip_type": "2",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "button_name",
+                        "uip_key": "button_name-1",
+                        "uip_value": "填写报名表",
+                        "uip_default": "填写报名表",
+                        "uip_title": "底部链接名字",
+                        "uip_description": "",
+                        "uip_order": "4"
+                    },
+                    {
+                        "pid": "50",
+                        "parent_name": "contact",
+                        "ui_name": "met_16_3",
+                        "uip_type": "2",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "button_url",
+                        "uip_key": "button_url",
+                        "uip_value": "https://www.rishiqing.com",
+                        "uip_default": "https://www.rishiqing.com",
+                        "uip_title": "底部链接",
+                        "uip_description": "",
+                        "uip_order": "5"
+                    }
+                ]
+            }
         }
     },
     "global": [

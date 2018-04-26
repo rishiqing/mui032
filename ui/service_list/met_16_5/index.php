@@ -29,7 +29,7 @@
 			            <h3>{$v.title}</h3>
 									<p>{$v.description}</p>
 									<if value="$data['classnow'] eq 10001">
-						      <a href="{$v.url}">{$lang.know_text}</a>
+						      <a href="{$v.url}">{$v.ctitle}</a>
 									</if>
 			          </div>
 							<!-- <if value="$ui['link_ok']">

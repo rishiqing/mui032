@@ -4,9 +4,10 @@
 <div class="$uicss" m-id='{$ui.mid}' m-type='nocontent'>
 	<div class="container">
 		<div class="subcolumn-nav text-xs-center">
-			<ul class="$uicss-ul m-b-0 p-y-30 ulstyle <if value="$data['index_num'] eq 50">left</if>">
+			<ul class="$uicss-ul m-b-0 p-y-30 ulstyle <if value="$data['foldername'] eq 'article' ">left</if>">
 				<tag action='category' cid="$data[releclass1]">
-				<if value="$data['index_num'] eq 50 || $data['index_num'] eq 49 || $data['index_num'] eq 47">
+					<!-- 官方博客/更新日志 -->
+				<if value="$data['foldername'] eq 'article' || $data['foldername'] eq 'toplog' ">
 					<tag action='category' cid="$m['id']" type='son' class="active">
 						<if value="$m['sub']">
 							<tag action='category' cid="$m['id']" type='son' class="active">
@@ -28,7 +29,7 @@
 						>{$ui.all}</a>
 					</li>
 				<else/>
-					<if value="$m[isshow]">
+					<if value="$m[isshow] && $m['foldername'] neq 'company'">
 						<li>
 							<a href="{$m.url}"  title="{$m.name}"
 							<if value="$data['classnow'] eq $m['id']">
@@ -39,7 +40,7 @@
 					</if>
 				</if>
 				</if>
-				<if value="$data['index_num'] neq 50">
+				<if value="$data['foldername'] neq 'article' && $data['foldername'] neq 'toplog'">
 				<tag action='category' cid="$m['id']" type='son' class="active">
 				<if value="$m['sub']">
 				<li>

@@ -1,5 +1,5 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
-<main class="$uicss <if value="$data['index_num'] eq 99">partners-list</if>">
+<main class="$uicss <if value="$data['foldername'] eq 'price' ">partners-list</if>">
     <div class="<if value="$ui[style]">container-fliud<else/>container</if>">
         <div class="row">
             <tag action='img.list' num="$c['met_img_list']"></tag>
@@ -17,7 +17,7 @@
                 </button>
             </div>
             </if>
-            <elseif value="$data['index_num'] eq 99" /> <!-- 价格页 -->
+            <elseif value="$data['foldername'] eq 'price' " /> <!-- 价格页 -->
             <h3 class="text-xs-center m-b-45 m-t-0">{$data['ctitle']}</h3>
             <!-- 读取价格页面下面的子栏目图片 -->
             <ul class="partners-img-list">

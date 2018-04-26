@@ -1,6 +1,6 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
 <tag action="category" type="current" cid="$data['classnow']">
-    <if value="$data['index_num'] eq 99"><!-- 价格页 常见问题部分 -->
+    <if value="$data['foldername'] eq 'price' "><!-- 价格页 常见问题部分 -->
         <div class="$uicss common-questions-list">
             <div class="container">
                 <h3 class="text-xs-center m-t-0">{$data['namemark']}</h3>
@@ -25,7 +25,7 @@
             </div>
         </div>
     <else/>
-    <main class="$uicss met-news <if value="!$m['nav'] && ($data['index_num'] eq 46 || $data['index_num'] eq 45)">m-t-70</if>">
+    <main class="$uicss met-news <if value="!$m['nav'] && ($data['foldername'] eq 'solution' || $data['foldername'] eq 'method')">m-t-70</if>"><!-- 解决方案和使用方法的 全部 -->
         <div class="container">
             <div class="row">
                 <tag action='news.list' num="$c['met_news_list']"></tag>
@@ -35,7 +35,7 @@
                         <div class="row">
                     </if>
                     <div class="met-news-list">
-                        <ul class="ulstyle met-pager-ajax imagesize <if value="$data['index_num'] eq 45">usage-list</if>" data-scale='{$c.met_newsimg_y}x{$c.met_newsimg_x}' m-id='{$ui.mid}'>
+                        <ul class="ulstyle met-pager-ajax imagesize <if value="$data['foldername'] eq 'method' ">usage-list</if>" data-scale='{$c.met_newsimg_y}x{$c.met_newsimg_x}' m-id='{$ui.mid}'>
                             <include file='ui_ajax/news'/>
                         </ul>
                         <div class='m-t-20 text-xs-center hidden-sm-down' m-type="nosysdata">

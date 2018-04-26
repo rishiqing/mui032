@@ -48,11 +48,18 @@ $uicss .list h4 {
 $uicss .list ul li {
   margin-bottom: 10px;
 }
+$uicss .list ul li span {
+  color: $firstcolor$;
+  font-size: 13px;
+}
 $uicss .list ul li a {
   color: $firstcolor$;
   font-size: 13px;
 }
 $uicss .list ul li a {
+  color: $son_color$;
+}
+$uicss .list ul li span {
   color: $son_color$;
 }
 $uicss .info a {

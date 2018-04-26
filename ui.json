@@ -876,7 +876,37 @@
                         "uip_default": "",
                         "uip_title": "应用服务商logo",
                         "uip_description": "建议上传宽为180px高60px的logo",
-                        "uip_order": "1"
+                        "uip_order": "2"
+                    },
+                    {
+                        "pid": "1",
+                        "parent_name": "head_nav",
+                        "ui_name": "met_16_4",
+                        "uip_type": "2",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "server_name",
+                        "uip_key": "server_name",
+                        "uip_value": "",
+                        "uip_default": "",
+                        "uip_title": "应用服务商名字",
+                        "uip_description": "图片alt及title文字",
+                        "uip_order": "3"
+                    },
+                    {
+                        "pid": "1",
+                        "parent_name": "head_nav",
+                        "ui_name": "met_16_4",
+                        "uip_type": "2",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "server_link",
+                        "uip_key": "server_link",
+                        "uip_value": "http:\/\/localhost\/metinfo\/",
+                        "uip_default": "",
+                        "uip_title": "应用服务商链接",
+                        "uip_description": "",
+                        "uip_order": "4"
                     },
                     {
                         "pid": "1",
@@ -891,7 +921,7 @@
                         "uip_default": "1",
                         "uip_title": "导航固定",
                         "uip_description": "固定状态下页面往下滚动时，导航也会跟随。",
-                        "uip_order": "1"
+                        "uip_order": "5"
                     },
                     {
                         "pid": "1",
@@ -906,7 +936,7 @@
                         "uip_default": "0",
                         "uip_title": "导航间距",
                         "uip_description": "仅支持5的倍数（0\/5\/10\/15\/20...最大50）<br\/>不同网站的导航数量不同，根据需求适当调整间距，让网站更协调。",
-                        "uip_order": "2"
+                        "uip_order": "6"
                     },
                     {
                         "pid": "1",
@@ -921,7 +951,7 @@
                         "uip_default": "1",
                         "uip_title": "导航下拉菜单",
                         "uip_description": "",
-                        "uip_order": "3"
+                        "uip_order": "7"
                     },
                     {
                         "pid": "1",
@@ -936,7 +966,7 @@
                         "uip_default": "1",
                         "uip_title": "下拉展示",
                         "uip_description": "无指向标时会有动画效果",
-                        "uip_order": "4"
+                        "uip_order": "8"
                     },
                     {
                         "pid": "1",
@@ -951,7 +981,7 @@
                         "uip_default": "1",
                         "uip_title": "下拉方式",
                         "uip_description": "",
-                        "uip_order": "5"
+                        "uip_order": "9"
                     },
                     {
                         "pid": "1",
@@ -966,7 +996,7 @@
                         "uip_default": "",
                         "uip_title": "导航禁用下拉菜单",
                         "uip_description": "多个菜单以\"|\"分割，填写格式为：xxx|xxx",
-                        "uip_order": "6"
+                        "uip_order": "10"
                     },
                     {
                         "pid": "1",
@@ -981,7 +1011,7 @@
                         "uip_default": "1",
                         "uip_title": "会员注册开关",
                         "uip_description": "在系统会员注册开启的前提下进行设置",
-                        "uip_order": "7"
+                        "uip_order": "11"
                     },
                     {
                         "pid": "1",
@@ -996,7 +1026,7 @@
                         "uip_default": "全部",
                         "uip_title": "全部文字",
                         "uip_description": "手机端文字",
-                        "uip_order": "9"
+                        "uip_order": "12"
                     },
                     {
                         "pid": "1",

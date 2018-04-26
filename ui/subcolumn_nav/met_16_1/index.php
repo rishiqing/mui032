@@ -4,7 +4,7 @@
 <div class="$uicss" m-id='{$ui.mid}' m-type='nocontent'>
 	<div class="container">
 		<div class="subcolumn-nav text-xs-center">
-			<ul class="$uicss-ul m-b-0 p-y-30 p-x-30 ulstyle <if value="$data['index_num'] eq 50">left</if>">
+			<ul class="$uicss-ul m-b-0 p-y-30 ulstyle <if value="$data['index_num'] eq 50">left</if>">
 				<tag action='category' cid="$data[releclass1]">
 				<if value="$data['index_num'] eq 50 || $data['index_num'] eq 49 || $data['index_num'] eq 47">
 					<tag action='category' cid="$m['id']" type='son' class="active">

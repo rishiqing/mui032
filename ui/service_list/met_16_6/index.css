@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* 培训课程时间管理 */
+$uicss {
+  background: #F9FCFF;
+  padding: 120px 0;
+}
+$uicss .time-manage {
+  display: flex;
+  justify-content: center;
+}
+$uicss .detail {
+  margin-left: 12px;
+}
+$uicss h3 {
+  font-size: 23px;
+  color: #3D3D3D;
+  letter-spacing: 0.64px;
+  margin-bottom: 2px;
+}
+$uicss p {
+  font-size: 14px;
+  color: #8C8C8C;
+}
+$uicss a {
+  width: 150px;
+  height: 46px;
+  line-height: 46px;
+  background: #0E6DCE;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 27px;
+}

@@ -8,24 +8,25 @@ $uicss .title {
   color: #3D3D3D;
   letter-spacing: 0.64px;
   line-height: 43px;
+  font-weight: 700;
 }
 $uicss .detail {
   margin-bottom: 47px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
 }
 $uicss .detail > div {
-  display: inline-block;
   width: 220px;
-}
-$uicss .detail > div > i {
-  color: #5698DB;
-  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 $uicss .detail > div > span {
-  display: inline-block;
   line-height: 39px;
   font-size: 18px;
   color: #3D3D3D;
-  vertical-align: top;
+  margin-left: 10px;
 }
 $uicss .operate > a {
   background: #0E6DCE;

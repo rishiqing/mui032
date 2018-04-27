@@ -819,6 +819,64 @@
                         "uip_order": "21"
                     }
                 ]
+            },
+            "52": {
+                "installid": "52",
+                "parent_name": "img_list_page",
+                "ui_name": "met_16_1",
+                "skin_name": "mui032",
+                "ui_page": "index",
+                "ui_title": "图片模块列表",
+                "ui_description": "",
+                "ui_order": "1",
+                "ui_version": "1.4",
+                "config": [
+                    {
+                        "pid": "52",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "4",
+                        "uip_style": "0",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "52",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
+                    },
+                    {
+                        "pid": "52",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "9",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "bgcolor",
+                        "uip_key": "bgcolor-1",
+                        "uip_value": "",
+                        "uip_default": "",
+                        "uip_title": "区块背景色",
+                        "uip_description": "默认为网页背景调",
+                        "uip_order": "2"
+                    }
+                ]
             }
         },
         "head": {
@@ -3656,6 +3714,21 @@
                         "pid": "11",
                         "parent_name": "img_list_page",
                         "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
+                    },
+                    {
+                        "pid": "11",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
                         "uip_type": "2",
                         "uip_style": "0",
                         "uip_select": "",
@@ -3665,7 +3738,7 @@
                         "uip_default": "浏览",
                         "uip_title": "按钮文字",
                         "uip_description": "",
-                        "uip_order": "1"
+                        "uip_order": "2"
                     },
                     {
                         "pid": "11",
@@ -3680,7 +3753,7 @@
                         "uip_default": "1",
                         "uip_title": "展示样式",
                         "uip_description": "",
-                        "uip_order": "1"
+                        "uip_order": "3"
                     },
                     {
                         "pid": "11",
@@ -3695,7 +3768,7 @@
                         "uip_default": "4",
                         "uip_title": "大尺寸电脑显示列数",
                         "uip_description": "大尺寸电脑：浏览器宽度大于1600像素",
-                        "uip_order": "3"
+                        "uip_order": "4"
                     },
                     {
                         "pid": "11",
@@ -3710,7 +3783,7 @@
                         "uip_default": "4",
                         "uip_title": "普通电脑显示列数",
                         "uip_description": "普通电脑：浏览器宽度大于992像素小于1600像素",
-                        "uip_order": "4"
+                        "uip_order": "5"
                     },
                     {
                         "pid": "11",
@@ -3725,7 +3798,7 @@
                         "uip_default": "2",
                         "uip_title": "平板显示列数",
                         "uip_description": "平板：浏览器宽度大于768像素小于992像素",
-                        "uip_order": "5"
+                        "uip_order": "6"
                     },
                     {
                         "pid": "11",
@@ -3740,7 +3813,7 @@
                         "uip_default": "1",
                         "uip_title": "手机显示列数",
                         "uip_description": "手机：浏览器宽度小于768像素",
-                        "uip_order": "6"
+                        "uip_order": "7"
                     },
                     {
                         "pid": "11",
@@ -3755,7 +3828,7 @@
                         "uip_default": "",
                         "uip_title": "当前页颜色",
                         "uip_description": "默认为网页配色调",
-                        "uip_order": "7"
+                        "uip_order": "8"
                     },
                     {
                         "pid": "11",
@@ -3770,7 +3843,7 @@
                         "uip_default": "",
                         "uip_title": "区块背景色",
                         "uip_description": "默认为网页背景调",
-                        "uip_order": "8"
+                        "uip_order": "9"
                     }
                 ]
             },

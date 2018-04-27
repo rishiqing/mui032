@@ -195,3 +195,60 @@ $uicss .partners-img-list li:nth-child(4n) {
 $uicss .partners-img-list li:nth-child(n+5) {
     margin-top: 30px;
 }
+
+$uicss.index-page {
+  background: #F9FCFF;
+  margin: 0;
+  padding: 60px 0;
+}
+$uicss.index-page + .index-page {
+  background: $bgcolor$;
+}
+$uicss.index-page .container {
+  width: 100%;
+}
+$uicss.index-page .container ul {
+  justify-content: center;
+}
+/*首页解决方案图片列表*/
+$uicss .solution-img-list li {
+  display: flex;
+  width: 241px;
+  height: 200px;
+  padding: 8px;
+  overflow: hidden;
+  border: 1px solid #BFDFFF;
+  box-shadow: 0 2px 3px 0 #D2E5FA;
+}
+$uicss .solution-img-list li + li {
+  margin-left: 14px;
+}
+$uicss .solution-img-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+$uicss .solution-img-list li a .img-wrap {
+  flex: 0 0 150px;
+}
+$uicss .solution-img-list li a .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+$uicss .solution-img-list li a p {
+  font-size: 16px;
+  color: #636363;
+}
+$uicss .solution-img-list + a {
+  font-size: 16px;
+  color: #5698DB;
+}
+/*首页遇到的问题图片列表*/
+$uicss .problem-img-list li {
+  display: flex;
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #BFDFFF;
+  padding: 16px;
+}

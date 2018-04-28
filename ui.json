@@ -860,21 +860,6 @@
                         "uip_title": "调用栏目",
                         "uip_description": "调用指定栏目，以及栏目里配置的数据",
                         "uip_order": "1"
-                    },
-                    {
-                        "pid": "52",
-                        "parent_name": "img_list_page",
-                        "ui_name": "met_16_1",
-                        "uip_type": "9",
-                        "uip_style": "0",
-                        "uip_select": "",
-                        "uip_name": "bgcolor",
-                        "uip_key": "bgcolor-1",
-                        "uip_value": "",
-                        "uip_default": "",
-                        "uip_title": "区块背景色",
-                        "uip_description": "默认为网页背景调",
-                        "uip_order": "2"
                     }
                 ]
             }
@@ -3947,6 +3932,135 @@
                         "uip_title": "链接地址",
                         "uip_description": "",
                         "uip_order": "5"
+                    }
+                ]
+            },
+            "53": {
+                "installid": "53",
+                "parent_name": "img_list_page",
+                "ui_name": "met_16_1",
+                "skin_name": "mui032",
+                "ui_page": "img",
+                "ui_title": "图片模块列表",
+                "ui_description": "",
+                "ui_order": "1",
+                "ui_version": "1.5",
+                "config": [
+                    {
+                        "pid": "53",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "4",
+                        "uip_style": "0",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "53",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
+                    }
+                ]
+            },
+            "54": {
+                "installid": "54",
+                "parent_name": "img_list_page",
+                "ui_name": "met_16_1",
+                "skin_name": "mui032",
+                "ui_page": "img",
+                "ui_title": "图片模块列表",
+                "ui_description": "",
+                "ui_order": "1",
+                "ui_version": "1.6",
+                "config": [
+                    {
+                        "pid": "54",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "4",
+                        "uip_style": "0",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "54",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
+                    }
+                ]
+            },
+            "55": {
+                "installid": "55",
+                "parent_name": "img_list_page",
+                "ui_name": "met_16_1",
+                "skin_name": "mui032",
+                "ui_page": "img",
+                "ui_title": "图片模块列表",
+                "ui_description": "",
+                "ui_order": "1",
+                "ui_version": "1.6",
+                "config": [
+                    {
+                        "pid": "55",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "4",
+                        "uip_style": "0",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "55",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
                     }
                 ]
             }

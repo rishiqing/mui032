@@ -4,10 +4,10 @@
 <div class="$uicss" m-id='{$ui.mid}' m-type='nocontent'>
 	<div class="container">
 		<div class="subcolumn-nav text-xs-center">
-			<ul class="$uicss-ul m-b-0 p-y-30 ulstyle <if value="$data['foldername'] eq 'article' ">left</if>">
+			<ul class="$uicss-ul m-b-0 p-y-30 ulstyle <if value="$data['foldername'] eq 'article' || $data['foldername'] eq 'skill'">left</if>">
 				<tag action='category' cid="$data[releclass1]">
 					<!-- 官方博客/更新日志 -->
-				<if value="$data['foldername'] eq 'article' || $data['foldername'] eq 'toplog' ">
+				<if value="$data['foldername'] eq 'article' || $data['foldername'] eq 'toplog'">
 					<tag action='category' cid="$m['id']" type='son' class="active">
 						<if value="$m['sub']">
 							<tag action='category' cid="$m['id']" type='son' class="active">

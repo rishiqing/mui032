@@ -251,6 +251,7 @@ $uicss .met-news-list .usage-list li p.des {
   -webkit-line-clamp: 1;
 }
 /*价格页 常见问题列表*/
+/*常见问题页面*/
 $uicss.common-questions-list {
   padding-top: 170px;
 }
@@ -259,17 +260,24 @@ $uicss.common-questions-list h3 {
   color: #5B5B5B;
   margin-bottom: 55px;
 }
-#faq {
+#faq, #faq-page {
   position: relative;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 30px;
   background: #fff;
+}
+#faq {
+  max-width: 800px;
+  margin-bottom: 30px;
   box-shadow: 0 4px 12px 0 rgba(52, 63, 75, 0.06), 0 10px 40px 0 rgba(52, 63, 75, 0.08), 0 0 0 1px rgba(52, 63, 75, 0.02);
 }
-
+#faq-page {
+  max-width: 1190px;
+  margin-bottom: 88px;
+  border: 1px solid #CDE6FF;
+}
 #faq .panel+.panel {
   margin-top: 0;
 }
@@ -317,6 +325,7 @@ $uicss.common-questions-list h3 {
     width: 96%;
   }
 }
+
 /*分页*/
 .met_pager {
   margin-top: 67px;

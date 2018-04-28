@@ -2,6 +2,7 @@
 <main class="$uicss <if value="$data['foldername'] eq 'price' ">partners-list<elseif value="$data['classnow'] eq 10001"/>index-page<elseif value="$data['foldername'] eq 'skill'"/>skill-page</if>" <if value="$data['foldername'] neq 'skill'">m-id='{$ui.mid}'</if>>
     <div class="<if value="$ui[style]">container-fliud<else/>container</if>">
         <div class="row text-xs-center">
+            <!-- 使用技巧 -->
             <if value="$data['foldername'] eq 'skill'">
             <tag action='img.list' num="$c['met_img_list']"></tag>
             <if value="$sub">
@@ -21,6 +22,12 @@
             <else/>
             <div class='h-100 text-xs-center font-size-20 vertical-align' m-id='{$ui.mid}'>{$g.nodata}</div>
             </if>
+            <div class="play-img-modal">
+                <div class="wrapper">
+                    <img src="" />
+                    <i class="icon-close" title = '点击关闭'>×</i>
+                </div>
+            </div>
             <else/>
             <tag action='category' cid="$ui['id']" type='current'>
                 <!-- 价格 -->
@@ -79,6 +86,12 @@
                 </tag>
                 </ul>
                 <a href="{$m.description}" {$m.urlnew}>{$m.namemark}</a>
+                <div class="play-img-modal">
+                    <div class="wrapper">
+                        <img src="" />
+                        <i class="icon-close" title = '点击关闭'>×</i>
+                    </div>
+                </div>
                 <!-- 帮助中心 第三部分 -->
                 <elseif value="$m['foldername'] eq 'helpthree'"/>
                 <ul class="helpthree-img-list m-b-45">
@@ -94,6 +107,12 @@
                     </li>
                 </tag>
                 </ul>
+                <div class="play-video-modal">
+                    <div class="wrapper">
+                        <video controls="" ></video>
+                        <i class="icon-close" title = '点击关闭'>×</i>
+                    </div>
+                </div>
                 <!-- 首页 -->
                 <elseif value="$data['classnow'] eq 10001"/>
                     <h3 class="text-xs-center m-b-45 m-t-10">{$m['ctitle']}</h3>
@@ -118,12 +137,6 @@
         </div>
     </div>
 <if value="$data['foldername'] eq 'skill' || $data['foldername'] eq 'help'">
-<div class="play-modal">
-  <div class="wrapper">
-      <img src="" />
-      <video controls="" ></video>
-      <i class="icon-close" title = '点击关闭'>×</i>
-  </div>
-</div>
+
 </if>
 </main>

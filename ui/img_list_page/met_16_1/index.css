@@ -374,7 +374,7 @@ $uicss .use-skill-list li {
   margin-left: 84px;
 }
 /*gif图片及视频播放弹窗*/
-$uicss .play-modal {
+$uicss .play-img-modal, $uicss .play-video-modal {
   display: none;
   position: fixed;
   top: 0;
@@ -386,26 +386,28 @@ $uicss .play-modal {
   align-items: center;
   justify-content: center;
 }
-$uicss .play-modal.show {
+$uicss .play-img-modal.show, $uicss .play-video-modal.show {
   display: flex;
 }
-$uicss .play-modal .wrapper {
+$uicss .wrapper {
   position: relative;
   max-width: 80%;
   height: auto;
 }
-$uicss .play-modal video, .play-modal img {
+$uicss .play-video-modal video, .play-img-modal img {
   width: 100%;
 }
-$uicss .play-modal i.icon-close {
+$uicss  i.icon-close {
   position: absolute;
   color: #fff;
   font-size: 24px;
   cursor: pointer;
   width: 30px;
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #136CFF;
-  text-align: center;
   top: 0;
   right: -30px;
 }

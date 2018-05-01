@@ -2,7 +2,7 @@
 <main class="$uicss page-content" m-id='{$ui.mid}'>
 	<div class="container">
 		<div class="row">
-			<div class="met-search-body panel panel-body m-b-0">
+			<div class="met-search-body m-b-0">
 				<tag action="search.form"></tag>
 				<ul class="list-group list-group-full list-group-dividered m-t-20 met-pager-ajax met-search-list" >
 					<include file='ui_ajax/search'/>

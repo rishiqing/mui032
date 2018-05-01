@@ -25,26 +25,22 @@
             </div>
         </div>
     <elseif value="$data['foldername'] eq 'faq'"/>
-        <div id="faq-page" aria-multiselectable="true" role="tablist" m-id='{$ui.mid}'>
+        <div id="faq-page" m-id='{$ui.mid}'>
         <tag action="category" cid="$data[classnow]" type="son">
-            <div class="panel">
-                <div class="panel-heading" id="a{$m._index}" role="tab">
-                  <a class="panel-title" data-toggle="collapse" href="#b{$m._index}" data-parent="faq" aria-expanded="true" aria-controls="b{$m._index}">
-                  {$m.name}
-                </a>
+            <div class="faq-list">
+                <div class="faq-heading">
+                  <h3 class="faq-title m-t-0 m-b-0">{$m.name}</h3>
                 </div>
-                <div class="panel-collapse collapse in" id="b{$m._index}" aria-labelledby="a{$m._index}" role="tabpanel" aria-expanded="false">
-                  <div class="panel-body">
-                    <ul class="list--vertical article-list">
+                <div class="faq-body">
+                    <ul class="p-l-20">
                         <tag action="list" cid="$m['id']" num="$ui[num]">
-                            <li class="list__item">
-                                <a href="{$v.url}" title="{$v.title}" class="link">
+                            <li class="list-item">
+                                <a href="{$v.url}" title="{$v.title}">
                                     {$v.title}
                                 </a>
                             </li>
                         </tag>
                     </ul>
-                  </div>
                 </div>
             </div>
         </tag>

@@ -3,5 +3,8 @@
 <if value="$data['foldername'] neq 'faq'">
 <ui name="subcolumn_nav" style="met_16_1" id="25" />
 </if>
+<if value="$data['foldername'] eq 'faq'">
+<ui name="search" style="met_16_1" id="34" />
+</if>
 <ui name="news_list_page" style="met_16_2" id="20" />
 <include file="foot.php" />

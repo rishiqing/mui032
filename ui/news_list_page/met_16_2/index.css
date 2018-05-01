@@ -277,6 +277,8 @@ $uicss.common-questions-list h3 {
   max-width: 1190px;
   margin-bottom: 88px;
   border: 1px solid #CDE6FF;
+  border-top: 0;
+  border-bottom: 0;
 }
 #faq .panel+.panel {
   margin-top: 0;
@@ -324,6 +326,36 @@ $uicss.common-questions-list h3 {
     margin-top: 60px;
     width: 96%;
   }
+}
+/*常见问题页面*/
+#faq-page .faq-heading {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-top: 1px solid #CDE6FF;
+  border-bottom: 1px solid #CDE6FF;
+  background: #F9FCFF;
+}
+#faq-page .faq-title {
+  font-size: 24px;
+  color: #5698DB;
+  letter-spacing: 2.13px;
+}
+#faq-page .faq-body {
+  padding: 24px 0;
+}
+#faq-page .faq-body li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+
+}
+#faq-page .faq-body li a {
+  font-size: 18px;
+  color: #8C8C8C;
+  letter-spacing: 1.6px;
 }
 
 /*分页*/

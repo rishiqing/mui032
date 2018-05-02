@@ -17,3 +17,12 @@ $uicss.met-show-body.tos .met-editor {
   border: 1px solid #CDE6FF;
   box-shadow: 0 6px 6px 0 #D2E5FA;
 }
+/*使用手册*/
+$uicss.manual {
+  flex: 1;
+  border: 1px solid #CDE6FF;
+  border-left: 0;
+  box-shadow: none;
+  max-width: 984px;
+  padding: 60px;
+}

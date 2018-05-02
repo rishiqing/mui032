@@ -61,6 +61,21 @@ METUI_FUN['$uicss'] = {
                 });
             }
         })
+       // 视频播放
+        var $videoModal = $metbanner.find('.play-video-modal'),
+        $video = $videoModal.find('video'),
+        $playBtn = $metbanner.find('.play-btn'),
+        $close = $metbanner.find('.icon-close');
+        $playBtn.click(function () {
+            var videoSrc = $(this).attr('data-src');
+            $video.attr('src', videoSrc).show();
+            $videoModal.addClass('show');
+            $video[0].play();
+        });
+        $close.click(function () {
+            $videoModal.removeClass('show');
+            $video.attr('src', '');
+        });
     }
     }
 };

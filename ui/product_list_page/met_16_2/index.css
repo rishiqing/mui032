@@ -210,6 +210,9 @@ $uicss section .desc > div p {
   margin-bottom: 20px;
   line-height: 30px;
 }
+$uicss section:nth-child(even) .desc > div h4 {
+  text-align: right;
+}
 $uicss section:nth-child(even) .desc > div p {
   text-align: right;
 }

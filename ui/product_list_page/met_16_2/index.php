@@ -1,45 +1,44 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
 <tag action="category" type="current" cid="$data['class1']">
-<div class="$uicss met-product animsition <if value="$ui[product_pagetype] eq 1 && $m[index_num] neq 1">type-1</if><if value="$ui[product_pagetype] eq 2 && $m[index_num] neq 1">type-2</if><if value="$ui[product_pagetype] eq 3 && $m[index_num] neq 1">type-3</if>" m-id='{$ui.mid}'>
+<div class="$uicss met-product animsition <if value="$ui[product_pagetype] eq 1 && $data['foldername'] neq 'ding'">type-1</if><if value="$ui[product_pagetype] neq 2 && $data['foldername'] eq 'ding'">type-2</if><if value="$ui[product_pagetype] eq 3 && $data['foldername'] neq 'ding'">type-3</if>" m-id='{$ui.mid}'>
 <!-- 钉钉页 栏目名称'ding' -->
 <if value="$data['foldername'] eq 'ding' && !$c['met_product_page']">
-	<tag action='category' cid="$data['classnow']" type='son'>
-        <if value="$m['_index'] lt $c['met_product_list']">
-            <if value="$m[_index]%2 eq 0">
-                <section class="<if value='$m[_index] eq 0'>animation-slide-bottom50 appear-no-repeat</if>" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false"
-                 <if value="!$ui[bg_type] && $m[indeximg]"> style="background:url({$m.indeximg}) no-repeat center;background-size:cover;"</if>>
+	<tag action='list' cid="$m['id']" num="$ui['num']">
+        <if value="$v['_index'] lt $c['met_product_list']">
+            <if value="$v[_index]%2 eq 0">
+                <section class="<if value='$v[_index] eq 0'>animation-slide-bottom50 appear-no-repeat</if>" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4 desc <if value='$m[_index] eq 0'>animation-slide-left appear-no-repeat</if>" data-plugin="appear" data-animate="slide-left" data-repeat="false">
+                            <div class="col-md-4 desc <if value='$v[_index] eq 0'>animation-slide-left appear-no-repeat</if>" data-plugin="appear" data-animate="slide-left" data-repeat="false">
                                 <div>
-                                    <h4>{$m.name}</h4>
-                                    <p>{$m.description}</p>
-                                    <if value='$m[_index] eq 0 || $m[_index] eq 2' >
-                                        <a href="{$lang.ding_url}" title="{$lang.btn_text1}" target="_blank" class="btn first-btn about_link">{$lang.btn_text1}</a>
+                                    <h4>{$v.title}</h4>
+                                    <p>{$v.description}</p>
+                                    <if value='$v.url && $v.keywords' >
+                                        <a href="{$v.url}" target="_blank" class="btn first-btn about_link">{$v.keywords}</a>
                                     </if>
                                 </div>
                             </div>
-                            <div class="col-md-8 img text-xs-right <if value='$m[_index] eq 0'>animation-slide-right appear-no-repeat</if>" data-plugin="appear" data-animate="slide-right" data-repeat="false">
+                            <div class="col-md-8 img text-xs-right <if value='$v[_index] eq 0'>animation-slide-right appear-no-repeat</if>" data-plugin="appear" data-animate="slide-right" data-repeat="false">
                                 <div class="vertical-align-middle">
-                                    <img src="{$m.columnimg}" alt="{$m.name}" />
+                                    <img src="{$v.imgurl}" alt="{$v.title}" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <else/>
-                <section class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false" <if value="!$ui[bg_type] && $m[indeximg]"> style="background:url({$m.indeximg}) no-repeat center;background-size:cover;"</if>>
+                <section class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 text-xs-left img vertical-align invisible" data-plugin="appear" data-animate="slide-left" data-repeat="false">
                                 <div class="vertical-align-middle">
-                                    <img src="{$m.columnimg}" alt="{$m.name}" />
+                                    <img src="{$v.imgurl}" alt="{$v.title}" />
                                 </div>
                             </div>
                             <div class="col-md-4 desc invisible" data-plugin="appear" data-animate="slide-right" data-repeat="false">
                                 <div>
-                                    <h4>{$m.name}</h4>
-                                    <p>{$m.description}</p>
+                                    <h4>{$v.title}</h4>
+                                    <p>{$v.description}</p>
                                 </div>
                             </div>
                         </div>

@@ -63,8 +63,14 @@ if($data['title']){
                                 <a href="{$ui.btnlink1}" target="_blank" class="btn animation-slide-bottom first-btn">{$v.btn_text_2}</a>
                             </if>
                             <if value="$data['classnow'] eq 10001 && $v[_first]">
-                                <div class="btn animation-slide-bottom play-btn">
+                                <div class="btn animation-slide-bottom play-btn" data-src="{$ui.btnlink2}">
                                     <i></i>
+                                </div>
+                                <div class="play-video-modal">
+                                    <div class="wrapper">
+                                        <video controls="" ></video>
+                                        <i class="icon-close" title = '点击关闭'>×</i>
+                                    </div>
                                 </div>
                             </if>
                         </if>

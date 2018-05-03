@@ -134,8 +134,8 @@
                     <else/>
                     <ul class="navbar-nav vertical-align p-l-0 m-b-0 met-head-user" m-id="member" m-type="member">
                         <li class=" text-xs-center vertical-align-middle animation-slide-top">
-                            <a href="{$c.met_weburl}member/login.php?lang={$_M[lang]}" class="btn btn-squared btn-primary btn-outline m-r-10">{$word.login}</a>
-                            <a href="{$c.met_weburl}member/register_include.php?lang={$_M[lang]}" class="btn btn-squared btn-success">{$word.register}</a>
+                            <a href="{$c.met_weburl}i?port=2" class="btn btn-squared btn-primary btn-outline m-r-10">{$word.login}</a>
+                            <a href="{$c.met_weburl}i?port=1" class="btn btn-squared btn-success">{$word.register}</a>
                         </li>
                     </ul>
                 </if>

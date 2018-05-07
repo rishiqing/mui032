@@ -72,7 +72,6 @@ $uicss.met-product.type-2 .container-fluid {
 }
 $uicss.met-product.type-2 h4 {
   margin: 0;
-  font-weight: 300;
 }
 $uicss.met-product.type-2 .overlay-panel{color: $firstcolor$;color: $titlecolor$;}
 @media (max-width: 767px) {
@@ -233,6 +232,18 @@ $uicss section .img {
 $uicss section .img img {
   max-height: 100%;
   max-width: 100%;
+}
+$uicss .select-wechat {
+  display: inline-block;
+  vertical-align: middle;
+  width: 48%;
+  text-align: center;
+  padding: 77px 0 50px;
+}
+$uicss .select-wechat p {
+  font-size: 14px;
+  color: #8C8C8C;
+  letter-spacing: 0.39px;
 }
 /*功能 目录名'function'*/
 $uicss .product_introduce {

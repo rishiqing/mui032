@@ -12,13 +12,13 @@
                                     <h4>{$v.title}</h4>
                                     <p>{$v.description}</p>
                                     <if value="$ui[more]">
-                                        <a href="{$v.url}" title="{$v.title}">{$ui.more}</a>
+                                        <a href="{$v.url}" title="{$v.title}">{$ui.more}<img src="{$v['displayimgs'][0]['img']}" alt="{$v.title}"></a>
                                     </if>
                                 </div>
                             </div>
                             <div class="col-md-8 img text-xs-center vertical-align invisible" data-plugin="appear" data-animate="slide-right" data-repeat="false">
                                 <div class="vertical-align-middle">
-                                    <img src="{$v.imgurl}" alt="{$v.title}" />
+                                    <img src="{$v['displayimgs'][1]['img']}" alt="{$v.title}" />
                                 </div>
                             </div>
                         </div>

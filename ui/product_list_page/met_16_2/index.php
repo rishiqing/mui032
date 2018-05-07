@@ -1,11 +1,12 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
 <tag action="category" type="current" cid="$data['class1']">
-<div class="$uicss met-product animsition <if value="$ui[product_pagetype] eq 1 && $data['foldername'] neq 'ding'">type-1</if><if value="$ui[product_pagetype] neq 2 && $data['foldername'] eq 'ding'">type-2</if><if value="$ui[product_pagetype] eq 3 && $data['foldername'] neq 'ding'">type-3</if>" m-id='{$ui.mid}'>
-<!-- 钉钉页 栏目名称'ding' -->
-<if value="$data['foldername'] eq 'ding' && !$c['met_product_page']">
+<div class="$uicss met-product animsition <if value="$ui[product_pagetype] eq 1 && $data['foldername'] neq 'wechat'">type-1</if><if value="$ui[product_pagetype] neq 2 && $data['foldername'] eq 'wechat'">type-2</if><if value="$ui[product_pagetype] eq 3 && $data['foldername'] neq 'wechat'">type-3</if>" m-id='{$ui.mid}'>
+<!-- 企业微信页 栏目名称'wechat' -->
+<if value="$data['foldername'] eq 'wechat' && !$c['met_product_page']">
+    <div class="container">
 	<tag action='list' cid="$m['id']" num="$ui['num']">
         <if value="$v['_index'] lt $c['met_product_list']">
-            <if value="$v[_index]%2 eq 0">
+            <if value="$v[_index] eq 0">
                 <section class="<if value='$v[_index] eq 0'>animation-slide-bottom50 appear-no-repeat</if>" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
                     <div class="container">
                         <div class="row">
@@ -13,9 +14,6 @@
                                 <div>
                                     <h4>{$v.title}</h4>
                                     <p>{$v.description}</p>
-                                    <if value='$v.url && $v.keywords' >
-                                        <a href="{$v.url}" target="_blank" class="btn first-btn about_link">{$v.keywords}</a>
-                                    </if>
                                 </div>
                             </div>
                             <div class="col-md-8 img text-xs-right <if value='$v[_index] eq 0'>animation-slide-right appear-no-repeat</if>" data-plugin="appear" data-animate="slide-right" data-repeat="false">
@@ -25,8 +23,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cutting-line"></div>
                 </section>
-                <else/>
+            <elseif value="$v[_index] egt 1"/>
+                <div class="select-wechat">
+                    <p class="m-b-20">{$v.description}</p>
+                    <a href="{$v.url}" target="_blank"><img src="{$v.imgurl}" alt="{$v.title}" /></a>
+                </div>
+            <else/>
                 <section class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
                     <div class="container">
                         <div class="row">
@@ -47,6 +51,7 @@
             </if>
         </if>
     </tag>
+    </div>
 <!-- 价格页 目录名'price' -->
 <elseif value="$data['foldername'] eq 'price' "/>
 	<div class="pricing">

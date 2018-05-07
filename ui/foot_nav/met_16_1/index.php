@@ -73,3 +73,6 @@
 	</div>
 	<div class="cutting-line"></div>
 </div>
+<div class="online-consult">
+	<img src="{$ui.online_url}">
+</div>

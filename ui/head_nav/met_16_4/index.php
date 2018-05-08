@@ -156,20 +156,24 @@
                         </li> -->
                         <tag action='category' type='head' class='active' hide="$ui['hide']">
                         <?php
+                            $sub_menu = 1;
                             // 如果禁止头部导航跳转，那么把$m[url]给置空
                             if ($m[disable_header_nav_jump] == '1') {
                                 $m[url]='';
                             }
                             if ($m[disable_header_nav_menu] == '1') {
-                                $m['sub']=0;
+                                // $m['sub']=0;
+                                $sub_menu=0;
                             }
                         ?>
-                        <if value="$ui['navdropdown_ok'] && $m['sub']">
+                        <if value="$ui['navdropdown_ok'] && $sub_menu">
                         <li class="nav-item dropdown m-l-{$ui.nav_ml}">
                             <if value="$ui['navdropdown_type']">
                             <a
                                 <if value="$m.url">
                                 href="{$m.url}"
+                                <else/>
+                                href="javascript:;"
                                 </if>
                                 {$m.urlnew}
                                 title="{$m.name}"
@@ -180,6 +184,8 @@
                             <a
                                 <if value="$m.url">
                                 href="{$m.url}"
+                                <else/>
+                                href="javascript:;"
                                 </if>
                                 {$m.urlnew}
                                 title="{$m.name}"
@@ -197,17 +203,21 @@
                                 <a 
                                     <if value="$m.url">
                                     href="{$m.url}"
+                                    <else/>
+                                    href="javascript:;"
                                     </if>
                                     {$m.urlnew}
                                     title="{$ui.all}"
                                     class='dropdown-item nav-parent hidden-lg-up'>{$ui.all}</a>
                                 </if>
                                 <tag action='category' cid="$m['id']" type='son' class='active'>
-                                <if value="$m['sub'] && $ui[threemenuok]">
+                                <if value="$sub_menu && $ui[threemenuok]">
                                 <div class="dropdown-submenu border-top1 <if value='!$ui[navbullet_ok]'>animate</if>">
                                     <a 
                                         <if value="$m.url">
                                         href="{$m.url}"
+                                        <else/>
+                                        href="javascript:;"
                                         </if>
                                         {$m.urlnew}
                                         class="dropdown-item {$m.class}">{$m.name}</a>
@@ -216,6 +226,8 @@
                                             <a 
                                                 <if value="$m.url">
                                                 href="{$m.url}"
+                                                <else/>
+                                                href="javascript:;"
                                                 </if>
                                                 {$m.urlnew}
                                                 class="dropdown-item border-top1 {$m.class}" >{$m.name}</a>
@@ -223,7 +235,7 @@
                                     </div>
                                 </div>
                                 <else/>
-                                <if value="$m['sub']">
+                                <if value="$sub_menu">
                                     <?php
                                         $urlnew = $m['urlnew'];
                                         $name = $m['name'];
@@ -239,6 +251,8 @@
                                 <a 
                                     <if value="$m.url">
                                     href="{$m.url}"
+                                    <else/>
+                                    href="javascript:;"
                                     </if>
                                     {$m.urlnew}
                                     title="{$m.name}"
@@ -253,6 +267,8 @@
                             <a 
                                 <if value="$m.url">
                                 href="{$m.url}"
+                                <else/>
+                                href="javascript:;"
                                 </if>
                                 {$m.urlnew}
                                 title="{$m.name}"

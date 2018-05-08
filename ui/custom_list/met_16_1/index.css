@@ -75,6 +75,9 @@ $uicss section .desc>div a {
 $uicss section .desc>div a:hover {
   opacity: 0.8;
 }
+$uicss section .desc>div a img {
+  margin-left: 18px;
+}
 $uicss section .img {
   height: 100%;
 }

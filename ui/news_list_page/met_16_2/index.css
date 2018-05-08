@@ -251,6 +251,7 @@ $uicss .met-news-list .usage-list li p.des {
   -webkit-line-clamp: 1;
 }
 /*价格页 常见问题列表*/
+/*常见问题页面*/
 $uicss.common-questions-list {
   padding-top: 170px;
 }
@@ -259,17 +260,25 @@ $uicss.common-questions-list h3 {
   color: #5B5B5B;
   margin-bottom: 55px;
 }
-#faq {
+#faq, #faq-page {
   position: relative;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 30px;
   background: #fff;
+}
+#faq {
+  max-width: 800px;
+  margin-bottom: 30px;
   box-shadow: 0 4px 12px 0 rgba(52, 63, 75, 0.06), 0 10px 40px 0 rgba(52, 63, 75, 0.08), 0 0 0 1px rgba(52, 63, 75, 0.02);
 }
-
+#faq-page {
+  max-width: 1190px;
+  margin-bottom: 88px;
+  border: 1px solid #CDE6FF;
+  border-top: 0;
+}
 #faq .panel+.panel {
   margin-top: 0;
 }
@@ -317,6 +326,37 @@ $uicss.common-questions-list h3 {
     width: 96%;
   }
 }
+/*常见问题页面*/
+#faq-page .faq-heading {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-top: 1px solid #CDE6FF;
+  border-bottom: 1px solid #CDE6FF;
+  background: #F9FCFF;
+}
+#faq-page .faq-title {
+  font-size: 24px;
+  color: #5698DB;
+  letter-spacing: 2.13px;
+}
+#faq-page .faq-body {
+  padding: 24px 0;
+}
+#faq-page .faq-body li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+
+}
+#faq-page .faq-body li a {
+  font-size: 18px;
+  color: #8C8C8C;
+  letter-spacing: 1.6px;
+}
+
 /*分页*/
 .met_pager {
   margin-top: 67px;

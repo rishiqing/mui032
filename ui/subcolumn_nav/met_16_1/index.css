@@ -11,6 +11,9 @@ $uicss .product-search .form-group {
   max-width: 500px;
   margin: 0 auto 10px;
 }
+$uicss $uicss-ul > li a {
+  color: #97ACC1;
+}
 $uicss $uicss-ul > li a:hover, $uicss $uicss-ul > li a.active {
   color: $thirdcolor$;
   color: $hovercolor$;

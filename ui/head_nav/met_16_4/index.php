@@ -20,12 +20,12 @@
                             <img src="{$ui.logo}" alt="{$c.met_webname}" class="logo1  hidden">
                         </div>
                     </a>
-                    <a href="{$lang.ding_url}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$lang.met_dingname}" target="_blank">
+                    <!-- <a href="{$ui.server_link}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$ui.server_name}" target="_blank">
                         <div class="vertical-align-middle">
-                            <img src="{$ui.server_logo}" alt="{$lang.met_dingname}" class="logo">
-                            <img src="{$ui.server_logo}" alt="{$lang.met_dingname}" class="logo1  hidden">
+                            <img src="{$ui.server_logo}" alt="{$ui.server_name}" class="logo">
+                            <img src="{$ui.server_logo}" alt="{$ui.server_name}" class="logo1  hidden">
                         </div>
-                    </a>
+                    </a> -->
                 </div>
                 <!-- logo -->
                 <button type="button" class="navbar-toggler hamburger hamburger-close collapsed p-x-5 $uicss-toggler" data-target="#$uicss-collapse" data-toggle="collapse">
@@ -134,8 +134,8 @@
                     <else/>
                     <ul class="navbar-nav vertical-align p-l-0 m-b-0 met-head-user" m-id="member" m-type="member">
                         <li class=" text-xs-center vertical-align-middle animation-slide-top">
-                            <a href="{$c.met_weburl}member/login.php?lang={$_M[lang]}" class="btn btn-squared btn-primary btn-outline m-r-10">{$word.login}</a>
-                            <a href="{$c.met_weburl}member/register_include.php?lang={$_M[lang]}" class="btn btn-squared btn-success">{$word.register}</a>
+                            <a href="{$c.met_weburl}i?port=2" class="btn btn-squared btn-primary btn-outline m-r-10">{$word.login}</a>
+                            <a href="{$c.met_weburl}i?port=1" class="btn btn-squared btn-success">{$word.register}</a>
                         </li>
                     </ul>
                 </if>

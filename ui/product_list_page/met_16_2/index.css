@@ -72,7 +72,6 @@ $uicss.met-product.type-2 .container-fluid {
 }
 $uicss.met-product.type-2 h4 {
   margin: 0;
-  font-weight: 300;
 }
 $uicss.met-product.type-2 .overlay-panel{color: $firstcolor$;color: $titlecolor$;}
 @media (max-width: 767px) {
@@ -145,7 +144,7 @@ $uicss.met-product.type-2 .overlay-panel{color: $firstcolor$;color: $titlecolor$
     filter: alpha(opacity=100);
   }
 }
-/*一级栏目标志等于1*/
+/*普通产品列表页*/
 $uicss {
   min-height: 200px;
 }
@@ -210,6 +209,9 @@ $uicss section .desc > div p {
   margin-bottom: 20px;
   line-height: 30px;
 }
+$uicss section:nth-child(even) .desc > div h4 {
+  text-align: right;
+}
 $uicss section:nth-child(even) .desc > div p {
   text-align: right;
 }
@@ -231,8 +233,19 @@ $uicss section .img img {
   max-height: 100%;
   max-width: 100%;
 }
-/*一级栏目标识等于22*/
-/*功能 所在二级栏目标识100*/
+$uicss .select-wechat {
+  display: inline-block;
+  vertical-align: middle;
+  width: 48%;
+  text-align: center;
+  padding: 77px 0 50px;
+}
+$uicss .select-wechat p {
+  font-size: 14px;
+  color: #8C8C8C;
+  letter-spacing: 0.39px;
+}
+/*功能 目录名'function'*/
 $uicss .product_introduce {
   height: 640px;
 }
@@ -257,7 +270,7 @@ $uicss .product_introduce p {
 $uicss .product_introduce:last-child .container > div {
   margin-top: 30px;
 }
-/*价格*/
+/*价格 目录名'price'*/
 $uicss .pricing {
   text-align: center;
 }
@@ -423,6 +436,51 @@ $uicss .pricing .pricing-column .signup .white:hover {
     $uicss section:nth-child(odd) .img{margin-top:10px;}
     $uicss section:nth-child(even) .img{margin-bottom:10px;}
     $uicss section .img img{max-width:90%;}
+}
+/*代理合作 目录名'agency*/
+$uicss .multi-agency:nth-child(even) {
+    background: #F9FCFF;
+}
+$uicss .multi-agency h3 {
+  font-size: 28px;
+  color: #5B5B5B;
+}
+$uicss .multi-agency ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+$uicss .multi-agency li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+$uicss .multi-agency h5 {
+  font-size: 16px;
+  color: #3D3D3D;
+  letter-spacing: 0.44px;
+}
+$uicss .multi-agency:nth-child(1) li {
+  flex: 0 0 37%;
+}
+$uicss .multi-agency:nth-child(1) p {
+  font-size: 16px;
+  color: #97ACC1;
+  max-width: 75%;
+}
+$uicss .multi-agency:nth-child(2) li:nth-child(n+2) {
+    margin-left: 50px;
+}
+$uicss .multi-agency:nth-child(3) li {
+  flex: 0 0 42%;
+}
+$uicss .multi-agency:nth-child(3) li p {
+  font-size: 18px;
+  color: #3D3D3D;
+}
+$uicss .multi-agency:nth-child(3) li:nth-child(1) {
+    border-right: 1px solid #E0E0E0;
 }
 /*分页*/
 .met_pager { margin-top: 20px; text-align: center; }

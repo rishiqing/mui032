@@ -69,7 +69,7 @@
                         "uip_value": "22",
                         "uip_default": "1",
                         "uip_title": "调用栏目",
-                        "uip_description": "调用指定二级栏目列表，显示栏目名称+栏目描述",
+                        "uip_description": "调用指定栏目",
                         "uip_order": "3"
                     },
                     {
@@ -819,6 +819,49 @@
                         "uip_order": "21"
                     }
                 ]
+            },
+            "52": {
+                "installid": "52",
+                "parent_name": "img_list_page",
+                "ui_name": "met_16_1",
+                "skin_name": "mui032",
+                "ui_page": "index",
+                "ui_title": "图片模块列表",
+                "ui_description": "",
+                "ui_order": "1",
+                "ui_version": "1.4",
+                "config": [
+                    {
+                        "pid": "52",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "4",
+                        "uip_style": "0",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "52",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
+                    }
+                ]
             }
         },
         "head": {
@@ -876,7 +919,37 @@
                         "uip_default": "",
                         "uip_title": "应用服务商logo",
                         "uip_description": "建议上传宽为180px高60px的logo",
-                        "uip_order": "1"
+                        "uip_order": "2"
+                    },
+                    {
+                        "pid": "1",
+                        "parent_name": "head_nav",
+                        "ui_name": "met_16_4",
+                        "uip_type": "2",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "server_name",
+                        "uip_key": "server_name",
+                        "uip_value": "",
+                        "uip_default": "",
+                        "uip_title": "应用服务商名字",
+                        "uip_description": "图片alt及title文字",
+                        "uip_order": "3"
+                    },
+                    {
+                        "pid": "1",
+                        "parent_name": "head_nav",
+                        "ui_name": "met_16_4",
+                        "uip_type": "2",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "server_link",
+                        "uip_key": "server_link",
+                        "uip_value": "http:\/\/localhost\/metinfo\/",
+                        "uip_default": "",
+                        "uip_title": "应用服务商链接",
+                        "uip_description": "",
+                        "uip_order": "4"
                     },
                     {
                         "pid": "1",
@@ -891,7 +964,7 @@
                         "uip_default": "1",
                         "uip_title": "导航固定",
                         "uip_description": "固定状态下页面往下滚动时，导航也会跟随。",
-                        "uip_order": "1"
+                        "uip_order": "5"
                     },
                     {
                         "pid": "1",
@@ -906,7 +979,7 @@
                         "uip_default": "0",
                         "uip_title": "导航间距",
                         "uip_description": "仅支持5的倍数（0\/5\/10\/15\/20...最大50）<br\/>不同网站的导航数量不同，根据需求适当调整间距，让网站更协调。",
-                        "uip_order": "2"
+                        "uip_order": "6"
                     },
                     {
                         "pid": "1",
@@ -921,7 +994,7 @@
                         "uip_default": "1",
                         "uip_title": "导航下拉菜单",
                         "uip_description": "",
-                        "uip_order": "3"
+                        "uip_order": "7"
                     },
                     {
                         "pid": "1",
@@ -936,7 +1009,7 @@
                         "uip_default": "1",
                         "uip_title": "下拉展示",
                         "uip_description": "无指向标时会有动画效果",
-                        "uip_order": "4"
+                        "uip_order": "8"
                     },
                     {
                         "pid": "1",
@@ -951,7 +1024,7 @@
                         "uip_default": "1",
                         "uip_title": "下拉方式",
                         "uip_description": "",
-                        "uip_order": "5"
+                        "uip_order": "9"
                     },
                     {
                         "pid": "1",
@@ -966,7 +1039,7 @@
                         "uip_default": "",
                         "uip_title": "导航禁用下拉菜单",
                         "uip_description": "多个菜单以\"|\"分割，填写格式为：xxx|xxx",
-                        "uip_order": "6"
+                        "uip_order": "10"
                     },
                     {
                         "pid": "1",
@@ -981,7 +1054,7 @@
                         "uip_default": "1",
                         "uip_title": "会员注册开关",
                         "uip_description": "在系统会员注册开启的前提下进行设置",
-                        "uip_order": "7"
+                        "uip_order": "11"
                     },
                     {
                         "pid": "1",
@@ -996,7 +1069,7 @@
                         "uip_default": "全部",
                         "uip_title": "全部文字",
                         "uip_description": "手机端文字",
-                        "uip_order": "9"
+                        "uip_order": "12"
                     },
                     {
                         "pid": "1",
@@ -2136,6 +2209,21 @@
                         "pid": "7",
                         "parent_name": "foot_nav",
                         "ui_name": "met_16_1",
+                        "uip_type": "7",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "online_url",
+                        "uip_key": "online_url",
+                        "uip_value": "..\/upload\/201802\/1518070206.png",
+                        "uip_default": "",
+                        "uip_title": "在线客服图片",
+                        "uip_description": "",
+                        "uip_order": "18"
+                    },
+                    {
+                        "pid": "7",
+                        "parent_name": "foot_nav",
+                        "ui_name": "met_16_1",
                         "uip_type": "2",
                         "uip_style": "0",
                         "uip_select": "",
@@ -2577,6 +2665,64 @@
                         "uip_title": "背景图",
                         "uip_description": "",
                         "uip_order": "4"
+                    }
+                ]
+            },
+            "56": {
+                "installid": "56",
+                "parent_name": "subcolumn_nav",
+                "ui_name": "met_16_2",
+                "skin_name": "mui032",
+                "ui_page": "show",
+                "ui_title": "内页子栏目列表",
+                "ui_description": "",
+                "ui_order": "2",
+                "ui_version": "1.4",
+                "config": [
+                    {
+                        "pid": "56",
+                        "parent_name": "subcolumn_nav",
+                        "ui_name": "met_16_2",
+                        "uip_type": "4",
+                        "uip_style": "0",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "56",
+                        "parent_name": "subcolumn_nav",
+                        "ui_name": "met_16_2",
+                        "uip_type": "9",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "titlecolor",
+                        "uip_key": "titlecolor-1",
+                        "uip_value": "",
+                        "uip_default": "",
+                        "uip_title": "主标题颜色",
+                        "uip_description": "",
+                        "uip_order": "1"
+                    },
+                    {
+                        "pid": "56",
+                        "parent_name": "subcolumn_nav",
+                        "ui_name": "met_16_2",
+                        "uip_type": "9",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "activecolor",
+                        "uip_key": "activecolor-1",
+                        "uip_value": "",
+                        "uip_default": "",
+                        "uip_title": "标题选中颜色",
+                        "uip_description": "",
+                        "uip_order": "2"
                     }
                 ]
             }
@@ -3626,6 +3772,21 @@
                         "pid": "11",
                         "parent_name": "img_list_page",
                         "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
+                    },
+                    {
+                        "pid": "11",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
                         "uip_type": "2",
                         "uip_style": "0",
                         "uip_select": "",
@@ -3635,7 +3796,7 @@
                         "uip_default": "浏览",
                         "uip_title": "按钮文字",
                         "uip_description": "",
-                        "uip_order": "1"
+                        "uip_order": "2"
                     },
                     {
                         "pid": "11",
@@ -3650,7 +3811,7 @@
                         "uip_default": "1",
                         "uip_title": "展示样式",
                         "uip_description": "",
-                        "uip_order": "1"
+                        "uip_order": "3"
                     },
                     {
                         "pid": "11",
@@ -3665,7 +3826,7 @@
                         "uip_default": "4",
                         "uip_title": "大尺寸电脑显示列数",
                         "uip_description": "大尺寸电脑：浏览器宽度大于1600像素",
-                        "uip_order": "3"
+                        "uip_order": "4"
                     },
                     {
                         "pid": "11",
@@ -3680,7 +3841,7 @@
                         "uip_default": "4",
                         "uip_title": "普通电脑显示列数",
                         "uip_description": "普通电脑：浏览器宽度大于992像素小于1600像素",
-                        "uip_order": "4"
+                        "uip_order": "5"
                     },
                     {
                         "pid": "11",
@@ -3695,7 +3856,7 @@
                         "uip_default": "2",
                         "uip_title": "平板显示列数",
                         "uip_description": "平板：浏览器宽度大于768像素小于992像素",
-                        "uip_order": "5"
+                        "uip_order": "6"
                     },
                     {
                         "pid": "11",
@@ -3710,7 +3871,7 @@
                         "uip_default": "1",
                         "uip_title": "手机显示列数",
                         "uip_description": "手机：浏览器宽度小于768像素",
-                        "uip_order": "6"
+                        "uip_order": "7"
                     },
                     {
                         "pid": "11",
@@ -3725,7 +3886,7 @@
                         "uip_default": "",
                         "uip_title": "当前页颜色",
                         "uip_description": "默认为网页配色调",
-                        "uip_order": "7"
+                        "uip_order": "8"
                     },
                     {
                         "pid": "11",
@@ -3740,7 +3901,239 @@
                         "uip_default": "",
                         "uip_title": "区块背景色",
                         "uip_description": "默认为网页背景调",
-                        "uip_order": "8"
+                        "uip_order": "9"
+                    }
+                ]
+            },
+            "51": {
+                "installid": "51",
+                "parent_name": "service_list",
+                "ui_name": "met_16_6",
+                "skin_name": "mui032",
+                "ui_page": "img",
+                "ui_title": "图片文字链接列表",
+                "ui_description": "图片文字链接组合模块",
+                "ui_order": "2",
+                "ui_version": "1.5",
+                "config": [
+                    {
+                        "pid": "51",
+                        "parent_name": "service_list",
+                        "ui_name": "met_16_6",
+                        "uip_type": "4",
+                        "uip_style": "4",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "1",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "51",
+                        "parent_name": "service_list",
+                        "ui_name": "met_16_6",
+                        "uip_type": "7",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "imgurl",
+                        "uip_key": "imgurl",
+                        "uip_value": "..\/upload\/201802\/1518070206.png",
+                        "uip_default": "",
+                        "uip_title": "图片",
+                        "uip_description": "",
+                        "uip_order": "1"
+                    },
+                    {
+                        "pid": "51",
+                        "parent_name": "service_list",
+                        "ui_name": "met_16_6",
+                        "uip_type": "2",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "title",
+                        "uip_key": "title-1",
+                        "uip_value": "在线时间管理训练",
+                        "uip_default": "标题",
+                        "uip_title": "标题",
+                        "uip_description": "",
+                        "uip_order": "2"
+                    },
+                    {
+                        "pid": "51",
+                        "parent_name": "service_list",
+                        "ui_name": "met_16_6",
+                        "uip_type": "2",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "desc",
+                        "uip_key": "desc-1",
+                        "uip_value": "加入时间管理学院社群，参加训练半价",
+                        "uip_default": "描述",
+                        "uip_title": "描述",
+                        "uip_description": "",
+                        "uip_order": "3"
+                    },
+                    {
+                        "pid": "51",
+                        "parent_name": "service_list",
+                        "ui_name": "met_16_6",
+                        "uip_type": "2",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "link_name",
+                        "uip_key": "link_name-1",
+                        "uip_value": "点击加入",
+                        "uip_default": "点击加入",
+                        "uip_title": "链接名字",
+                        "uip_description": "",
+                        "uip_order": "4"
+                    },
+                    {
+                        "pid": "51",
+                        "parent_name": "service_list",
+                        "ui_name": "met_16_6",
+                        "uip_type": "2",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "link_url",
+                        "uip_key": "link_url",
+                        "uip_value": "https://www.rishiqing.com",
+                        "uip_default": "https://www.rishiqing.com",
+                        "uip_title": "链接地址",
+                        "uip_description": "",
+                        "uip_order": "5"
+                    }
+                ]
+            },
+            "53": {
+                "installid": "53",
+                "parent_name": "img_list_page",
+                "ui_name": "met_16_1",
+                "skin_name": "mui032",
+                "ui_page": "img",
+                "ui_title": "图片模块列表",
+                "ui_description": "",
+                "ui_order": "1",
+                "ui_version": "1.5",
+                "config": [
+                    {
+                        "pid": "53",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "4",
+                        "uip_style": "0",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "53",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
+                    }
+                ]
+            },
+            "54": {
+                "installid": "54",
+                "parent_name": "img_list_page",
+                "ui_name": "met_16_1",
+                "skin_name": "mui032",
+                "ui_page": "img",
+                "ui_title": "图片模块列表",
+                "ui_description": "",
+                "ui_order": "1",
+                "ui_version": "1.6",
+                "config": [
+                    {
+                        "pid": "54",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "4",
+                        "uip_style": "0",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "54",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
+                    }
+                ]
+            },
+            "55": {
+                "installid": "55",
+                "parent_name": "img_list_page",
+                "ui_name": "met_16_1",
+                "skin_name": "mui032",
+                "ui_page": "img",
+                "ui_title": "图片模块列表",
+                "ui_description": "",
+                "ui_order": "1",
+                "ui_version": "1.6",
+                "config": [
+                    {
+                        "pid": "55",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "4",
+                        "uip_style": "0",
+                        "uip_select": "$M$开启$T$1$M$关闭$T$0",
+                        "uip_name": "ui_show",
+                        "uip_key": "ui_show",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "区块显示开关",
+                        "uip_description": "当前UI区块的开启关闭设置，关闭后可以在可视化编辑中开启",
+                        "uip_order": "0"
+                    },
+                    {
+                        "pid": "55",
+                        "parent_name": "img_list_page",
+                        "ui_name": "met_16_1",
+                        "uip_type": "6",
+                        "uip_style": "4",
+                        "uip_select": "",
+                        "uip_name": "id",
+                        "uip_key": "id-1",
+                        "uip_value": "",
+                        "uip_default": "1",
+                        "uip_title": "调用栏目",
+                        "uip_description": "调用指定栏目，以及栏目里配置的数据",
+                        "uip_order": "1"
                     }
                 ]
             }
@@ -6060,6 +6453,21 @@
                         "pid": "50",
                         "parent_name": "contact",
                         "ui_name": "met_16_3",
+                        "uip_type": "7",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "name_url",
+                        "uip_key": "name_url",
+                        "uip_value": "..\/upload\/201802\/1518070206.png",
+                        "uip_default": "",
+                        "uip_title": "联系人图片",
+                        "uip_description": "建议上传宽为30px高30px的图片",
+                        "uip_order": "1"
+                    },
+                    {
+                        "pid": "50",
+                        "parent_name": "contact",
+                        "ui_name": "met_16_3",
                         "uip_type": "2",
                         "uip_style": "4",
                         "uip_select": "",
@@ -6069,7 +6477,22 @@
                         "uip_default": "名字",
                         "uip_title": "联系人名字",
                         "uip_description": "",
-                        "uip_order": "1"
+                        "uip_order": "2"
+                    },
+                    {
+                        "pid": "50",
+                        "parent_name": "contact",
+                        "ui_name": "met_16_3",
+                        "uip_type": "7",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "phone_url",
+                        "uip_key": "phone_url",
+                        "uip_value": "..\/upload\/201802\/1518070206.png",
+                        "uip_default": "",
+                        "uip_title": "电话图片",
+                        "uip_description": "建议上传宽为30px高30px的图片",
+                        "uip_order": "3"
                     },
                     {
                         "pid": "50",
@@ -6084,7 +6507,22 @@
                         "uip_default": "电话",
                         "uip_title": "联系人电话",
                         "uip_description": "",
-                        "uip_order": "2"
+                        "uip_order": "4"
+                    },
+                    {
+                        "pid": "50",
+                        "parent_name": "contact",
+                        "ui_name": "met_16_3",
+                        "uip_type": "7",
+                        "uip_style": "0",
+                        "uip_select": "",
+                        "uip_name": "wx_url",
+                        "uip_key": "wx_url",
+                        "uip_value": "..\/upload\/201802\/1518070206.png",
+                        "uip_default": "",
+                        "uip_title": "微信图片",
+                        "uip_description": "建议上传宽为30px高30px的图片",
+                        "uip_order": "5"
                     },
                     {
                         "pid": "50",
@@ -6099,7 +6537,7 @@
                         "uip_default": "rishiqing_123",
                         "uip_title": "联系人微信号",
                         "uip_description": "",
-                        "uip_order": "3"
+                        "uip_order": "6"
                     },
                     {
                         "pid": "50",
@@ -6114,7 +6552,7 @@
                         "uip_default": "填写报名表",
                         "uip_title": "底部链接名字",
                         "uip_description": "",
-                        "uip_order": "4"
+                        "uip_order": "7"
                     },
                     {
                         "pid": "50",
@@ -6129,7 +6567,7 @@
                         "uip_default": "https://www.rishiqing.com",
                         "uip_title": "底部链接",
                         "uip_description": "",
-                        "uip_order": "5"
+                        "uip_order": "8"
                     }
                 ]
             }

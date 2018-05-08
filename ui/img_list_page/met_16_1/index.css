@@ -8,10 +8,64 @@
 $uicss {
   background: $bgcolor$;
   margin: 30px 0;
+  margin-bottom: 80px;
 }
-$uicss .container li.card {
-  padding: 10px;
-  background: transparent;
+$uicss ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+$uicss li {
+  list-style: none;
+}
+$uicss .met-img-list {
+  justify-content: center;
+}
+$uicss .met-img-list li {
+  display: flex;
+  border: 1px solid #D0DBE6;
+  margin-left: 32px;
+}
+$uicss .met-img-list li:nth-child(4n+1) {
+  margin-left: 0;
+}
+$uicss .met-img-list li:nth-child(n+5) {
+  margin-top: 32px;
+}
+$uicss .met-img-list li:hover {
+  border-color: #CDE6FF;
+}
+$uicss .met-img-list li .des-wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  padding: 20px 14px 0 10px;
+}
+$uicss .met-img-list li .des-wrap .left .name {
+  font-size: 18px;
+  color: #3D3D3D;
+  letter-spacing: 1.29px;
+}
+$uicss .met-img-list li .des-wrap .left .price {
+  font-size: 12px;
+  color: #057EFF;
+  letter-spacing: 0.86px;
+}
+$uicss .met-img-list li .des-wrap .left .type {
+  font-size: 12px;
+  color: #8C8C8C;
+  letter-spacing: 0.86px;
+}
+$uicss .met-img-list li .des-wrap button {
+  width: 64px;
+  height: 25px;
+  background-image: linear-gradient(90deg, #4EA6FF 0%, #047DFF 100%);
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 16px;
+  margin-top: 16px;
 }
 /* 图片列表-画廊 */
 .met-img-list li .img-photoswipe {
@@ -132,19 +186,190 @@ $uicss h3 {
   font-size: 28px;
   color: #5b5b5b;
 }
-$uicss .partners-img-list {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-}
 $uicss .partners-img-list li {
-    list-style: none;
-    margin-right: 3.2857rem;
+  margin-right: 3.2857rem;
 }
 $uicss .partners-img-list li:nth-child(4n) {
     margin-right: 0;
 }
 $uicss .partners-img-list li:nth-child(n+5) {
     margin-top: 30px;
+}
+
+$uicss.index-page {
+  background: #F9FCFF;
+  margin: 0;
+  padding: 60px 0;
+}
+$uicss.index-page + .index-page {
+  background: #ffffff;
+}
+$uicss.index-page[m-id="11"] .container {
+  width: 100%;
+}
+$uicss.index-page .container ul {
+  justify-content: center;
+}
+/*首页解决方案图片列表*/
+$uicss .solution-img-list li {
+  display: flex;
+  width: 241px;
+  height: 200px;
+  padding: 8px;
+  overflow: hidden;
+  border: 1px solid #BFDFFF;
+  box-shadow: 0 2px 3px 0 #D2E5FA;
+}
+$uicss .solution-img-list li + li {
+  margin-left: 14px;
+}
+$uicss .solution-img-list li a, $uicss .problem-img-list li a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+$uicss .solution-img-list li a .img-wrap {
+  flex: 0 0 150px;
+}
+$uicss .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+$uicss .solution-img-list li a p, $uicss .problem-img-list li a p {
+  font-size: 16px;
+  color: #636363;
+}
+$uicss .solution-img-list + a, $uicss .problem-img-list + a {
+  font-size: 16px;
+  color: #5698DB;
+}
+/*首页遇到的问题图片列表*/
+$uicss .problem-img-list li {
+  display: flex;
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #BFDFFF;
+  padding: 16px;
+  margin-left: 65px;
+}
+$uicss .problem-img-list li:nth-child(3n+1) {
+  margin-left: 0;
+}
+$uicss .problem-img-list li:nth-child(n+4) {
+  margin-top: 30px;
+}
+$uicss .problem-img-list li a .img-wrap {
+  width: 100%;
+  height: 136px;
+}
+/*帮助中心第一部分*/
+$uicss .helpone-img-list, $uicss .skill-img-list, $uicss .helpthree-img-list {
+  justify-content: center;
+}
+$uicss .helpone-img-list li {
+  display: flex;
+  margin-left: 104px;
+  position: relative;
+  bottom: 0;
+  transition: all .1s ease-in-out;
+}
+$uicss .helpone-img-list li:first-child {
+  margin-left: 0;
+}
+$uicss .helpone-img-list li:hover {
+  bottom: 6px;
+}
+$uicss .helpone-img-list li:hover .img-wrap {
+  box-shadow: 0 2px 3px 0 #D2E5FA;
+}
+$uicss .helpone-img-list li p {
+  font-size: 12px;
+  color: #8C8C8C;
+}
+/*帮助中心第二部分*/
+$uicss[m-id="54"] {
+  background: #F9FCFF;
+  margin: 0;
+  padding: 45px 0;
+}
+$uicss[m-id="54"] h3 {
+  color: #8c8c8c;
+}
+$uicss .skill-img-list + a {
+  font-size: 16px;
+  color: #5698DB;
+}
+$uicss .skill-img-list li {
+  cursor: pointer;
+  margin-left: 50px;
+}
+$uicss .skill-img-list li:nth-child(4n+1) {
+  margin-left: 0;
+}
+$uicss .skill-img-list li:nth-child(n+5) {
+  margin-top: 45px;
+}
+$uicss .skill-img-list li .img-wrap {
+  width: 240px;
+  height: 125px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+$uicss .skill-img-list li p {
+  font-size: 18px;
+  color: #8C8C8C;
+}
+/*帮助中心第三部分*/
+$uicss[m-id="55"] {
+  margin: 0;
+  padding: 93px 0 0;
+}
+$uicss .helpthree-img-list li:nth-child(2) {
+  margin-left: 147px;
+}
+$uicss .helpthree-img-list li .img-wrap {
+  width: 384px;
+  height: 230px;
+  position: relative;
+}
+$uicss .helpthree-img-list li .img-wrap .play-btn {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  box-shadow: 0 0 13px 0 rgba(120,185,255,0.39);
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+$uicss .helpthree-img-list li .img-wrap .play-btn i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-left: 15px solid #007BFF;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+}
+$uicss .helpthree-img-list li p {
+  font-size: 20px;
+  color: #8C8C8C;
+  letter-spacing: 1.78px;
+}
+/*使用技巧页面*/
+$uicss.skill-page {
+  margin: 0;
+  padding: 10px 0 50px;
+}
+$uicss .use-skill-list {
+  justify-content: flex-start;
+}
+$uicss .use-skill-list li {
+  margin-left: 84px;
 }

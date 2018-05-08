@@ -16,6 +16,7 @@
         "{$metui_url3}plugin/StackBlur.js",
         "{$metui_url3}plugin/jquery.lazyload.min.js",
         "{$metui_url3}js/pager.js",
-		"{$metui_url3}js/img.js"
+		"{$metui_url3}js/img.js",
+        "ui/js/index.js"
     ]
 }

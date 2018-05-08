@@ -10,13 +10,19 @@ $uicss.met-show-body.bgpic {
   background-position: center;
 }
 /*服务条款*/
-$uicss.met-show-body.tos {
-  margin-top: -150px;
-}
 $uicss.met-show-body.tos .met-editor {
   width: auto;
   margin: 10px 100px 42px;
   padding: 66px 70px 46px;
   border: 1px solid #CDE6FF;
   box-shadow: 0 6px 6px 0 #D2E5FA;
+}
+/*使用手册*/
+$uicss.manual {
+  flex: 1;
+  border: 1px solid #CDE6FF;
+  border-left: 0;
+  box-shadow: none;
+  max-width: 984px;
+  padding: 60px;
 }

@@ -12,6 +12,13 @@
  */
 METUI_FUN['$uicss'] = {
     name:'$uicss',
+    init: function () {
+        $('body').append('<script type="text/javascript"> window.NTKF_PARAM = {siteid: "kf_9458",settingid: "kf_9458_1479119226945", uid: "",uname: "",isvip: "0",userlevel: "1",erpparam: "abc"};</script>');
+        $('body').append('<script src="https://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9458" async></script>');
+        $('.online-consult').click(function () {
+            window.NTKF.im_openInPageChat('kf_9458_1479119226945');
+        });
+    },
     weixin:function (){
         // 底部微信
         if($('#met-weixin').length){

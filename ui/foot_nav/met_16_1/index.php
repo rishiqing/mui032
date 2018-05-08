@@ -9,7 +9,7 @@
 					<tag action='list' cid="$m['id']">
 					<li>
 						<if value="$v.links">
-							<a href="{$v.links}" title="{$v.title}">{$v.title}</a>
+							<a href="{$v.links}" title="{$v.title}" <if value="$v.description">target="_blank"</if>>{$v.title}</a>
 						<else/>
 							<span>{$v.title}</span>
 						</if>
@@ -72,4 +72,7 @@
 		</div>
 	</div>
 	<div class="cutting-line"></div>
+</div>
+<div class="online-consult">
+	<img src="{$ui.online_url}">
 </div>

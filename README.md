@@ -8,8 +8,8 @@
 -----
 * 在后台系统中 增值服务--官方商城--应用，右上角搜索处进行应用的搜索、下载和安装。
 
-1.模板制作助手
-* 修改模板的时候，需要自定义一些标签使用，借助模板制作助手，可以往我们的模板中增加一些变量，避免页面中的文字和图片等信息写死，后期不方便产品运营在后台修改，不方便维护。
+1.模板制作助手（可以不安装）
+* 修改模板的时候，如果需要自定义一些标签，借助模板制作助手，可以往我们的模板中增加一些变量，避免页面中的文字和图片等信息写死，后期不方便产品运营在后台修改，不方便维护。注：目前这套模板放弃通过模板制作助手添加变量的方式，而是通过修改ui.json文件方式配置参数。
 * 我们通过模板制作助手添加的一些分区、变量等数据信息会保存在我们模板中的install文件夹--template.json文件中。首次在模板制作助手添加，会自动生成一个install文件夹。
 
 2.上传文件管理器（米拓暂时下架这个应用了，无需安装）
@@ -19,6 +19,7 @@
 -----
 * 点击 栏目管理--添加新栏目，按照以下栏目添加。属于二级栏目的对应在其一级栏目的 更多--添加 即可。下面列出的分别按照 栏目等级--排序--栏目名称--导航栏显示--所属模块--目录名称 的顺序，对照设置。本项目最多用到二级栏目。
 * 下面表格中的 `-`仅仅是为了对照方便查看而插入的分割线，表格太长，设置项较多，分割线便于对照。
+* 另外，下面表格中的 `...`是表示此处设置只是简单列出了部分项，没有全部列出，实际设置时按照产品要求同理设置即可。
 <table>
    <tr>
       <td>栏目等级</td>
@@ -31,69 +32,141 @@
    <tr>
       <td>一级</td>
       <td>0</td>
-      <td>产品</td>
-      <td>尾部导航条</td>
-      <td>产品模块</td>
-      <td>product</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>0</td>
       <td>功能</td>
       <td>头部主导航条</td>
       <td>产品模块</td>
-      <td>product</td>
+      <td>function</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>0</td>
       <td>日程安排</td>
       <td>不显示</td>
       <td>产品模块</td>
-      <td>product</td>
+      <td>function</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>1</td>
       <td>计划管理</td>
       <td>不显示</td>
       <td>产品模块</td>
-      <td>product</td>
+      <td>function</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>2</td>
       <td>工作笔记</td>
       <td>不显示</td>
       <td>产品模块</td>
-      <td>product</td>
+      <td>function</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>3</td>
       <td>在线云盘</td>
       <td>不显示</td>
       <td>产品模块</td>
-      <td>product</td>
+      <td>function</td>
    </tr>
    <tr>
-      <td>三级</td>
+      <td>二级</td>
       <td>4</td>
       <td>公司同事</td>
       <td>不显示</td>
       <td>产品模块</td>
-      <td>product</td>
+      <td>function</td>
    </tr>
    <tr>
-      <td>二级</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
       <td>1</td>
       <td>价格</td>
       <td>头部主导航条</td>
       <td>产品模块</td>
-      <td>product</td>
+      <td>price</td>
    </tr>
    <tr>
       <td>二级</td>
+      <td>0</td>
+      <td>中国铁塔</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>1</td>
+      <td>SYKES</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>2</td>
+      <td>亚洲保理</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>3</td>
+      <td>昌河汽车</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>4</td>
+      <td>中原物流</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>5</td>
+      <td>华生集团</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>6</td>
+      <td>通威太阳能</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>7</td>
+      <td>四达人才</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>price</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
       <td>2</td>
       <td>下载</td>
       <td>头部主导航条</td>
@@ -101,14 +174,6 @@
       <td>download</td>
    </tr>
    <tr>
-      <td>二级</td>
-      <td>3</td>
-      <td>更新日志</td>
-      <td>不显示</td>
-      <td>文章模块</td>
-      <td>log</td>
-   </tr>
-   <tr>
       <td>－</td>
       <td>－</td>
       <td>－</td>
@@ -118,107 +183,107 @@
    </tr>
    <tr>
       <td>一级</td>
-      <td>1</td>
-      <td>使用</td>
-      <td>尾部导航条</td>
-      <td>简介模块</td>
-      <td>usage</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>4</td>
+      <td>3</td>
       <td>解决方案</td>
       <td>头部主导航条</td>
-      <td>图片模块</td>
+      <td>文章模块</td>
       <td>solution</td>
    </tr>
    <tr>
       <td>二级</td>
-      <td>5</td>
-      <td>使用技巧</td>
-      <td>不显示</td>
-      <td>图片模块</td>
-      <td>skill</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>6</td>
-      <td>帮助中心</td>
-      <td>不显示</td>
-      <td>图片模块</td>
-      <td>help</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>7</td>
-      <td>产品手册</td>
-      <td>不显示</td>
-      <td>文章模块</td>
-      <td>manual</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>8</td>
-      <td>培训课程</td>
-      <td>不显示</td>
-      <td>文章模块</td>
-      <td>course</td>
-   </tr>
-   <tr>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-   </tr>
-   <tr>
-      <td>一级</td>
-      <td>10</td>
-      <td>使用方法</td>
-      <td>头部主导航条</td>
-      <td>简介模块</td>
-      <td>method</td>
-   </tr>
-   <tr>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-      <td>－</td>
-   </tr>
-   <tr>
-      <td>一级</td>
-      <td>11</td>
-      <td>钉钉</td>
-      <td>头部主导航条</td>
-      <td>产品模块</td>
-      <td>ding</td>
-   </tr>
-   <tr>
-      <td>二级</td>
       <td>0</td>
-      <td>轻应用，轻办公</td>
+      <td>互联网</td>
       <td>不显示</td>
-      <td>产品模块</td>
-      <td>ding</td>
+      <td>文章模块</td>
+      <td>solution</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>互联网文章1</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>solution</td>
+   </tr>
+   <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
    </tr>
    <tr>
       <td>二级</td>
       <td>1</td>
-      <td>一键发DING</td>
+      <td>建筑</td>
       <td>不显示</td>
-      <td>产品模块</td>
-      <td>ding</td>
+      <td>文章模块</td>
+      <td>solution</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>建筑文章1</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>solution</td>
+   </tr>
+   <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
    </tr>
    <tr>
       <td>二级</td>
       <td>2</td>
-      <td>随时发起讨论</td>
+      <td>制造业</td>
       <td>不显示</td>
-      <td>产品模块</td>
-      <td>ding</td>
+      <td>文章模块</td>
+      <td>solution</td>
+   </tr>
+   <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>3</td>
+      <td>电商</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>solution</td>
+   </tr>
+   <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>4</td>
+      <td>法律</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>solution</td>
+   </tr>
+   <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
    </tr>
    <tr>
       <td>－</td>
@@ -230,7 +295,63 @@
    </tr>
    <tr>
       <td>一级</td>
-      <td>12</td>
+      <td>4</td>
+      <td>使用方法</td>
+      <td>头部主导航条</td>
+      <td>文章模块</td>
+      <td>method</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>0</td>
+      <td>使用方法1</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>method</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>使用方法文章1</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>method</td>
+   </tr>
+   <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>5</td>
+      <td>企业微信</td>
+      <td>头部主导航条</td>
+      <td>产品模块</td>
+      <td>wechat</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>6</td>
       <td>支持</td>
       <td>头部主导航条</td>
       <td>简介模块</td>
@@ -241,8 +362,8 @@
       <td>0</td>
       <td>帮助中心</td>
       <td>不显示</td>
-      <td>简介模块</td>
-      <td>about</td>
+      <td>图片模块</td>
+      <td>help</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -251,6 +372,46 @@
       <td>不显示</td>
       <td>简介模块</td>
       <td>about</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>0</td>
+      <td>日事清概况</td>
+      <td>不显示</td>
+      <td>简介模块</td>
+      <td>about</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>1</td>
+      <td>开始使用日事清</td>
+      <td>不显示</td>
+      <td>简介模块</td>
+      <td>about</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>2</td>
+      <td>注册账号</td>
+      <td>不显示</td>
+      <td>简介模块</td>
+      <td>about</td>
+   </tr>
+   <tr>
+      <td>三级</td>
+      <td>3</td>
+      <td>登陆账号</td>
+      <td>不显示</td>
+      <td>简介模块</td>
+      <td>about</td>
+   </tr>
+   <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
    </tr>
    <tr>
       <td>二级</td>
@@ -301,6 +462,14 @@
       <td>article</td>
    </tr>
    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+   </tr>
+   <tr>
       <td>二级</td>
       <td>4</td>
       <td>更新日志</td>
@@ -333,6 +502,14 @@
       <td>toplog</td>
    </tr>
    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+   </tr>
+   <tr>
       <td>－</td>
       <td>－</td>
       <td>－</td>
@@ -342,15 +519,111 @@
    </tr>
    <tr>
       <td>一级</td>
-      <td>13</td>
-      <td>公司</td>
-      <td>尾部导航条</td>
-      <td>简介模块</td>
-      <td>company</td>
+      <td>7</td>
+      <td>底部导航</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>product</td>
    </tr>
    <tr>
       <td>二级</td>
       <td>0</td>
+      <td>产品</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>product</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>1</td>
+      <td>使用</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>product</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>2</td>
+      <td>公司</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>product</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>3</td>
+      <td>其他</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>product</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>8</td>
+      <td>使用技巧</td>
+      <td>不显示</td>
+      <td>图片模块</td>
+      <td>skill</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>0</td>
+      <td>日程</td>
+      <td>不显示</td>
+      <td>图片模块</td>
+      <td>skill</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>1</td>
+      <td>计划</td>
+      <td>不显示</td>
+      <td>图片模块</td>
+      <td>skill</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>2</td>
+      <td>笔记</td>
+      <td>不显示</td>
+      <td>图片模块</td>
+      <td>skill</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>3</td>
+      <td>公司</td>
+      <td>不显示</td>
+      <td>简介模块</td>
+      <td>other</td>
+   </tr>
+   <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>9</td>
       <td>关于我们</td>
       <td>不显示</td>
       <td>简介模块</td>
@@ -358,8 +631,16 @@
    </tr>
    <tr>
       <td>二级</td>
+      <td>0</td>
+      <td>公司简介</td>
+      <td>不显示</td>
+      <td>简介模块</td>
+      <td>company</td>
+   </tr>
+   <tr>
+      <td>二级</td>
       <td>1</td>
-      <td>官方博客</td>
+      <td>联系我们</td>
       <td>不显示</td>
       <td>简介模块</td>
       <td>company</td>
@@ -367,22 +648,6 @@
    <tr>
       <td>二级</td>
       <td>2</td>
-      <td>代理合作</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>company</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>3</td>
-      <td>服务条款</td>
-      <td>不显示</td>
-      <td>简介模块</td>
-      <td>company</td>
-   </tr>
-   <tr>
-      <td>二级</td>
-      <td>4</td>
       <td>加入我们</td>
       <td>不显示</td>
       <td>招聘模块</td>
@@ -398,42 +663,51 @@
    </tr>
    <tr>
       <td>一级</td>
-      <td>14</td>
-      <td>其他</td>
-      <td>尾部导航条</td>
-      <td>简介模块</td>
-      <td>other</td>
+      <td>10</td>
+      <td>代理合作</td>
+      <td>不显示</td>
+      <td>产品模块</td>
+      <td>agency</td>
    </tr>
    <tr>
       <td>二级</td>
       <td>0</td>
-      <td>电话：010-57294778</td>
+      <td>为什么选择成为日事清的代理商？</td>
       <td>不显示</td>
-      <td>简介模块</td>
-      <td>other</td>
+      <td>产品模块</td>
+      <td>agency</td>
    </tr>
    <tr>
       <td>二级</td>
       <td>1</td>
-      <td>邮箱：rishiqing@126.com</td>
+      <td>日事清能为你提供什么？</td>
       <td>不显示</td>
-      <td>简介模块</td>
-      <td>other</td>
+      <td>产品模块</td>
+      <td>agency</td>
    </tr>
    <tr>
       <td>二级</td>
       <td>2</td>
-      <td>申请友情链接</td>
+      <td>代理日事清您需要具备什么基础条件？</td>
       <td>不显示</td>
-      <td colspan="2">外部模块(tencent://message/uin=3500636638&Site=&Menu=yes)</td>
+      <td>产品模块</td>
+      <td>agency</td>
    </tr>
    <tr>
-      <td>二级</td>
-      <td>3</td>
-      <td>自助检测</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>11</td>
+      <td>服务条款</td>
       <td>不显示</td>
-      <td>简介模块</td>
-      <td>other</td>
+      <td></td>
+      <td>service</td>
    </tr>
    <tr>
       <td>－</td>
@@ -478,36 +752,155 @@
    <tr>
       <td>一级</td>
       <td>104</td>
-      <td>产品动画列表</td>
+      <td>首页随时随地享受工作</td>
       <td>不显示</td>
-      <td>简介模块</td>
+      <td>产品模块</td>
       <td>animate</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>105</td>
+      <td>首页解决方案</td>
+      <td>不显示</td>
+      <td>图片模块</td>
+      <td>partial</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>106</td>
+      <td>工作中遇到的问题</td>
+      <td>不显示</td>
+      <td>图片模块</td>
+      <td>settle</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>107</td>
+      <td>帮助中心第一部分</td>
+      <td>不显示</td>
+      <td>图片模块</td>
+      <td>helpone</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>108</td>
+      <td>帮助中心第二部分</td>
+      <td>不显示</td>
+      <td>图片模块</td>
+      <td>helptwo</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>109</td>
+      <td>帮助中心第三部分</td>
+      <td>不显示</td>
+      <td>图片模块</td>
+      <td>helpthree</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>110</td>
+      <td>常见问题</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>faq</td>
    </tr>
    <tr>
       <td>二级</td>
       <td>0</td>
-      <td>随时随地享受工作</td>
+      <td>日程</td>
       <td>不显示</td>
-      <td>产品模块</td>
-      <td>show</td>
+      <td>文章模块</td>
+      <td>faq</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>1</td>
+      <td>计划</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>faq</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>2</td>
+      <td>笔记</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>faq</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>3</td>
+      <td>公司</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>faq</td>
+   </tr>
+   <tr>
+      <td>二级</td>
+      <td>4</td>
+      <td>其它</td>
+      <td>不显示</td>
+      <td>文章模块</td>
+      <td>faq</td>
+   </tr>
+   <tr>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+   </tr>
+   <tr>
+      <td>一级</td>
+      <td>111</td>
+      <td>数据安全说明</td>
+      <td>不显示</td>
+      <td>简介模块</td>
+      <td>datasafe</td>
    </tr>
 </table>
 
-需要特殊设置标识的栏目(其它无说明的默认为0即可)
+需要进一步进行设置的一级二级和三级栏目
 -----
-* 1.一级栏目--产品，标识设置为 22
-* 2.一级栏目--钉钉，标识设置为 1
-* 3.二级栏目--功能，标识设置为 100
-* 4.三级栏目--价格，标识设置为 99
-* 5.二级栏目--官方博客，以及此栏目下的所有三级栏目，标识设置为 50
-* 6.二级栏目--更新日志，以及此栏目下的所有三级栏目，标识设置为 49
-* 7.二级栏目--服务条款，标识设置为 48
-
-需要进一步进行设置的二级栏目和三级栏目
------
-* 1.一级栏目--产品动画列表，是在首页`custom_list`部分中用到的，其下面的1个二级栏目，也需要进一步进行设置。同理，需要进行描述和栏目图片的设置。
-* 2.二级栏目--功能，是在 功能 这个列表页用到的，其下面的5个三级栏目，需要进一步设置描述以及栏目图片。
-* 3.一级栏目--钉钉，是在 钉钉 这个列表页用到的，其下面的3个二级栏目，需要进一步设置描述以及栏目图片。
+* 1.一级栏目--功能，是在 功能 这个列表页用到的，其下面的5个二级栏目，需要进一步设置描述以及栏目图片。
+* 2.一级栏目--价格，其下面的8个二级栏目，是在 价格 这个列表页的`谁在用日事清`部分用到的，需要进一步设置栏目图片。
+* 3.一级栏目--首页解决方案，需要设置栏目标题为`为各行各业提供全方位的解决方案`，以及简短描述为解决方案的链接地址，开发环境下为`http://localhost/metinfo/solution/index.php?lang=cn&pageset=1`，还有栏目修饰名称为`了解更多`。
+* 4.一级栏目--工作中遇到的问题，同上面首页解决方案的设置，需要分别设置栏目标题/简短描述/栏目修饰名称。
 
 风格--Banner管理
 -----
@@ -528,7 +921,7 @@
       <td>0</td>
       <td>日事清  工作开始的地方</td>
       <td>#5698db</td>
-      <td>阿里钉钉战略合作伙伴，数十万家企业共同选择，打造高效企业</td>
+      <td>企业微信战略合作伙伴，数十万家企业共同选择，打造高效企业</td>
       <td>#97acc1</td>
       <td>左</td>
       <td>网站首页</td>
@@ -538,7 +931,7 @@
       <td>覆盖工作方方面面</td>
       <td>#5698db</td>
       <td>高效之旅，远不止于此</td>
-      <td#97acc1</td>
+      <td>#97acc1</td>
       <td>居中</td>
       <td>功能</td>
    </tr>
@@ -547,7 +940,7 @@
       <td>永久免费，按需付费</td>
       <td>#5698db</td>
       <td>做最适合你的选择，用最低的价格</td>
-      <td#97acc1</td>
+      <td>#97acc1</td>
       <td>居中</td>
       <td>价格</td>
    </tr>
@@ -556,7 +949,7 @@
       <td>让工作超越距离</td>
       <td>#5698db</td>
       <td>全平台支持，只为时刻准备着的你</td>
-      <td#97acc1</td>
+      <td>#97acc1</td>
       <td>居中</td>
       <td>下载</td>
    </tr>
@@ -565,34 +958,34 @@
       <td>全方位企业管理解决方案</td>
       <td>#5698db</td>
       <td>让每个行业、每份工作都能运转自如</td>
-      <td#97acc1</td>
+      <td>#97acc1</td>
       <td>居中</td>
-      <td>解决方案</td>
+      <td>解决方案及其下所有子栏目</td>
    </tr>
    <tr>
       <td>5</td>
       <td>深入场景，玩转日事清</td>
       <td>#5698db</td>
       <td>完美解决办公场景中的每一个问题</td>
-      <td#97acc1</td>
+      <td>#97acc1</td>
       <td>居中</td>
-      <td>使用方法</td>
+      <td>使用方法及其下所有子栏目</td>
    </tr>
    <tr>
       <td>6</td>
-      <td>日事清 X 钉钉</td>
+      <td>日事清 X 企业微信</td>
       <td>#5698db</td>
       <td>保持高昂生产力</td>
-      <td#97acc1</td>
+      <td>#97acc1</td>
       <td>居中</td>
-      <td>钉钉</td>
+      <td>企业微信</td>
    </tr>
    <tr>
       <td>7</td>
       <td>帮助中心</td>
       <td>#5698db</td>
       <td>获悉你想要的一切</td>
-      <td#97acc1</td>
+      <td>#97acc1</td>
       <td>居中</td>
       <td>帮助中心</td>
    </tr>
@@ -601,9 +994,9 @@
       <td>产品手册</td>
       <td>#5698db</td>
       <td>欢迎使用日事清！</td>
-      <td#97acc1</td>
+      <td>#97acc1</td>
       <td>居中</td>
-      <td>产品手册</td>
+      <td>产品手册及其下所有子栏目</td>
    </tr>
    <tr>
       <td>9</td>
@@ -621,7 +1014,7 @@
       <td>记录日事清的点滴</td>
       <td>#97acc1</td>
       <td>居中</td>
-      <td>官方博客</td>
+      <td>官方博客及其下所有子栏目</td>
    </tr>
    <tr>
       <td>11</td>
@@ -630,7 +1023,7 @@
       <td>变化之间，无不洞悉</td>
       <td>#97acc1</td>
       <td>居中</td>
-      <td>更新日志</td>
+      <td>更新日志及其下所有子栏目</td>
    </tr>
    <tr>
       <td>12</td>
@@ -639,97 +1032,34 @@
       <td></td>
       <td>#97acc1</td>
       <td>居中</td>
-      <td>加入我们</td>
-   </tr>
-</table>
-
-模板制作助手中增加的变量
------
-* 在后台系统--我的应用--模板制作助手--模板管理，找到所使用的模板，点击自定义标签，进入标签自定义页面。
-* 点击添加自定义标签，依次设置 类型--变量名--默认值--标题--说明--位置。以下列表按照顺序，列出所设置的变量。
-* 建议先设置分区，后设置所属分区的变量，便于查找和修改。
-* 如果选择 类型 为分区，可点击 编辑 选项中的 添加子选项 进行变量的添加。下面列表中的非分区类型(简短文本，多行文本等) 变量都是在最近一个分区下添加的（向上查找所属分区）。
-
-<table>
-   <tr>
-      <td>类型</td>
-      <td>变量名</td>
-      <td>默认值</td>
-      <td>标题</td>
-      <td>说明</td>
-      <td>位置</td>
+      <td>关于我们及其下所有子栏目</td>
    </tr>
    <tr>
-      <td>分区</td>
-      <td>met_head</td>
-      <td></td>
-      <td>顶部导航</td>
-      <td></td>
-      <td>全局</td>
+      <td>13</td>
+      <td>日事清邀您一起</td>
+      <td>#5698db</td>
+      <td>开拓企业级SaaS市场这片蓝海</td>
+      <td>#97acc1</td>
+      <td>居中</td>
+      <td>代理合作</td>
    </tr>
    <tr>
-      <td>简短文本</td>
-      <td>ding_url</td>
-      <td>http://appcenter.dingtalk.com/detail.html?goodsCode=FW_GOODS-1000330934</td>
-      <td>点击钉钉图片的跳转地址</td>
+      <td>14</td>
+      <td>使用技巧</td>
+      <td>#5698db</td>
       <td></td>
-      <td>全局</td>
+      <td>#97acc1</td>
+      <td>居中</td>
+      <td>使用技巧及其下所有子栏目</td>
    </tr>
    <tr>
-      <td>简短文本</td>
-      <td>met_dingname</td>
-      <td>钉钉</td>
-      <td>图片的alt显示名字</td>
+      <td>15</td>
+      <td>常见问题</td>
+      <td>#5698db</td>
       <td></td>
-      <td>全局</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>btn_text1</td>
-      <td>立即体验</td>
-      <td>按钮文字</td>
-      <td></td>
-      <td>全局</td>
-   </tr>
-   <tr>
-      <td>分区</td>
-      <td>met_price</td>
-      <td></td>
-      <td>价格</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>price_desc_0</td>
-      <td>适用于个人</td>
-      <td>免费版描述</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>price_desc_1</td>
-      <td>适用于个人或微型团队</td>
-      <td>专业版描述</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>price_desc_2</td>
-      <td>适用于部门或企业</td>
-      <td>企业版描述</td>
-      <td></td>
-      <td>列表页</td>
-   </tr>
-   <tr>
-      <td>简短文本</td>
-      <td>price_desc_3</td>
-      <td>适用于大中型企业</td>
-      <td>旗舰版描述</td>
-      <td></td>
-      <td>列表页</td>
+      <td>#97acc1</td>
+      <td>居中</td>
+      <td>常见问题</td>
    </tr>
 </table>
 
@@ -737,6 +1067,7 @@
 -----
 * 1.页面设置，地址栏图标---上传日事清.ico文件
 * 2.风格--风格设置，模板主色调---#5b5b5b；模板副色调---#8c8c8c；模板配色调---#5698db
+* 3.风格--水印/缩略图-缩略图，产品模块--200 X 200；图片模块--268 X 214；文章模块--230 X 152
 
 下面的设置和内容均指在可视化后台中某个部分的设置/内容，只有设置的表示此部分只需要点击设置，不需要点击内容；只有内容的表示此部分只需要点击内容，不需要点击设置；
 -----
@@ -754,7 +1085,7 @@
    </tr>
    <tr>
       <td>导航禁用下拉菜单</td>
-      <td>钉钉|功能|</td>
+      <td>功能|价格|解决方案|使用方法|</td>
    </tr>
    <tr>
       <td>一级导航文字颜色</td>
@@ -803,12 +1134,8 @@
       <td>左</td>
    </tr>
    <tr>
-      <td>按钮1文字</td>
-      <td>立即进入</td>
-   </tr>
-   <tr>
-      <td>按钮2文字</td>
-      <td></td>
+      <td>按钮2链接</td>
+      <td>http://res-front-cdn.rishiqing.com/common/video/%E6%97%A5%E4%BA%8B%E6%B8%85%EF%BC%8C%E4%BD%A0%E7%90%86%E6%83%B3%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F.mp4</td>
    </tr>
    <tr>
       <td>按钮颜色</td>
@@ -1033,6 +1360,69 @@
    </tr>
 </table>
 
+* 2.内容
+* 点击内容，右上角选择首页随时随地享受工作，添加内容，按照下面设置
+
+<table>
+   <tr>
+      <td>所属栏目</td>
+      <td>首页随时随地享受工作</td>
+   </tr>
+   <tr>
+      <td>标题</td>
+      <td>随时随地享受工作</td>
+   </tr>
+   <tr>
+      <td>展示图片</td>
+      <td>上传大图</td>
+   </tr>
+   <tr>
+      <td>详细内容</td>
+      <td>我们的提供全平台的产品，触及每一个工作场景，只为时刻准备着的你</td>
+   </tr>
+   <tr>
+      <td>链接至</td>
+      <td>对应跳转链接</td>
+   </tr>
+</table>
+
+
+首页第五部分`img_list_page`
+-----
+* 1.设置
+* 调用栏目--首页解决方案
+
+* 2.内容
+* 右上角选择首页解决方案，然后添加内容，依次按照下面设置添加对应的5个解决方案即可
+
+<table>
+   <tr>
+      <td>所属栏目</td>
+      <td>首页解决方案</td>
+   </tr>
+   <tr>
+      <td>标题</td>
+      <td>互联网解决方案</td>
+   </tr>
+   <tr>
+      <td>展示图片</td>
+      <td>上传对应图片即可</td>
+   </tr>
+   <tr>
+      <td>链接至</td>
+      <td>解决方案页面中的对应子分类地址</td>
+   </tr>
+</table>
+
+首页第六部分`img_list_page`
+-----
+* 1.设置
+* 调用栏目--工作中遇到的问题
+
+* 2.内容
+* 右上角选择工作中遇到的问题，然后添加内容，同上面首页第五部分解决方案的设置，依次添加对应内容即可
+
+
 首页第七部分`contact`
 -----
 * 设置
@@ -1113,11 +1503,15 @@
    </tr>
 </table>
 
-底部导航栏设置(公共)
+底部导航栏设置(在首页设置)
 -----
-* 设置
+* 1.设置
 
 <table>
+   <tr>
+      <td>调用栏目</td>
+      <td>底部导航</td>
+   </tr>
    <tr>
       <td>服务热线</td>
       <td></td>
@@ -1171,6 +1565,25 @@
       <td>#ffffff</td>
    </tr>
 </table>
+
+* 2.内容
+* 点击内容--右上角选择 底部导航--产品，然后添加内容，按照以下设置，依次给底部导航的四个子栏目添加对应内容即可
+
+<table>
+   <tr>
+      <td>所属栏目</td>
+      <td>产品</td>
+   </tr>
+   <tr>
+      <td>标题</td>
+      <td>产品功能</td>
+   </tr>
+   <tr>
+      <td>链接至</td>
+      <td>设置为头部功能页的练级即可</td>
+   </tr>
+</table>
+
 
 功能页`product_list_page`设置
 -----
@@ -1229,20 +1642,109 @@
 
 <table>
    <tr>
+      <td>名称</td>
+      <td>字段类型</td>
       <td>所属栏目</td>
+      <td>访问权限</td>
+      <td>排序</td>
+   </tr>
+   <tr>
       <td>价格</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>0</td>
    </tr>
    <tr>
-      <td>标题（名称）</td>
-      <td>免费版</td>
+      <td>储存空间</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>1</td>
    </tr>
    <tr>
-      <td>展示图片</td>
-      <td></td>
+      <td>文件大小</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>2</td>
    </tr>
    <tr>
-      <td>参数管理</td>
-      <td>按下面表格新增参数</td>
+      <td>功能1</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>3</td>
+   </tr>
+   <tr>
+      <td>功能2</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>4</td>
+   </tr>
+   <tr>
+      <td>功能3</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>5</td>
+   </tr>
+   <tr>
+      <td>功能4</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>6</td>
+   </tr>
+   <tr>
+      <td>功能5</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>7</td>
+   </tr>
+   <tr>
+      <td>功能6</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>8</td>
+   </tr>
+   <tr>
+      <td>功能7</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>9</td>
+   </tr>
+   <tr>
+      <td>功能8</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>10</td>
+   </tr>
+   <tr>
+      <td>功能9</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>11</td>
+   </tr>
+   <tr>
+      <td>功能10</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>12</td>
+   </tr>
+   <tr>
+      <td>功能11</td>
+      <td>简短</td>
+      <td>价格</td>
+      <td>不限制</td>
+      <td>13</td>
    </tr>
 </table>
 
@@ -1326,7 +1828,48 @@
    </tr>
 </table>
 
-官方博客页`news_list_page`
+解决方案页`news_list_page`
+-----
+* 1.内容
+* 点击内容，右上角选择解决方案--互联网--相应三级栏目，添加内容，设置文章标题/详细内容即可。
+
+使用方法页`news_list_page`
+-----
+* 1.内容
+* 点击内容，右上角选择使用方法--使用方法1--相应三级栏目，添加内容，设置文章标题/详细内容即可。
+
+企业微信页`news_list_page`
+-----
+* 1.内容
+* 点击内容，右上角选择企业微信，添加内容，设置标题--轻应用,轻办公/展示图片/详细内容--任务实时分配、随时发起讨论；标题--安装到企业微信/展示图片/详细内容--立即安装日事清到企业微信/链接至--安装链接；标题--注册企业微信/展示图片/详细内容--还没有企业微信？立即注册企业微信和日事清/链接至--注册地址，依次添加三条内容，回到内容页面，将三个排序按照3-2-1进行排序，即第一个添加的排序在最前面。
+
+支持--帮助中心页第一部分
+-----
+* 1.设置
+* 调用栏目，选择 帮助中心第一部分
+
+* 2.内容
+* 点击内容，右上角选择 帮助中心第一部分，添加内容，分别设置标题--使用手册，展示图片--上传对应图片，详细内容--探索每个功能来了解日事清的基础用法。链接至--对应产品手册的链接地址。
+* 添加完之后，回到内容页面，按照大号排序在前，自定义排序即可。
+
+支持--帮助中心页第二部分/第三部分
+-----
+* 同上面帮助中心第一部分的设置，进行同理设置。
+
+支持--产品手册
+-----
+* 左侧标题是在栏目中进行设置的，添加栏目时，按照标题顺序添加即可，需要特殊设置的是子级标题部分栏目标识设置为1
+* 内容部分，就点击左侧标题，右侧对应点击内容，添加文章内容即可。
+
+支持--培训课程
+-----
+* 1.设置
+* 点击设置，按钮文字--报名，区块背景色--#ffffff
+
+* 2.内容
+* 点击内容，右上角选择培训课程，同上一样，添加内容
+
+支持--官方博客页`news_list_page`
 -----
 1.设置
 <table>
@@ -1362,7 +1905,7 @@
 
 3.点击任何一篇博客，进入博客详情页也可进行单独具体设置和内容
 
-更新日志页`news_list_page`
+支持--更新日志页`news_list_page`
 * 同上面 官方博客 操作
 
 自定义ui组件

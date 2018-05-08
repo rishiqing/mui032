@@ -156,26 +156,21 @@
                         </li> -->
                         <tag action='category' type='head' class='active' hide="$ui['hide']">
                         <?php
-                            $nav=explode('|', $ui[onenavlink]);
-                            foreach ($nav as $value) {
-                                if($value && strcmp($value, $m[name]) < -1){
-                                    $m[url]='';
-                                }
+                            // 如果禁止头部导航跳转，那么把$m[url]给置空
+                            if ($m[disable_header_nav_jump] == '1') {
+                                $m[url]='';
                             }
-                            $navDropdownHide=explode('|', $ui[hide]);
-                            foreach ($navDropdownHide as $value) {
-                                if ($value) {
-                                    if(strcmp($value, $m[name]) < -1){
-                                        $m['sub']=0;
-                                    }
-                                }
+                            if ($m[disable_header_nav_menu] == '1') {
+                                $m['sub']=0;
                             }
                         ?>
                         <if value="$ui['navdropdown_ok'] && $m['sub']">
                         <li class="nav-item dropdown m-l-{$ui.nav_ml}">
                             <if value="$ui['navdropdown_type']">
                             <a
+                                <if value="$m.url">
                                 href="{$m.url}"
+                                </if>
                                 {$m.urlnew}
                                 title="{$m.name}"
                                 class="nav-link dropdown-toggle {$m.class}"
@@ -183,7 +178,9 @@
                             >
                             <else/>
                             <a
+                                <if value="$m.url">
                                 href="{$m.url}"
+                                </if>
                                 {$m.urlnew}
                                 title="{$m.name}"
                                 class="nav-link dropdown-toggle {$m.class}"
@@ -197,15 +194,31 @@
                             <div class="dropdown-menu dropdown-menu-right animate two-menu">
                             </if>
                                 <if value="$m[module] neq 1">
-                                <a href="{$m.url}" {$m.urlnew} title="{$ui.all}" class='dropdown-item nav-parent hidden-lg-up'>{$ui.all}</a>
+                                <a 
+                                    <if value="$m.url">
+                                    href="{$m.url}"
+                                    </if>
+                                    {$m.urlnew}
+                                    title="{$ui.all}"
+                                    class='dropdown-item nav-parent hidden-lg-up'>{$ui.all}</a>
                                 </if>
                                 <tag action='category' cid="$m['id']" type='son' class='active'>
                                 <if value="$m['sub'] && $ui[threemenuok]">
                                 <div class="dropdown-submenu border-top1 <if value='!$ui[navbullet_ok]'>animate</if>">
-                                    <a href="{$m.url}" {$m.urlnew} class="dropdown-item {$m.class}">{$m.name}</a>
+                                    <a 
+                                        <if value="$m.url">
+                                        href="{$m.url}"
+                                        </if>
+                                        {$m.urlnew}
+                                        class="dropdown-item {$m.class}">{$m.name}</a>
                                     <div class="dropdown-menu <if value='!$ui[navbullet_ok]'>animate</if>">
                                         <tag action='category' cid="$m['id']" type='son' class='active'>
-                                            <a href="{$m.url}" {$m.urlnew} class="dropdown-item border-top1 {$m.class}" >{$m.name}</a>
+                                            <a 
+                                                <if value="$m.url">
+                                                href="{$m.url}"
+                                                </if>
+                                                {$m.urlnew}
+                                                class="dropdown-item border-top1 {$m.class}" >{$m.name}</a>
                                         </tag>
                                     </div>
                                 </div>
@@ -223,7 +236,13 @@
                                     </tag>
                                     <a href="<?php echo $firstSubUrl; ?>" <?php echo $urlnew.'title='.$name.'" class="dropdown-item border-top1 hassub "'.$class.'>'.$name.'</a>'; ?>
                                 <else/>
-                                <a href="{$m.url}" {$m.urlnew} title="{$m.name}" class='dropdown-item border-top1 hassub {$m.class}'>{$m.name}</a>
+                                <a 
+                                    <if value="$m.url">
+                                    href="{$m.url}"
+                                    </if>
+                                    {$m.urlnew}
+                                    title="{$m.name}"
+                                    class='dropdown-item border-top1 hassub {$m.class}'>{$m.name}</a>
                                 </if>
                                 </if>
                                 </tag>
@@ -231,7 +250,13 @@
                         </li>
                         <else/>
                         <li class='nav-item m-l-{$ui.nav_ml}'>
-                            <a href="{$m.url}" {$m.urlnew} title="{$m.name}" class="nav-link {$m.class}">{$m.name}</a>
+                            <a 
+                                <if value="$m.url">
+                                href="{$m.url}"
+                                </if>
+                                {$m.urlnew}
+                                title="{$m.name}"
+                                class="nav-link {$m.class}">{$m.name}</a>
                         </li>
                         </if>
                         </tag>

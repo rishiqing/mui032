@@ -134,8 +134,8 @@
                     <else/>
                     <ul class="navbar-nav vertical-align p-l-0 m-b-0 met-head-user" m-id="member" m-type="member">
                         <li class=" text-xs-center vertical-align-middle animation-slide-top">
-                            <a href="{$c.met_weburl}i?port=2" class="btn btn-squared btn-primary btn-outline m-r-10">{$word.login}</a>
-                            <a href="{$c.met_weburl}i?port=1" class="btn btn-squared btn-success">{$word.register}</a>
+                            <a href="{$ui.login_link}" class="btn btn-squared btn-primary btn-outline m-r-10">{$word.login}</a>
+                            <a href="{$ui.register_link}" class="btn btn-squared btn-success">{$word.register}</a>
                         </li>
                     </ul>
                 </if>
@@ -211,7 +211,7 @@
                                     class='dropdown-item nav-parent hidden-lg-up'>{$ui.all}</a>
                                 </if>
                                 <tag action='category' cid="$m['id']" type='son' class='active'>
-                                <if value="$sub_menu && $ui[threemenuok]">
+                                <if value="$m['sub'] && $ui[threemenuok]">
                                 <div class="dropdown-submenu border-top1 <if value='!$ui[navbullet_ok]'>animate</if>">
                                     <a 
                                         <if value="$m.url">
@@ -235,7 +235,7 @@
                                     </div>
                                 </div>
                                 <else/>
-                                <if value="$sub_menu">
+                                <if value="$m['sub']">
                                     <?php
                                         $urlnew = $m['urlnew'];
                                         $name = $m['name'];

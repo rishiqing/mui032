@@ -12,7 +12,7 @@
                     <tag action="feedback.form" cid="$ui[id]"></tag>
                 </div>
                 <else/>
-                    <a href="{$ui.btnlink}" title="{$ui.btntext}" target="_blank" class="btn btn-primary about_link">{$ui.btntext}</a>
+                    <a href="{$ui.btnlink}" title="{$ui.btntext}" class="btn btn-primary about_link">{$ui.btntext}</a>
             </if>
         </div>
     </div>

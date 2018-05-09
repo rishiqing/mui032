@@ -101,6 +101,8 @@ METUI_FUN['$uicss'] = {
                         location=$(this).attr('href');
                     }
                 }
+                $met_navlist.find('.nav-link').removeClass('active');
+                $(this).addClass('active');
             });
             // 导航下拉菜单三级栏目展开处理
             if(device_type=='d'){

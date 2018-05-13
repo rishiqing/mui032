@@ -154,7 +154,7 @@
                             </if>
                             ">{$word.home}</a>
                         </li> -->
-                        <tag action='category' type='head' class='active' hide="$ui['hide']">
+                        <tag action='category' type='head' class='active'>
                         <?php
                             $sub_menu = 1;
                             // 如果禁止头部导航跳转，那么把$m[url]给置空

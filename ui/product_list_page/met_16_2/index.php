@@ -7,16 +7,16 @@
 	<tag action='list' cid="$m['id']" num="$ui['num']">
         <if value="$v['_index'] lt $c['met_product_list']">
             <if value="$v[_index] eq 0">
-                <section class="<if value='$v[_index] eq 0'>animation-slide-bottom50 appear-no-repeat</if>" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+                <section>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4 desc <if value='$v[_index] eq 0'>animation-slide-left appear-no-repeat</if>" data-plugin="appear" data-animate="slide-left" data-repeat="false">
+                            <div class="col-md-4 desc">
                                 <div>
                                     <h4>{$v.title}</h4>
                                     <p>{$v.description}</p>
                                 </div>
                             </div>
-                            <div class="col-md-8 img text-xs-right <if value='$v[_index] eq 0'>animation-slide-right appear-no-repeat</if>" data-plugin="appear" data-animate="slide-right" data-repeat="false">
+                            <div class="col-md-8 img text-xs-right">
                                 <div class="vertical-align-middle">
                                     <img src="{$v.imgurl}" alt="{$v.title}" />
                                 </div>
@@ -31,15 +31,15 @@
                     <a href="{$v.url}" target="_blank"><img src="{$v.imgurl}" alt="{$v.title}" /></a>
                 </div>
             <else/>
-                <section class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+                <section>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 text-xs-left img vertical-align invisible" data-plugin="appear" data-animate="slide-left" data-repeat="false">
+                            <div class="col-md-8 text-xs-left img vertical-align">
                                 <div class="vertical-align-middle">
                                     <img src="{$v.imgurl}" alt="{$v.title}" />
                                 </div>
                             </div>
-                            <div class="col-md-4 desc invisible" data-plugin="appear" data-animate="slide-right" data-repeat="false">
+                            <div class="col-md-4 desc">
                                 <div>
                                     <h4>{$v.title}</h4>
                                     <p>{$v.description}</p>
@@ -169,7 +169,7 @@
 				<div class='m-t-20 text-xs-center hidden-sm-down' m-type="nosysdata">
 				    <pager/>
 				</div>
-				<div class="met_pager met-pager-ajax-link hidden-md-up" data-plugin="appear" data-animate="slide-bottom" data-repeat="false" m-type="nosysdata">
+				<div class="met_pager met-pager-ajax-link hidden-md-up" m-type="nosysdata">
 				    <button type="button" class="btn btn-primary btn-block btn-squared ladda-button" id="met-pager-btn" data-plugin="ladda" data-style="slide-left" data-url="" data-page="1">
 				        <i class="icon wb-chevron-down m-r-5" aria-hidden="true"></i>
 				    </button>

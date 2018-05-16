@@ -9,6 +9,11 @@ $uicss {
     padding-top: 172px;
     padding-bottom: 56px;
 }
+[class*=animation-] {
+  -webkit-animation-duration: .3s;
+  -o-animation-duration: .3s;
+  animation-duration: .3s;
+}
 $uicss.index-page {
     background-image: linear-gradient(-180deg, #F5FAFF 0%, #FFFFFF 99%);
     padding-top: 190px;

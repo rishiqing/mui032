@@ -51,7 +51,7 @@
                                     {$user.username}
                                     <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-right animate" role="menu">
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
                                     <li role="presentation">
                                         <a href="{$url.shop_profile}" class="dropdown-item" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> {$word.app_shop_personal}</a>
                                     </li>
@@ -117,7 +117,7 @@
                                     {$user.username}
                                     <span class="caret"></span>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-right animate">
+                                <ul class="dropdown-menu dropdown-menu-right">
                                     <li role="presentation">
                                         <a href="{$c.met_weburl}member/basic.php?lang={$_M[lang]}" class="dropdown-item" title='{$word.memberIndex9}' role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> {$word.memberIndex9}</a>
                                     </li>
@@ -197,7 +197,7 @@
                             <if value="$ui['navbullet_ok']">
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-bullet two-menu">
                             <else/>
-                            <div class="dropdown-menu dropdown-menu-right animate two-menu">
+                            <div class="dropdown-menu dropdown-menu-right two-menu">
                             </if>
                                 <if value="$m[module] neq 1">
                                 <a 
@@ -212,7 +212,7 @@
                                 </if>
                                 <tag action='category' cid="$m['id']" type='son' class='active'>
                                 <if value="$m['sub'] && $ui[threemenuok]">
-                                <div class="dropdown-submenu border-top1 <if value='!$ui[navbullet_ok]'>animate</if>">
+                                <div class="dropdown-submenu border-top1">
                                     <a 
                                         <if value="$m.url">
                                         href="{$m.url}"
@@ -221,7 +221,7 @@
                                         </if>
                                         {$m.urlnew}
                                         class="dropdown-item {$m.class}">{$m.name}</a>
-                                    <div class="dropdown-menu <if value='!$ui[navbullet_ok]'>animate</if>">
+                                    <div class="dropdown-menu">
                                         <tag action='category' cid="$m['id']" type='son' class='active'>
                                             <a 
                                                 <if value="$m.url">
@@ -302,7 +302,7 @@
                                         </button>
                                         </if>
                                         </lang>
-                                        <div class="dropdown-menu dropdown-menu-right animate animate-reverse" id="met-langlist-dropdown" role="menu">
+                                        <div class="dropdown-menu dropdown-menu-right" id="met-langlist-dropdown" role="menu">
                                             <lang>
                                             <a href="{$v.met_weburl}" title="{$v.name}" class='dropdown-item'>
                                                 <if value="$ui['langlist_icon_ok']">

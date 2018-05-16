@@ -62,7 +62,7 @@
                         <div class='m-t-20 text-xs-center hidden-sm-down' m-type="nosysdata">
                             <pager/>
                         </div>
-                        <div class="met_pager met-pager-ajax-link hidden-md-up" data-plugin="appear" data-animate="slide-bottom" data-repeat="false" m-type="nosysdata">
+                        <div class="met_pager met-pager-ajax-link hidden-md-up" m-type="nosysdata">
                             <button type="button" class="btn btn-primary btn-block btn-squared ladda-button" id="met-pager-btn" data-plugin="ladda" data-style="slide-left" data-url="" data-page="1">
                                 <i class="icon wb-chevron-down m-r-5" aria-hidden="true"></i>
                                 {$lang.page_ajax_next}

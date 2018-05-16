@@ -2,11 +2,8 @@
 <div class="$uicss met-index-body text-xs-center <if value="$ui['bg_type'] eq 1">bgcolor<else/>bgpic</if>" m-id='{$ui.mid}'>
 	<div class="container">
 		<if value="$ui['title']">
-			<h2 class="invisible" data-plugin="appear" data-animate="slide-top" data-repeat="false">{$ui.title}</h2>
+			<h2>{$ui.title}</h2>
 		</if>
-		<!-- <if value="$ui['desc']">
-			<p class="desc m-b-0 font-weight-300 invisible" data-plugin="appear" data-animate="fade" data-repeat="false">{$ui.desc}</p>
-		</if> -->
 		<ul class="
 			<if value="$ui['column_xs'] eq 1">
 			block-xs-100
@@ -18,7 +15,7 @@
 			<tag action='category' cid="$ui['id']" type='current'>
 				<tag action='list' cid="$m['id']" num="$ui['num']">
 					<if value="$v['_index'] lt $ui[num]">
-						<li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+						<li>
 							<!-- <if value="$ui['link_ok']">
 							<a href="{$v.url}" title="{$v.title}" {$v.urlnew}>
 							</if> -->

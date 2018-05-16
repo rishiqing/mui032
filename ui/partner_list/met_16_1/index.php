@@ -1,8 +1,7 @@
 <?php defined('IN_MET') or exit('No permission'); ?>
 <div class="$uicss met-index-body <if value="$ui[bg_type]">bgcolor<else/>bgpic</if>" m-id='{$ui.mid}'>
     <div class="container text-xs-center">
-        <h2 class="title invisible" data-plugin="appear" data-animate="slide-top" data-repeat="false">{$ui.title}</h2>
-        <!-- <p class="desc invisible" data-plugin="appear" data-animate="fade" data-repeat="false">{$ui.desc}</p> -->
+        <h2 class="title">{$ui.title}</h2>
         <if value="$data['classnow'] eq 10001">
         <div class="image-list">
         <div class="list-container">
@@ -18,7 +17,7 @@
              data-scale='$ui[img_y]x$ui[img_x]'>
             <tag action="category" type="current" cid="$ui['id']">
                 <tag action="list" cid="$m['id']" num="$ui['num']" type="$ui['type']">
-                    <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+                    <li>
                         <div>
                             <if value="$ui[link_ok]">
                                 <a href="{$v.url}" title="{$v.title}">

@@ -23,7 +23,7 @@
                             <if value="$ui[link_ok]">
                                 <a href="{$v.url}" title="{$v.title}">
                             </if>
-                             <img data-original="{$v.imgurl|thumb:$ui[img_w],$ui[img_h]}" alt="{$v.title}" >
+                             <img src="{$v.imgurl|thumb:$ui[img_w],$ui[img_h]}" alt="{$v.title}" >
                             <if value="$ui[link_ok]">
                                 </a>
                             </if>

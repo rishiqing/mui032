@@ -19,11 +19,11 @@ $uicss .container ul {
   display: flex;
   flex-wrap: wrap;
 }
-$uicss .container ul li:nth-child(n+5) {
-  margin-top: 18px;
+$uicss .container ul li:nth-child(n+13) {
+  margin-top: 4px;
 }
 $uicss .container ul li a {
-  font-size: 13px;
+  font-size: 12px;
   color: #666666;
   transition: color 0.2s ease-out;
 }

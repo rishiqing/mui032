@@ -82,7 +82,14 @@ $uicss .slick-slide .bannera {
     top: 0;
     z-index: 13;
 }
-$uicss .slick-slide img {
+$uicss .slick-slide .wechat-link {
+    display: inline-block;
+    margin-top: 40px;
+}
+$uicss .slick-slide img.wechat-img {
+    display: inline-block;
+}
+$uicss .slick-slide img:not(.wechat-img) {
     min-height: 150px;
     width: 100%;
 }

@@ -62,6 +62,9 @@ if($data['title']){
                             <if value="$v.btn_text_2">
                                 <a href="{$ui.btnlink1}" class="btn animation-slide-bottom first-btn">{$v.btn_text_2}</a>
                             </if>
+                            <if value="$data['foldername'] eq 'wechat'">
+                                <a href="<if value="$v['img_link']">{$v.img_link}<else/>{$ui.btnlink1}</if>" class="wechat-link animation-slide-bottom" target="_blank"><img class="wechat-img" src="{$v.img_path}"></a>
+                            </if>
                             <if value="$data['classnow'] eq 10001 && $v[_first]">
                                 <div class="btn animation-slide-bottom play-btn" data-src="{$ui.btnlink2}">
                                     <i></i>
@@ -81,9 +84,6 @@ if($data['title']){
                 </div>
             </div>
         </div>
-        </if>
-        <if value="$v['img_link']">
-        <a href="{$v.img_link}" title="{$v.img_des}" target='_blank' class="bannera" met-imgmask></a>
         </if>
     </div>
     </tag>

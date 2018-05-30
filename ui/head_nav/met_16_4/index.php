@@ -20,12 +20,12 @@
                             <img src="{$ui.logo}" alt="{$c.met_webname}" class="logo1  hidden">
                         </div>
                     </a>
-                    <!-- <a href="{$ui.server_link}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$ui.server_name}" target="_blank">
+                    <a href="{$ui.server_link}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$ui.server_name}" target="_blank">
                         <div class="vertical-align-middle">
                             <img src="{$ui.server_logo}" alt="{$ui.server_name}" class="logo">
                             <img src="{$ui.server_logo}" alt="{$ui.server_name}" class="logo1  hidden">
                         </div>
-                    </a> -->
+                    </a>
                 </div>
                 <!-- logo -->
                 <button type="button" class="navbar-toggler hamburger hamburger-close collapsed p-x-5 $uicss-toggler" data-target="#$uicss-collapse" data-toggle="collapse">

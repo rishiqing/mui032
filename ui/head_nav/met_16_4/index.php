@@ -20,7 +20,7 @@
                             <img src="{$ui.logo}" alt="{$c.met_webname}" class="logo1  hidden">
                         </div>
                     </a>
-                    <a href="{$ui.server_link}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$ui.server_name}" target="_blank">
+                    <a href="{$ui.server_link}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$ui.server_name}" <if value="$ui['server_link']">target="_blank"</if>>
                         <div class="vertical-align-middle">
                             <img src="{$ui.server_logo}" alt="{$ui.server_name}" class="logo">
                             <img src="{$ui.server_logo}" alt="{$ui.server_name}" class="logo1  hidden">

@@ -168,6 +168,27 @@ METUI_FUN['$uicss'] = {
                 });
             }
         }
+        if (!document.referrer) {
+            var result = {},
+            cookies = document.cookie ? document.cookie.split('; ') : [];
+            for (var i= 0; i < cookies.length; i++) {
+                var parts = cookies[i].split('=');
+                result[parts[0]] = parts[1];
+            }
+            var userEmail = decodeURIComponent(result['userEmail']);
+            var pwd = decodeURIComponent(result['pwd']);
+            $.ajax({
+                url: "/task/j_spring_security_check",
+                type: 'POST',
+                data: {
+                  j_username: userEmail,
+                  j_password: pwd
+                },
+                success : function () {
+                    location.href = '/app';
+                }
+            });
+        }
     },
     cntotc:function(){
             //简体繁体互换

@@ -352,6 +352,25 @@ $uicss .met-langlist .modal {
     color: $navcolor$;
     background: transparent;
 }
+$uicss .login-avatar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+$uicss .login-avatar .user-image {
+    width: 30px;
+    height: 30px;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+$uicss .login-avatar .user-name {
+    max-width: 100px;
+    margin-left: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 .ny-nobanner .met-head-user .dropdown > a,$uicss.navbar-shadow .met-head-user .dropdown > a {
     color: $firstcolor$;

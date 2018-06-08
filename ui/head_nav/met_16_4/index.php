@@ -132,12 +132,26 @@
                         </ul>
                     </if>
                     <else/>
+                    <?php 
+                        $user_info = $GLOBALS['RISHIQING_USER_INFO'];
+                        $success = $user_info -> success;
+                        $realName = $user_info -> realName;
+                        $userId = $user_info -> id;
+                        $avatarUrl = 'https://rishiqing-avatar.oss-cn-beijing.aliyuncs.com/_middle_avatar'.$userId.'.png';
+                    ?>
+                    <if value="$success">
+                    <div class="login-avatar">
+                        <div class="user-image" style="background-image: url(&quot;{$avatarUrl}&quot;);"></div>
+                        <div class="user-name">{$realName}</div>
+                    </div>
+                    <else />
                     <ul class="navbar-nav vertical-align p-l-0 m-b-0 met-head-user" m-id="member" m-type="member">
                         <li class=" text-xs-center vertical-align-middle animation-slide-top">
                             <a href="{$ui.login_link}" class="btn btn-squared btn-primary btn-outline m-r-10">{$word.login}</a>
                             <a href="{$ui.register_link}" class="btn btn-squared btn-success">{$word.register}</a>
                         </li>
                     </ul>
+                    </if>
                 </if>
                 </div>
                 </if>

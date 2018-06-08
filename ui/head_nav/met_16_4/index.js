@@ -169,37 +169,15 @@ METUI_FUN['$uicss'] = {
             }
         }
         if (!document.referrer) {
-            var result = {},
-            cookies = document.cookie ? document.cookie.split('; ') : [];
-            for (var i= 0; i < cookies.length; i++) {
-                var parts = cookies[i].split('=');
-                result[parts[0]] = parts[1];
-            }
-            var userEmail = decodeURIComponent(result['userEmail']);
-            var pwd = decodeURIComponent(result['pwd']);
-            if (userEmail && pwd) {
-                $.ajax({
-                    url: "/task/j_spring_security_check",
-                    type: 'POST',
-                    data: {
-                      j_username: userEmail,
-                      j_password: pwd
-                    },
-                    success : function () {
+            $.ajax({
+                url: "/task/login/authAjax",
+                type: 'GET',
+                success : function (data) {
+                    if (data.success) {
                         location.href = '/app';
                     }
-                });
-            } else {
-                $.ajax({
-                    url: "/task/login/authAjax",
-                    type: 'GET',
-                    success : function (data) {
-                        if (data.success) {
-                            location.href = '/app';
-                        }
-                    }
-                });
-            }
+                }
+            });
         }
         var $metnav=METUI['$uicss'],
         $logginAvatar=$metnav.find('.login-avatar');

@@ -177,16 +177,35 @@ METUI_FUN['$uicss'] = {
             }
             var userEmail = decodeURIComponent(result['userEmail']);
             var pwd = decodeURIComponent(result['pwd']);
-            $.ajax({
-                url: "/task/j_spring_security_check",
-                type: 'POST',
-                data: {
-                  j_username: userEmail,
-                  j_password: pwd
-                },
-                success : function () {
-                    location.href = '/app';
-                }
+            if (userEmail && pwd) {
+                $.ajax({
+                    url: "/task/j_spring_security_check",
+                    type: 'POST',
+                    data: {
+                      j_username: userEmail,
+                      j_password: pwd
+                    },
+                    success : function () {
+                        location.href = '/app';
+                    }
+                });
+            } else {
+                $.ajax({
+                    url: "/task/login/authAjax",
+                    type: 'GET',
+                    success : function (data) {
+                        if (data.success) {
+                            location.href = '/app';
+                        }
+                    }
+                });
+            }
+        }
+        var $metnav=METUI['$uicss'],
+        $logginAvatar=$metnav.find('.login-avatar');
+        if ($logginAvatar.length) {
+            $logginAvatar.on('click', function () {
+                location.href = '/app';
             });
         }
     },

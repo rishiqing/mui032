@@ -80,6 +80,13 @@
 											<span class="package-currency">{$arr[0]}</span>
 											<span class="package-price">{$arr[1]}</span>
 											<span class="package-time">{$arr[2]}</span>
+                                            <if value="$v['links']">
+                                                <a href="{$v['links']}" target="_blank" class="show-link">
+                                                    <if value="$v['imgurl']">
+                                                        <img src="{$v['imgurl']}">
+                                                    </if>
+                                                </a>
+                                            </if>
 										</if>
 						            </if>
 					            </list>

@@ -186,6 +186,14 @@ METUI_FUN['$uicss'] = {
                 location.href = '/app';
             });
         }
+        // 新版默认头像设置
+        $newDefaultAvatar=$metnav.find('.new-default-avatar'),
+        $userName=$metnav.find('.user-name');
+        if ($newDefaultAvatar.length) {
+            var username = $userName.text().trim();
+            var firstName = username[0] || 'A';
+            $newDefaultAvatar.attr('src',`data:image/svg+xml;base64, ${this.converseToBase64(this.getSvgTemplate(this.getStringColor(firstName).color || '#96D530', firstName))}`);
+        }
     },
     cntotc:function(){
             //简体繁体互换
@@ -203,6 +211,51 @@ METUI_FUN['$uicss'] = {
             $(this).text('繁體');
          }
       });
+    },
+    getStringColor:function(s) {
+        if (s) {
+            if (!s[0]) {
+              return {
+                index: 0,
+                color: '#96D530',
+              }
+            }
+            var colorList = [
+              '#96D530',
+              '#30D539',
+              '#7F67FF',
+              '#F7E437',
+              '#55E6A5',
+              '#9467FF',
+              '#F7A437',
+              '#4FDFDD',
+              '#E567FF',
+              '#F77C37',
+              '#67C9FF',
+              '#FF67B2',
+              '#F73737',
+              '#678FFF',
+              '#FF6767',
+            ];
+            var uniCode = s.codePointAt(0);
+            var index = uniCode % 15;
+            return {
+              index: index,
+              color: colorList[index]
+            }
+        }
+  },
+  converseToBase64:function(data) {
+    let s = '';
+    if (typeof data === 'string') {
+      s = data;
+    } else if (typeof data === 'object') {
+      s = JSON.stringify(data);
     }
+    return window.btoa(unescape(encodeURIComponent(s)));
+  },
+  getSvgTemplate:function(color, name) {
+    return `<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><rect fill='${color}' x='0' y='0' width='100%' height='100%'></rect><text fill='#FFF' x='50%' y='70%' text-anchor='middle' alignment-baseline='baseline' font-size='30' font-family='Verdana, Geneva, sans-serif'>${name}</text></svg>`;
+  }
 };
 var x = new metui(METUI_FUN['$uicss']);

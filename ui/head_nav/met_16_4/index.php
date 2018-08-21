@@ -135,13 +135,29 @@
                     <?php 
                         $user_info = $GLOBALS['RISHIQING_USER_INFO'];
                         $success = $user_info -> success;
-                        $realName = $user_info -> realName;
+                        $isBackNewVersion = $user_info -> isBackNewVersion;
                         $userId = $user_info -> id;
-                        $avatarUrl = 'https://rishiqing-avatar.oss-cn-beijing.aliyuncs.com/_middle_avatar'.$userId.'.png';
+                        $hasAvatar = $user_info -> hasAvatar;
+                        $realName = '姓名';
+                        $avatarUrl = 'https://images.timetask.cn/avatar/_large_avatar1.png';
+                        $isNewDefaultAvatar = false;
+                        if ($isBackNewVersion) {
+                            $realName = $user_info -> personRealName;
+                            if ($hasAvatar) {
+                                $avatarUrl = $user_info -> avatar;
+                            } else {
+                                $isNewDefaultAvatar = true;
+                            }
+                        } else {
+                            $realName = $user_info -> realName;
+                            if ($hasAvatar) {
+                                $avatarUrl = 'https://rishiqing-avatar.oss-cn-beijing.aliyuncs.com/_middle_avatar'.$userId.'.png';
+                            }
+                        }
                     ?>
                     <if value="$success">
                     <div class="login-avatar">
-                        <div class="user-image" style="background-image: url(&quot;{$avatarUrl}&quot;);"></div>
+                        <img class="user-image <if value="$isNewDefaultAvatar">new-default-avatar</if>" src="{$avatarUrl}">
                         <div class="user-name">{$realName}</div>
                     </div>
                     <else />

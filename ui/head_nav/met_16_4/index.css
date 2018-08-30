@@ -360,9 +360,7 @@ $uicss .login-avatar {
 }
 $uicss .login-avatar .user-image {
     width: 30px;
-    height: 30px;
-    -webkit-background-size: contain;
-    background-size: contain;
+    border-radius: 2px;
 }
 $uicss .login-avatar .user-name {
     max-width: 100px;

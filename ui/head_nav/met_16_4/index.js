@@ -246,7 +246,7 @@ METUI_FUN['$uicss'] = {
         }
   },
   converseToBase64:function(data) {
-    let s = '';
+    var s = '';
     if (typeof data === 'string') {
       s = data;
     } else if (typeof data === 'object') {

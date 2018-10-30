@@ -167,14 +167,17 @@ $uicss .banner-text.p-0 .container {
     text-align: left;
 }
 $uicss .banner-text.p-0 .container .banner-text-con > div {
-    width: 39.6%;
+    width: 45.6%;
     float: left;
     margin-left: 2.4286rem;
+}
+$uicss .banner-text.p-0 .container .banner-text-con > div > p {
+    max-width: 85%;
 }
 $uicss .banner-text.p-0 .container .banner-text-con > img {
     width: 60.4%;
     position: absolute;
-    top: -25.6%;
+    top: -21.6%;
     right: 2.5%;
 }
 $uicss .banner-text.p-1 .container {

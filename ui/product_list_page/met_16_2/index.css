@@ -270,6 +270,47 @@ $uicss .product_introduce p {
 $uicss .product_introduce:last-child .container > div {
   margin-top: 30px;
 }
+/*钉钉 目录名'ding'*/
+$uicss .ding {
+  position: relative;
+}
+$uicss .ding .ding-background {
+  width: 100%;
+}
+$uicss .ding .ding-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12.5%;
+}
+$uicss .ding .ding-content .ding-in-img {
+  height: 76px;
+}
+$uicss .ding .ding-content .ding-title {
+  font-size: 43px;
+  color: #FFFFFF;
+  margin: 0;
+}
+$uicss .ding .ding-content .ding-des {
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 25px;
+}
+$uicss .ding .ding-content .ding-btn {
+  display: block;
+  width: 226px;
+  height: 44px;
+  background: #3296FA;
+  color: #FFFFFF;
+  font-size: 17px;
+  text-align: center;
+  line-height: 44px;
+  margin-top: 25px;
+  border-radius: 2px;
+}
+
 /*价格 目录名'price'*/
 $uicss .pricing {
   text-align: center;

@@ -20,12 +20,22 @@
                             <img src="{$ui.logo}" alt="{$c.met_webname}" class="logo1  hidden">
                         </div>
                     </a>
-                    <a href="{$ui.server_link}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$ui.server_name}" <if value="$ui['server_link']">target="_blank"</if>>
+                    <if value="$data['foldername'] neq 'ding'">
+                    <a href="{$ui.server1_link}" class="met-qywx-logo vertical-align block pull-xs-left p-y-5" title="{$ui.server1_name}" <if value="$ui['server1_link']">target="_blank"</if>>
                         <div class="vertical-align-middle">
-                            <img src="{$ui.server_logo}" alt="{$ui.server_name}" class="logo">
-                            <img src="{$ui.server_logo}" alt="{$ui.server_name}" class="logo1  hidden">
+                            <img src="{$ui.server1_logo}" alt="{$ui.server1_name}" class="logo">
+                            <img src="{$ui.server1_logo}" alt="{$ui.server1_name}" class="logo1  hidden">
                         </div>
                     </a>
+                    </if>
+                    <if value="$data['foldername'] neq 'wechat'">
+                    <a href="{$ui.server2_link}" class="met-ding-logo vertical-align block pull-xs-left p-y-5" title="{$ui.server2_name}" <if value="$ui['server2_link']">target="_blank"</if>>
+                        <div class="vertical-align-middle">
+                            <img src="{$ui.server2_logo}" alt="{$ui.server2_name}" class="logo">
+                            <img src="{$ui.server2_logo}" alt="{$ui.server2_name}" class="logo1  hidden">
+                        </div>
+                    </a>
+                    </if>
                 </div>
                 <!-- logo -->
                 <button type="button" class="navbar-toggler hamburger hamburger-close collapsed p-x-5 $uicss-toggler" data-target="#$uicss-collapse" data-toggle="collapse">

@@ -52,6 +52,23 @@
         </if>
     </tag>
     </div>
+<!-- 钉钉页 栏目名称'ding' -->
+<elseif value="$data['foldername'] eq 'ding' "/>
+    <div class="ding">
+        <tag action='list' cid="$m['id']" num="$ui['num']">
+            <if value="$m['_index'] eq 0">
+            <img class="ding-background" src="{$v.imgurl}">
+            <div class="ding-content">
+                <div class="vertical-align-middle">
+                    <img class="ding-in-img" src="{$v[displayimgs][1][img]}" alt="{$v.title}">
+                </div>
+                <h2 class="m-t-30 ding-title">{$v.title}</h2>
+                <p class="ding-des">{$v.keywords}<br/>{$v.description}</p>
+                <a href="{$v.url}" target="_blank" class="ding-btn">{$v.ctitle}</a>
+            </div>
+            </if>
+        </tag>
+    </div>
 <!-- 价格页 目录名'price' -->
 <elseif value="$data['foldername'] eq 'price' "/>
 	<div class="pricing">

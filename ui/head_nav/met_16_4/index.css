@@ -58,13 +58,21 @@ $uicss .met-langlist .dropdown a {
 $uicss .met-logo img {
     max-height: 50px;
 }
-$uicss .met-ding-logo {
+$uicss .met-qywx-logo {
     margin-left: 5px;
 }
-$uicss .met-ding-logo img {
+$uicss .met-qywx-logo img {
     max-height: 31px;
 }
+$uicss .met-ding-logo {
+    margin-left: 15px;
+}
+$uicss .met-ding-logo img {
+    max-height: 25px;
+    margin-top: 6px;
+}
 $uicss .met-logo,
+$uicss .met-qywx-logo,
 $uicss .met-ding-logo,
 $uicss .navbar-toggler,
 .met-navfixed-navclamp $uicss .met-langlist .dropdown {

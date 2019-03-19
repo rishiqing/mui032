@@ -46,7 +46,7 @@ METUI_FUN['$uicss'] = {
                   customField18: '' // 公司名称
                 };
                 const objStr = JSON.stringify(obj);
-                zhiManager.set('customerFields', objStr);
+                zhiManager.set('customerFields', window.encodeURIComponent(objStr));
                 // 调用load方法
                 zhiManager.on('load', () => {
                   zhiManager.initBtnDOM();

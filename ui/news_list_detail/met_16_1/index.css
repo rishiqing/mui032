@@ -45,13 +45,13 @@ $uicss .details-title .info span {
 }
 $uicss .met-editor {
     padding: 75px 0;
-    width: 100%;
-    max-width: 100%;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.8;
     color: #222;
     word-wrap: break-word;
+    width: 780px;
+    margin: auto;
 }
 
 .tag {

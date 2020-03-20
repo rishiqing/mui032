@@ -31,14 +31,20 @@ if($data['title']){
 <div class="$uicss <if value="$data['classnow'] eq 10001">index-page</if>" data-height='' style='' m-id='{$ui.mid}' m-type='banner'>
     <tag action='banner.list' >
     <div class="slick-slide">
-        <!-- <img class="cover-image" src="{$v.img_path}" srcset='{$v.img_path} 767w,{$v.img_path}' sizes="(max-width: 767px) 767px" alt="{$v.img_title}" data-height='{$v.height}|{$v.height_t}|{$v.height_m}' > -->
-        <if value="$v['img_title']">
+        <if value="$data['classnow'] eq 10001">
+        <img class="cover-image" src="{$v.img_path}" srcset='{$v.img_path} 767w,{$v.img_path}' sizes="(max-width: 767px) 767px" alt="{$v.img_title}" data-height='{$v.height}|{$v.height_t}|{$v.height_m}' >
+        </if>
+        <if value="$v['img_title'] || $data['classnow'] eq 10001">
         <div class="banner-text p-{$v.img_text_position}" met-imgmask>
             <div class='container'>
                 <div class='banner-text-con'>
                     <div>
-                        <h4 class="animation-slide-top font-weight-500" style="color:{$v.img_title_color}">{$v.img_title}</h4>
-                        <p class="animation-slide-bottom" style='color:{$v.img_des_color}'>{$v.img_des}</p>
+                        <if value="$v.img_title">
+                            <h4 class="animation-slide-top font-weight-500" style="color:{$v.img_title_color}">{$v.img_title}</h4>
+                        </if>
+                        <if value="$v.img_des">
+                            <p class="animation-slide-bottom" style='color:{$v.img_des_color}'>{$v.img_des}</p>
+                        </if>
                         <tag action="category" type="current" cid="$data['classnow']">
                             <if value="$m[index_num] eq 2">
                                 <form class='help' method='get' action="{$c.met_weburl}search/search.php">
@@ -57,7 +63,7 @@ if($data['title']){
                         </tag>
                         <if value="$ui[btn_ok]">
                             <if value="$v.btn_text_1">
-                                <a href="{$ui.btnlink1}" class="btn animation-slide-bottom first-btn">{$v.btn_text_1}</a>
+                                <a href="<if value="$data['classnow'] eq 10001 && $v['img_link']">{$v.img_link}<else/>{$ui.btnlink1}</if>" class="btn animation-slide-bottom first-btn <if value="$data['classnow'] eq 10001 && $v['_index'] eq 1">custom-btn</if>">{$v.btn_text_1}</a>
                             </if>
                             <if value="$v.btn_text_2">
                                 <a href="{$ui.btnlink1}" class="btn animation-slide-bottom first-btn">{$v.btn_text_2}</a>
@@ -78,18 +84,12 @@ if($data['title']){
                             </if>
                         </if>
                     </div>
-                    <if value="$data['classnow'] eq 10001">
-                    <img src="{$v.img_path}" srcset="{$v.img_path}">
-                    </if>
                 </div>
             </div>
         </div>
         </if>
     </div>
     </tag>
-    <if value="$data['classnow'] eq 10001">
-    <div class="cutting-line"></div>
-    </if>
 </div>
 <else/>
     <tag action='category' type="current" cid="$data['class1']">

@@ -303,7 +303,7 @@
                             </div>
                         </li>
                         <else/>
-                        <li class='nav-item m-l-{$ui.nav_ml}'>
+                        <li class='<if value="$m['_index'] eq 0">first-nav</if> nav-item m-l-{$ui.nav_ml} '>
                             <a 
                                 <if value="$m.url">
                                 href="{$m.url}"

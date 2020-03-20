@@ -170,6 +170,13 @@ $uicss .navlist .nav-item a.active {
     color: $navhovercolor$;
 }
 
+$uicss .navlist .nav-item.first-nav a.nav-link,
+$uicss .navlist .nav-item.first-nav a.nav-link:hover,
+$uicss .navlist .nav-item.first-nav a.nav-link.active {
+    color: #FF7801;
+}
+
+
 .ny-nobanner .navlist .nav-item a.active,$uicss.navbar-shadow .navlist .nav-item a.active {
     color: $thirdcolor$;
     color: $navhovercolor$;

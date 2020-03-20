@@ -15,12 +15,28 @@ $uicss {
   animation-duration: .3s;
 }
 $uicss.index-page {
-    background-image: linear-gradient(-180deg, #F5FAFF 0%, #FFFFFF 99%);
-    padding-top: 190px;
-    padding-bottom: 265px;
+    background-image: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 0;
 }
 $uicss.fixedheight {
     display: -moz-deck;
+}
+$uicss.index-page .slick-slide {
+    height: 588px;
+    display: flex;
+    justify-content: center;
+}
+$uicss.index-page .slick-slide img {
+    width: auto!important;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 88px;
+    margin-bottom: 34px;
+}
+$uicss.index-page .banner-text {
+    position: absolute;
 }
 $uicss.fixedheight .slick-slide {
     height: 100%;
@@ -101,7 +117,7 @@ $uicss .slick-arrow {
     text-align: center;
     border-radius: 99px;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.6);
+    background: #D9D9D9;
     width: 70px;
     height: auto;
     display: none !important;
@@ -162,6 +178,10 @@ $uicss .banner-text .container .banner-text-con {
     display: table-cell;
     vertical-align: middle;
     position: relative;
+}
+$uicss.index-page .slick-slide[data-slick-index="0"] .banner-text .container .banner-text-con {
+    vertical-align: initial;
+    padding-top: 130px;
 }
 $uicss .banner-text.p-0 .container {
     text-align: left;
@@ -249,6 +269,21 @@ $uicss.index-page .banner-text .first-btn {
     height: 55px;
     font-size: 18px;
 }
+$uicss.index-page .banner-text .first-btn.custom-btn {
+    position: absolute;
+    left: 0;
+    bottom: 122px;
+    margin-top: 0;
+    width:130px;
+    height:50px;
+    background:linear-gradient(90deg,rgba(254,203,16,1) 0%,rgba(248,152,29,1) 100%);
+    box-shadow:0px 5px 15px 0px rgba(249,165,25,0.28);
+    border-radius:25px;
+    font-size:16px;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    color: #333333;
+    font-weight:600;
+}
 $uicss .banner-text .second-btn {
     border-color: $btncolor$;
 }
@@ -279,6 +314,33 @@ $uicss .banner-text .play-btn i {
     margin-top: -8px;
     margin-left: -4px;
 }
+$uicss.index-page .slick-list {
+    margin: 0 auto;
+}
+
+@media (min-width:480px) {
+  $uicss.index-page .slick-list {
+    width: 606px
+  }
+}
+
+@media (min-width:768px) {
+  $uicss.index-page .slick-list {
+    width: 750px
+  }
+}
+
+@media (min-width:992px) {
+  $uicss.index-page .slick-list {
+    width: 970px
+  }
+}
+
+@media (min-width:1200px) {
+  $uicss.index-page .slick-list {
+    width: 1215px
+  }
+}
 
 @media (max-width:1200px) {
     $uicss .banner-text.p-0 .container .banner-text-con > img {
@@ -286,9 +348,9 @@ $uicss .banner-text .play-btn i {
         right: -2.5%;
     }
     $uicss.index-page {
-    padding-top: 10%;
-    padding-bottom: 14%;
-}
+        padding-top: 10%;
+        padding-bottom: 14%;
+    }
 }
 
 @media (max-width:991px) {

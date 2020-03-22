@@ -313,6 +313,9 @@
                                 {$m.urlnew}
                                 title="{$m.name}"
                                 class="nav-link {$m.class}">{$m.name}</a>
+                            <if value="$m['_index'] eq 0">
+                                <img class="first-nav-image" src="{$m['indeximg']}">
+                            </if>
                         </li>
                         </if>
                         </tag>

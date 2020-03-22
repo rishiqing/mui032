@@ -170,10 +170,24 @@ $uicss .navlist .nav-item a.active {
     color: $navhovercolor$;
 }
 
+
 $uicss .navlist .nav-item.first-nav a.nav-link,
 $uicss .navlist .nav-item.first-nav a.nav-link:hover,
 $uicss .navlist .nav-item.first-nav a.nav-link.active {
     color: #FF7801;
+}
+
+$uicss .navlist .nav-item.first-nav {
+    position: relative;
+    right: 36px;
+}
+
+$uicss .navlist .nav-item .first-nav-image {
+    position: absolute;
+    top: 22px;
+    right: -24px;
+    width: 35px;
+
 }
 
 

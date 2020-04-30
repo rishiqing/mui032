@@ -32,10 +32,11 @@ if($data['title']){
     <tag action='banner.list' >
     <div class="slick-slide">
         <if value="$data['classnow'] eq 10001">
-        <img class="cover-image" src="{$v.img_path}" srcset='{$v.img_path} 767w,{$v.img_path}' sizes="(max-width: 767px) 767px" alt="{$v.img_title}" data-height='{$v.height}|{$v.height_t}|{$v.height_m}' >
+            <img class="cover-image" src="{$v.img_path}" srcset='{$v.img_path} 767w,{$v.img_path}' sizes="(max-width: 767px) 767px" alt="{$v.img_title}" data-height='{$v.height}|{$v.height_t}|{$v.height_m}' >
         </if>
         <if value="$v['img_title'] || $data['classnow'] eq 10001">
-        <div class="banner-text p-{$v.img_text_position}" met-imgmask>
+        <div <if value="$data['classnow'] eq 10001"><if value="$v.btn_text_1 || $v.btn_text_2"><else/>href="{$v['img_link']}"</if></if>
+        class="banner-text p-{$v.img_text_position} <if value="$data['classnow'] eq 10001"><if value="$v.btn_text_1 || $v.btn_text_2"><else/>img-link</if></if>" met-imgmask>
             <div class='container'>
                 <div class='banner-text-con'>
                     <div>
@@ -63,7 +64,7 @@ if($data['title']){
                         </tag>
                         <if value="$ui[btn_ok]">
                             <if value="$v.btn_text_1">
-                                <a href="<if value="$data['classnow'] eq 10001 && $v['img_link']">{$v.img_link}<else/>{$ui.btnlink1}</if>" class="btn animation-slide-bottom first-btn <if value="$data['classnow'] eq 10001 && $v['_index'] eq 1">custom-btn</if>">{$v.btn_text_1}</a>
+                                <a href="<if value="$data['classnow'] eq 10001 && $v['img_link']">{$v.img_link}<else/>{$ui.btnlink1}</if>" class="btn animation-slide-bottom first-btn <if value="$data['classnow'] eq 10001 && ($v['_index'] eq 1 || $v['_index'] eq 2)">custom-btn</if>">{$v.btn_text_1}</a>
                             </if>
                             <if value="$v.btn_text_2">
                                 <a href="{$ui.btnlink1}" class="btn animation-slide-bottom first-btn">{$v.btn_text_2}</a>

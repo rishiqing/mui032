@@ -45,7 +45,7 @@ METUI_FUN['$uicss'] = {
             if(Breakpoints.is('xs')) slick_arrows=false;
             if($(metbanner_slide).length>1){
                 $metbanner.slick({
-                    autoplay:true,
+                    // autoplay:true,
                     dots:true,
                     arrows:slick_arrows,
                     autoplaySpeed:4000,
@@ -60,6 +60,12 @@ METUI_FUN['$uicss'] = {
                     $(metbanner_slide+'.slick-active .banner-text').show();
                 });
             }
+        })
+       // 图片链接点击
+        var $imgLink = $metbanner.find('.img-link')
+        $imgLink.click(function () {
+            const href = $(this).attr('href')
+            window.open(href)
         })
        // 视频播放
         var $videoModal = $metbanner.find('.play-video-modal'),

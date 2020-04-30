@@ -61,6 +61,12 @@ METUI_FUN['$uicss'] = {
                 });
             }
         })
+       // 图片链接点击
+        var $imgLink = $metbanner.find('.img-link')
+        $imgLink.click(function () {
+            const href = $(this).attr('href')
+            window.open(href)
+        })
        // 视频播放
         var $videoModal = $metbanner.find('.play-video-modal'),
         $video = $videoModal.find('video'),

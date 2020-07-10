@@ -68,10 +68,10 @@ METUI_FUN['$uicss'] = {
             window.open(href)
         })
        // 视频播放
-        var $videoModal = $metbanner.find('.play-video-modal'),
+        var $videoModal = $('body > .play-video-modal'),
         $video = $videoModal.find('video'),
         $playBtn = $metbanner.find('.play-btn'),
-        $close = $metbanner.find('.icon-close');
+        $close = $videoModal.find('.icon-close');
         $playBtn.click(function () {
             var videoSrc = $(this).attr('data-src');
             $video.attr('src', videoSrc).show();

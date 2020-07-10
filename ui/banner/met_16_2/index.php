@@ -28,6 +28,12 @@ if($data['title']){
 <if value="$hide">
 <tag action="banner.list"></tag>
 <if value="$sub || $data['classnow'] eq 10001">
+ <div class="play-video-modal">
+    <div class="wrapper">
+        <video controls="" ></video>
+        <i class="icon-close" title = '点击关闭'>×</i>
+    </div>
+</div>
 <div class="$uicss <if value="$data['classnow'] eq 10001">index-page</if>" data-height='' style='' m-id='{$ui.mid}' m-type='banner'>
     <tag action='banner.list' >
     <div class="slick-slide">
@@ -75,12 +81,6 @@ if($data['title']){
                             <if value="$data['classnow'] eq 10001 && $v[_first]">
                                 <div class="btn animation-slide-bottom play-btn" data-src="{$ui.btnlink2}">
                                     <i></i>
-                                </div>
-                                <div class="play-video-modal">
-                                    <div class="wrapper">
-                                        <video controls="" ></video>
-                                        <i class="icon-close" title = '点击关闭'>×</i>
-                                    </div>
                                 </div>
                             </if>
                         </if>

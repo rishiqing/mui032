@@ -23,7 +23,7 @@ $uicss.fixedheight {
     display: -moz-deck;
 }
 $uicss.index-page .slick-slide {
-    height: 588px;
+    height: 658px;
     display: flex;
     justify-content: center;
 }
@@ -32,8 +32,8 @@ $uicss.index-page .slick-slide img {
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    margin-top: 88px;
-    margin-bottom: 34px;
+    margin-top: 72px;
+    margin-bottom: 120px;
 }
 $uicss.index-page .slick-slide .img-link {
     cursor: pointer;
@@ -275,7 +275,7 @@ $uicss.index-page .banner-text .first-btn {
 $uicss.index-page .banner-text .first-btn.custom-btn {
     position: absolute;
     left: 0;
-    bottom: 122px;
+    bottom: 208px;
     margin-top: 0;
     width:130px;
     height:50px;
@@ -317,6 +317,83 @@ $uicss .banner-text .play-btn i {
     margin-top: -8px;
     margin-left: -4px;
 }
+
+$uicss .banner-text .index-btn-bottom {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+$uicss .banner-text .bottom-link {
+    width: 280px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+$uicss .banner-text .bottom-link-container {
+    margin-left: 40px;
+    position: relative;
+    display: flex;
+}
+
+$uicss .banner-text .apply-link {
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/apply-normal.png');
+}
+
+$uicss .banner-text .apply-link:hover {
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/apply-hover.png');
+}
+
+$uicss .banner-text .qywx-link {
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/qywx-normal.png');
+}
+
+$uicss .banner-text .qywx-link:hover {
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/qywx-hover.png');
+}
+
+$uicss .banner-text .link-qr {
+    width: 240px;
+    height: 284px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 2px 46px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -296px;
+    left: 17px;
+    display: none;
+}
+
+$uicss .banner-text .qywx-link-qr {
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/qywx-qr.png')
+}
+
+$uicss .banner-text .qywx-link:hover + .qywx-link-qr {
+    display: block;
+}
+
+$uicss .banner-text .ding-link {
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/ding-normal.png');
+}
+
+$uicss .banner-text .ding-link:hover {
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/ding-hover.png');
+}
+
+$uicss .banner-text .ding-link-qr {
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/ding-qr.png')
+}
+
+$uicss .banner-text .ding-link:hover + .ding-link-qr {
+    display: block;
+}
+
 $uicss.index-page .slick-list {
     margin: 0 auto;
 }

@@ -64,7 +64,10 @@
                 </div>
                 <h2 class="m-t-30 ding-title">{$v.title}</h2>
                 <p class="ding-des">{$v.keywords}<br/>{$v.description}</p>
-                <a href="{$v.url}" target="_blank" class="ding-btn">{$v.ctitle}</a>
+                <div class="vertical-align-middle">
+                    <img class="ding-in-img-qr" src="{$v[displayimgs][2][img]}" alt="{$v.title}">
+                </div>
+                <div class="ding-qr-des">{$v.ctitle}</div>
             </div>
             </if>
         </tag>

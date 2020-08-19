@@ -70,7 +70,7 @@ if($data['title']){
                         </tag>
                         <if value="$ui[btn_ok]">
                             <if value="$v.btn_text_1">
-                                <a href="<if value="$data['classnow'] eq 10001 && $v['img_link']">{$v.img_link}<else/>{$ui.btnlink1}</if>" class="btn animation-slide-bottom first-btn <if value="$data['classnow'] eq 10001 && ($v['_index'] eq 1 || $v['_index'] eq 2)">custom-btn</if>">{$v.btn_text_1}</a>
+                                <a href="{$ui.btnlink1}" class="btn animation-slide-bottom first-btn <if value="$data['classnow'] eq 10001 && ($v['_index'] eq 1 || $v['_index'] eq 2)">custom-btn</if>">{$v.btn_text_1}</a>
                             </if>
                             <if value="$v.btn_text_2">
                                 <a href="{$ui.btnlink1}" class="btn animation-slide-bottom first-btn">{$v.btn_text_2}</a>

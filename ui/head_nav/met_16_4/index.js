@@ -168,7 +168,7 @@ METUI_FUN['$uicss'] = {
                 });
             }
         }
-        if (!document.referrer) {
+        if (!document.referrer && !/lark/i.test(window.navigator.userAgent)) {
             $.ajax({
                 url: "/task/login/authAjax",
                 type: 'GET',

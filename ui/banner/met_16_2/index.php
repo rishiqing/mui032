@@ -87,12 +87,13 @@ if($data['title']){
                                 ?>
                                 <div class="index-btn-bottom">
                                     <a href="{$imgLinkArr[0]}" class="bottom-link apply-link" target="_blank"></a>
+                                    <a href="{$imgLinkArr[1]}" class="bottom-link apply-link-lark" target="_blank"></a>
                                     <div class="bottom-link-container">
-                                        <a href="{$imgLinkArr[1]}" class="bottom-link qywx-link" target="_blank"></a>
+                                        <a href="{$imgLinkArr[2]}" class="bottom-link qywx-link" target="_blank"></a>
                                         <div class="link-qr qywx-link-qr"></div>
                                     </div>
                                     <div class="bottom-link-container">
-                                        <a href="{$imgLinkArr[2]}" class="bottom-link ding-link" target="_blank"></a>
+                                        <a href="{$imgLinkArr[3]}" class="bottom-link ding-link" target="_blank"></a>
                                         <div class="link-qr ding-link-qr"></div>
                                     </div>
                                 </div>

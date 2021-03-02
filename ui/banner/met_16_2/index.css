@@ -329,6 +329,7 @@ $uicss .banner-text .index-btn-bottom {
 
 $uicss .banner-text .bottom-link {
     width: 280px;
+    max-width: 280px;
     height: 56px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -336,7 +337,7 @@ $uicss .banner-text .bottom-link {
 }
 
 $uicss .banner-text .bottom-link-container {
-    margin-left: 40px;
+    margin-left: 30px;
     position: relative;
     display: flex;
 }
@@ -347,6 +348,15 @@ $uicss .banner-text .apply-link {
 
 $uicss .banner-text .apply-link:hover {
     background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/apply-hover.png');
+}
+
+$uicss .banner-text .apply-link-lark {
+    margin-left: 30px;
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/lark-normal.png');
+}
+
+$uicss .banner-text .apply-link-lark:hover {
+    background-image: url('https://rsqsystem.oss-cn-beijing.aliyuncs.com/website/lark-hover.png');
 }
 
 $uicss .banner-text .qywx-link {

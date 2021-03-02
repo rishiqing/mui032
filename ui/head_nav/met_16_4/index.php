@@ -36,6 +36,14 @@
                         </div>
                     </a>
                     </if>
+                    <if value="$ui['server3_logo']">
+                    <a href="{$ui.server3_link}" class="met-lark-logo vertical-align block pull-xs-left p-y-5" title="{$ui.server3_name}" <if value="$ui['server3_link']">target="_blank"</if>>
+                        <div class="vertical-align-middle">
+                            <img src="{$ui.server3_logo}" alt="{$ui.server3_name}" class="logo">
+                            <img src="{$ui.server3_logo}" alt="{$ui.server3_name}" class="logo1  hidden">
+                        </div>
+                    </a>
+                    </if>
                 </div>
                 <!-- logo -->
                 <button type="button" class="navbar-toggler hamburger hamburger-close collapsed p-x-5 $uicss-toggler" data-target="#$uicss-collapse" data-toggle="collapse">

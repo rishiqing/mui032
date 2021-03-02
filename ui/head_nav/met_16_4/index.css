@@ -67,13 +67,20 @@ $uicss .met-qywx-logo img {
 $uicss .met-ding-logo {
     margin-left: 15px;
 }
+$uicss .met-lark-logo {
+    margin-left: 15px;
+}
 $uicss .met-ding-logo img {
     max-height: 25px;
     margin-top: 6px;
 }
+$uicss .met-lark-logo img {
+    height: 32px;
+}
 $uicss .met-logo,
 $uicss .met-qywx-logo,
 $uicss .met-ding-logo,
+$uicss .met-lark-logo,
 $uicss .navbar-toggler,
 .met-navfixed-navclamp $uicss .met-langlist .dropdown {
     height: 60px;

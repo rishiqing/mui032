@@ -327,7 +327,10 @@ $uicss[m-id="55"] {
   margin: 0;
   padding: 93px 0 0;
 }
-$uicss .helpthree-img-list li:nth-child(2) {
+$uicss .helpthree-img-list li {
+  margin-bottom: 16px;
+}
+$uicss .helpthree-img-list li:nth-child(2n) {
   margin-left: 147px;
 }
 $uicss .helpthree-img-list li .img-wrap {
